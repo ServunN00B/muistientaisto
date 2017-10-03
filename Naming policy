@@ -31,7 +31,8 @@ PATHS
 SCRIPTS
 ***
 
-- 
+- scrDealingCards
+- hoitaa korttien sekoittamisen ja jakamisen
 
 SHADERS
 ***
@@ -53,6 +54,12 @@ OBJECTS
 
 - objAudio
 - audio controller hoitaa äänipuolen
+
+- objArenaController
+- Hoitaa taistelun pysyvät numerot ja korttien jakamisen
+
+- objNormalCard
+- Normaalikorttien instanssien pohja ja  hoitaa klikkausten tunnistamisen
 
 ROOMS
 ***
