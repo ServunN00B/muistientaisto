@@ -17,7 +17,11 @@ TILE SETS
 SOUNDS
 ***
 
-- 
+- souCount
+- "count in" taustamusiikkiin
+
+- souMusic01 ... souMusic05
+- taustamusiikit
 
 PATHS
 ***
