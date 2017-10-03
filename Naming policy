@@ -51,7 +51,8 @@ TIMELINES
 OBJECTS
 ***
 
-- 
+- objAudio
+- audio controller hoitaa äänipuolen
 
 ROOMS
 ***
