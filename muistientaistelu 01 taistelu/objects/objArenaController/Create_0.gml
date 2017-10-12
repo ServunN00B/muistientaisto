@@ -33,7 +33,7 @@ flipTimer = room_speed*1;//flipping timer
 alarm_set(0,room_speed*preturnTimer); // Turn start timer
 
 if (objPerSave.isAttacking = 0) {
-	coinFlip = floor(random_range(1,3));
+	coinFlip = 2//floor(random_range(1,3));
 	isAttacking = coinFlip; // Player which is Attacking
 	isTurn = coinFlip; // Player which is active
 	if(isTurn = 2) { 

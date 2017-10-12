@@ -32,6 +32,9 @@ if (!self.turned) {
 						if (instance_exists(objAIdriver)){
 						ds_list_delete(objAIdriver.cardsOnTable, ds_list_find_index(objAIdriver.cardsOnTable, self.id));
 						ds_list_delete(objAIdriver.cardsOnTable, ds_list_find_index(objAIdriver.cardsOnTable, objArenaController.instID));
+						
+						ds_list_delete(objAIdriver.cardsOnMemory, ds_list_find_index(objAIdriver.cardsOnMemory, self.id));
+						ds_list_delete(objAIdriver.cardsOnMemory, ds_list_find_index(objAIdriver.cardsOnMemory, objArenaController.instID));
 						}
 						if (objArenaController.isTurn = 1) {
 							ds_list_add(objArenaController.p1Score, real(self.cardValue));

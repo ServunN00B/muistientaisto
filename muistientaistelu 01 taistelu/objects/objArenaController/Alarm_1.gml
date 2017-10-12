@@ -1,6 +1,8 @@
 /// @description End of turn alarm
 
-show_message("End of turn");
+
+window_set_cursor(cr_default);
+//show_message("End of turn");
 canTurn = false;
 var debudi = file_text_open_append("debudit.txt");
 var plop =  "Pelaaja " + string(objArenaController.isTurn) + ". Parien määrä " + string(objNormalCard.pairs) + " : ";
