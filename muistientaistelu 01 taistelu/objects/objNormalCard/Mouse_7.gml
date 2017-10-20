@@ -2,10 +2,12 @@
 if (!self.found) {
 if (!self.turned) {
 	if (objArenaController.canTurn) {
+
 		self.turned = true;
 		ds_list_add(testiNappi1.cardDebug, self.cardValue);
 		if (objNormalCard.clicks = 0 && self.cardValue = "0") {
-	
+			//sprite_index = sprTurnAnim;
+			//alarm_set(1, 15);
 			sprite_index = self.varSprite;
 			objArenaController.instID = 0;
 			objArenaController.canTurn = false;
@@ -20,7 +22,9 @@ if (!self.turned) {
 			// Changing sprite
 			if (self.varSprite) {
 				sprite_index = self.varSprite;
-			
+				//sprite_index = sprTurnAnim;
+				//alarm_set(1, 15);
+				//alarm_set(0, 15);
 				// Turning cards back
 				if (objNormalCard.clicks > 1) {
 				
@@ -42,6 +46,7 @@ if (!self.turned) {
 							ds_list_add(objArenaController.p2Score, real(self.cardValue));
 						}
 						objNormalCard.clicks = 0;
+						
 						with(instance_create_layer(self.x,self.y,"Instances", objBackFlash)){
 							sprite_index = sprite9;
 							alarm_set(0, 15);
@@ -73,6 +78,7 @@ if (!self.turned) {
 						}
 					// End finding pairs
 					} else {
+
 						alarm_set(0, objArenaController.flipTimer);
 						if (instance_exists(objAIdriver)) {objAIdriver.normalAlarm0 = 1;}
 						objArenaController.canTurn=false;

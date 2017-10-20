@@ -103,6 +103,22 @@
             }
         },
         {
+            "Key": "284192b3-04d7-45e0-8658-3f146b8df30f",
+            "Value": {
+                "id": "7e9a9a71-65a4-4530-a06b-3d0cdd435710",
+                "resourcePath": "sprites\\sprTurnAnim\\sprTurnAnim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c448698-d64f-411c-879f-2f468f2ee6a3",
+            "Value": {
+                "id": "a3af9bd0-8ea7-4d04-98ab-49f9c7c2d030",
+                "resourcePath": "sprites\\sprButton\\sprButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2d2ddb11-bde5-47ca-ae62-37596ca93f09",
             "Value": {
                 "id": "417123e6-3ad4-4dfd-9d59-1673c61565e9",
@@ -183,6 +199,14 @@
             }
         },
         {
+            "Key": "5b325df1-9de4-4c4e-b3fc-f1b97aee4b10",
+            "Value": {
+                "id": "60e71296-63eb-4109-ba40-56c5210c9e7e",
+                "resourcePath": "objects\\objButton\\objButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5e8dafe3-8911-4db5-8b5f-09e013da504b",
             "Value": {
                 "id": "f1e89a99-64c6-4865-8ba6-ca0f31baa623",
@@ -252,6 +276,14 @@
                 "id": "1cc00847-b68b-4019-add3-f06a5691ddc8",
                 "resourcePath": "objects\\testiNappi1\\testiNappi1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "886eef84-e57e-4368-94bf-817001cd8c5b",
+            "Value": {
+                "id": "2e000b19-bb74-4e79-95af-2b3ca6502a1b",
+                "resourcePath": "sprites\\sprite12\\sprite12.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
