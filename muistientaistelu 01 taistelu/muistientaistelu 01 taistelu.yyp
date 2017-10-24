@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "6cc95fea-80e4-4b28-877b-75fa690fdb2e",
+            "Value": {
+                "id": "cc13c5ee-4ae8-4a99-abe6-2a442d2b49d7",
+                "resourcePath": "objects\\objBattleController\\objBattleController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6dfd59f3-5eef-4686-8ed0-4212e9250423",
             "Value": {
                 "id": "4fc5f407-8b63-4105-b571-7e56c74e2ba6",
@@ -316,6 +324,14 @@
                 "id": "8123ea91-f176-42aa-a84b-6f24e7ab4834",
                 "resourcePath": "views\\8190a22d-4619-481c-b4e5-dd959e178543.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "84d9d2d3-3a70-4534-954c-766cb2bdb440",
+            "Value": {
+                "id": "4005e565-98ff-4472-b65b-2f2be81e1c9d",
+                "resourcePath": "scripts\\scrTurnChangePureAI\\scrTurnChangePureAI.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -514,7 +530,8 @@
     "script_order": [
         "dcf73209-26b2-408f-b443-5c50f3d0e4c5",
         "050024e6-231e-4697-8bc6-e33d86cd1f04",
-        "622cab11-41df-4e08-af2b-78bddf64388f"
+        "622cab11-41df-4e08-af2b-78bddf64388f",
+        "84d9d2d3-3a70-4534-954c-766cb2bdb440"
     ],
     "tutorial": ""
 }

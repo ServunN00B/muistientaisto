@@ -33,7 +33,7 @@ flipTimer = room_speed*1;//flipping timer
 alarm_set(0,room_speed*preturnTimer); // Turn start timer
 
 if (objPerSave.isAttacking = 0) {
-	coinFlip = 2//floor(random_range(1,3));
+	if (objPerSave.AI) {coinFlip = 2;} else { coinFlip = floor(random_range(1,3));}
 	isAttacking = coinFlip; // Player which is Attacking
 	isTurn = coinFlip; // Player which is active
 	if(isTurn = 2) { 
@@ -58,5 +58,13 @@ if (objPerSave.isAttacking = 0) {
 // Suffling and dealing cards in grid
 scrDealingCards();
 // for scoring
-p1Score = ds_list_create(); //Player One score
-p2Score = ds_list_create(); //Player Two score
+//Player One score
+p1ScoreInt = 0;
+//Player Two score
+p2ScoreInt = 0;
+
+aiDifficulty = 0;
+aiRoundLimit = 10;
+aiRoundLimitNow = aiRoundLimit -1;
+aiRoundKA = 0;
+alarmi1 = 0;
