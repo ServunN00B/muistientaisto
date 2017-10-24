@@ -210,16 +210,8 @@
             "Key": "4bdfc94a-f788-4744-aa8e-6d6c467fe474",
             "Value": {
                 "id": "a229f922-8a55-4450-893e-a490b9e6fd10",
-                "resourcePath": "objects\\object5\\object5.yy",
+                "resourcePath": "objects\\restart\\restart.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4dd629b6-46c3-4ae1-8bb8-bd6a8ddff843",
-            "Value": {
-                "id": "3ac9d2a4-0d92-4805-941e-eb05cd5047a4",
-                "resourcePath": "datafiles_yy\\debudit.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -324,14 +316,6 @@
                 "id": "8123ea91-f176-42aa-a84b-6f24e7ab4834",
                 "resourcePath": "views\\8190a22d-4619-481c-b4e5-dd959e178543.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "84bcfc9e-6c5f-4ec3-8132-d6cc13e00dab",
-            "Value": {
-                "id": "1cc00847-b68b-4019-add3-f06a5691ddc8",
-                "resourcePath": "objects\\testiNappi1\\testiNappi1.yy",
-                "resourceType": "GMObject"
             }
         },
         {
