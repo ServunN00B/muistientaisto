@@ -12,12 +12,10 @@ draw_text(415,25,"Vaikeus " + string(objArenaController.aiDifficulty) + ". Erä 
 
 draw_text(415,45, "Player " + string(isTurn));
 
-draw_text(objPlayerHP.x, objPlayerHP.y, "HP 100");
 draw_text(30,600, "Player1 Score:" + string(p1ScoreInt));
 draw_text(30,610, "Player1 Coins:" + string(objPerSave.p1Coin));
 draw_text(objPlayerHP.x, objPlayerHP.y, objPerSave.p1Health);
 
-//draw_text(865,610, "Player2 Gold:" + string(objPerSave.p2Gold));
 draw_text(865,600, "Player2 Score:" + string(p2ScoreInt));
 draw_text(865,610, "Player2 Coins:" + string(objPerSave.p2Coin));
 draw_text(objEnemyHp.x, objEnemyHp.y, objPerSave.p2Health);
