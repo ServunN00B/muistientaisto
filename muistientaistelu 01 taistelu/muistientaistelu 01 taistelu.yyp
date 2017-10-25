@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "3eb2b556-7e5e-40c2-9fff-258a3c19029b",
+            "Value": {
+                "id": "d074fabd-b18a-470e-ad3c-46c6279b0f96",
+                "resourcePath": "sprites\\sprAttackCards\\sprAttackCards.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42b9d306-60be-4f8c-a5ec-040be5255fbb",
             "Value": {
                 "id": "ac51e0e5-2f2e-447f-bbaf-cce7a97ad514",
