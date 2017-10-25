@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "9d2bfba8-2c65-4f02-9b6d-6fc7fd2ed26d",
+            "Value": {
+                "id": "f51fd1a4-9dbb-4741-8f1c-da2e23c2f148",
+                "resourcePath": "scripts\\scrAiCheckMemory\\scrAiCheckMemory.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a107a386-5e3f-448f-bae6-411afd4964ce",
             "Value": {
                 "id": "d3a2b920-ea49-415b-9b2c-dece703af335",
@@ -531,7 +539,8 @@
         "dcf73209-26b2-408f-b443-5c50f3d0e4c5",
         "050024e6-231e-4697-8bc6-e33d86cd1f04",
         "622cab11-41df-4e08-af2b-78bddf64388f",
-        "84d9d2d3-3a70-4534-954c-766cb2bdb440"
+        "84d9d2d3-3a70-4534-954c-766cb2bdb440",
+        "9d2bfba8-2c65-4f02-9b6d-6fc7fd2ed26d"
     ],
     "tutorial": ""
 }

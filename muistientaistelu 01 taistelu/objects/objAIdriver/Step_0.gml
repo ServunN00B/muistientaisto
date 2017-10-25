@@ -38,7 +38,12 @@ if (arenaAlarm0 == 0 ){
 						alarm_set(0,15);
 						}
 					} else {
-						scrAIcheck();
+						if (ds_list_size(objAIdriver.cardsOnMemory) > 1) {
+							scrAiCheckMemory();
+						}
+						if (!objAIdriver.remember) {
+							scrAIcheck();
+						}
 						file_text_write_string(AItxt, "Vuoro " + string(turn) + " loppuu");
 						file_text_writeln(AItxt);
 						file_text_writeln(AItxt);

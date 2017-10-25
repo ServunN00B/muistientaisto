@@ -3,7 +3,7 @@
 cardsOnTable = ds_list_create();
 cardsOnMemory = ds_list_create();
 zeroOnMemory = ds_list_create();
-aiDifficultyArray = [50, 80];
+aiDifficultyArray = [20, 40, 60, 80];
 instance_create_layer(60,60,layer_get_id("Instances"),objBlock);
 arenaAlarm0 = 1;
 normalAlarm0 = 0;
@@ -17,6 +17,7 @@ turn = 1;
 AItxt = file_text_open_append(working_directory + "AI.txt");
 aiLastPick = undefined;
 aiStLastPick = undefined;
+remember = false;
 file_text_write_string(AItxt, "*****************************");
 file_text_writeln(AItxt);
 file_text_write_string(AItxt, "AI vuoro alkaa");
