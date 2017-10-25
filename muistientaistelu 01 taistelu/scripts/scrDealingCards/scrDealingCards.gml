@@ -1,8 +1,8 @@
 		// Suffling the deck
 		ds_list_shuffle(objArenaController.dsCarddeck);
 		//Dealing in grid
-		var a=objCards.x; //200; // Starting position X
-		var b=objCards.y; // Starting position Y
+		var a=objCardHolder.x; //200; // Starting position X
+		var b=objCardHolder.y; // Starting position Y
 		var c=5; // Card on a row
 		var f = 20; //Number of cards on the table
 		var g = 90 //Sprite width

@@ -57,6 +57,9 @@ if (!self.turned) {
 							sprite_index = sprite9;
 							alarm_set(0, 15);
 						}
+						
+						alarm_set(2, 15);
+
 						// When all the pairs are found, reset timer and deal new cards
 						if (objNormalCard.pairs > 5) {
 							

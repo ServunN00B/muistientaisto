@@ -37,22 +37,32 @@ if (objPerSave.isAttacking = 0) {
 	isAttacking = coinFlip; // Player which is Attacking
 	isTurn = coinFlip; // Player which is active
 	if(isTurn = 2) { 
+		objPL1Glow.visible = false;
+		objPL2Glow.visible = true;
 		if (objPerSave.AI) {
 			window_set_cursor(cr_none); 
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
+	} else {
+		objPL1Glow.visible = true;
+		objPL2Glow.visible = false;
 	}
 	
 } else {
 	isAttacking = objPerSave.isAttacking;
 	isTurn = objPerSave.isAttacking;
 	if(isTurn = 2) { 
+		objPL1Glow.visible = false;
+		objPL2Glow.visible = true;
 		if (objPerSave.AI) {
 			window_set_cursor(cr_none); 
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
+	}else {
+		objPL1Glow.visible = true;
+		objPL2Glow.visible = false;
 	}
 }
 // Suffling and dealing cards in grid

@@ -3,7 +3,9 @@ alarm_set(1,-1);
 alarm_set(0,room_speed*objArenaController.preturnTimer); // Turn start timer
 if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 if (objArenaController.isAttacking = 1){
+
 	if (objArenaController.isTurn = 1){
+
 		if (!objPerSave.firstTurn) {
 			objPerSave.p1Coin +=1;
 			}
@@ -24,7 +26,9 @@ if (objArenaController.isAttacking = 1){
 		room_goto(2);
 	}
 } else {
+
 	if (objArenaController.isTurn = 2){
+
 		if (!objPerSave.firstTurn) {
 			objPerSave.p2Coin +=1;
 			}
@@ -38,6 +42,7 @@ if (objArenaController.isAttacking = 1){
 		if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		
 	} else {
+		
 		objPerSave.p1Coin +=1;
 		objPerSave.firstTurn=false;
 		objPerSave.isAttacking = 1;
