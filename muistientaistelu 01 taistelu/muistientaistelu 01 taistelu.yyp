@@ -685,6 +685,14 @@
                 "resourcePath": "views\\fab10ae0-ae8c-4d1b-b229-143d51c25654.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fac5f380-5a34-4210-9b22-0f3386002368",
+            "Value": {
+                "id": "adfdf454-bb5b-4b76-bd62-92a6c171f1b1",
+                "resourcePath": "views\\fac5f380-5a34-4210-9b22-0f3386002368.yy",
+                "resourceType": "GMFolder"
+            }
         }
     ],
     "script_order": [

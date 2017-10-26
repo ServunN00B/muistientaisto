@@ -274,7 +274,7 @@
         }
     ],
     "origin": 0,
-    "playbackSpeed": 20,
+    "playbackSpeed": 24,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

@@ -1,11 +1,13 @@
 //chancing turn
 alarm_set(1,-1);
 alarm_set(0,room_speed*objArenaController.preturnTimer); // Turn start timer
-if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
+if (instance_exists(objAIdriver)) { objAIdriver.arenaAlarm0 = 1; }
 if (objArenaController.isAttacking = 1){
 
 	if (objArenaController.isTurn = 1){
-
+		//show_debug_message("Player 1 turn....");
+		objPL1Glow.visible = true;
+		objPL2Glow.visible = false;
 		if (!objPerSave.firstTurn) {
 			objPerSave.p1Coin +=1;
 			}
@@ -28,7 +30,10 @@ if (objArenaController.isAttacking = 1){
 } else {
 
 	if (objArenaController.isTurn = 2){
-
+		//show_debug_message("Player 2 turn....");
+		objPL1Glow.visible = false;
+		objPL2Glow.visible = true;
+		
 		if (!objPerSave.firstTurn) {
 			objPerSave.p2Coin +=1;
 			}

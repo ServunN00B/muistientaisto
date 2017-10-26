@@ -1,8 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 switch(objArenaController.isTurn) {
 	case 1:
+		path2 = path_add();
+		path_add_point(path2, x, y, 100);
 		
+		path_add_point(path2, (objPL1CardHolder.x + (objNormalCard.pairs-1) * 100), objPL1CardHolder.y, 100);
+		
+			//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
+		// path_end();
+		//path_insert_point(path2, 0, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
+		path_start(path2, 100, path_action_stop, true);
+		/*
 		if(objNormalCard.pairs > 3) {
 			x = objPL1CardHolder.x+((objNormalCard.pairs-4))*100;
 			y = objPL1CardHolder.y+ 150;
@@ -20,11 +30,20 @@ switch(objArenaController.isTurn) {
 				x = objPL1CardHolder.x+(objNormalCard.pairs-1)*100;
 				y = objPL1CardHolder.y;
 			}
-		}
+		}*/
 		
 		
 		break;
 	case 2:
+		path2 = path_add();
+		path_add_point(path2, x, y, 100);
+		path_add_point(path2,( objPL2CardHolder.x+(objNormalCard.pairs-1)*100), objPL2CardHolder.y, 100);
+		//path_insert_point(path2,0, objPL2CardHolder.x+(objNormalCard.pairs-1)*100, objPL2CardHolder.y, 100);
+	//path_add_point(path2, objPL2CardHolder.x+(objNormalCard.pairs-1)*100, objPL2CardHolder.y, 100);
+		//path_end();
+		path_start(path2, 100, path_action_stop, true);
+
+		/*
 		if(objNormalCard.pairs > 3) {
 			x = objPL2CardHolder.x+(objNormalCard.pairs-4)*100;
 			y = objPL2CardHolder.y+ 150;
@@ -42,7 +61,7 @@ switch(objArenaController.isTurn) {
 				x = objPL2CardHolder.x+(objNormalCard.pairs-1)*100;
 				y = objPL2CardHolder.y;
 			}
-		}
+		}*/
 		break;
 	default:
 		break;
