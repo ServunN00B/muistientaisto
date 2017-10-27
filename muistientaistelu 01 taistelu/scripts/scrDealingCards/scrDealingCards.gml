@@ -17,7 +17,7 @@
 				switch(ds_list_find_value(objArenaController.dsCarddeck, objArenaController.i)){
 					case 0:
 						// Miss, "rock", "banana", "beer"
-						varSprite = sprMiss;
+						varSprite = sprBanana;
 						cardValue = "0";
 						break;
 					case 1:

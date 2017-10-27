@@ -4,13 +4,12 @@
     "mvc": "1.1",
     "name": "ebfa20f4-e9cb-4464-8295-ecb44edc92dc",
     "children": [
-        "284192b3-04d7-45e0-8658-3f146b8df30f",
         "f37120a2-17b4-4177-b581-f4e02bd627ba",
-        "6fab3512-cff3-4797-9b43-02071dd8e565",
-        "431e511b-b147-4a0a-8ca4-58fbb662feb3",
-        "b962c898-7c13-4645-bc78-472b67022e0b",
-        "ab4469bf-e4f1-4ef1-a1ac-ccff9813ba8f",
-        "f5eb1f75-4de6-41e7-8051-550c5485e26e"
+        "130cf720-a502-4b04-b4aa-c9a670b73f9e",
+        "9d24fa96-8634-49fa-995c-9c138088c7fb",
+        "21d33f99-e83a-40d3-bcef-99ed655e008d",
+        "6c73838a-ff7d-4caa-a800-7732f60bbf85",
+        "1a59df38-c763-4dfe-8801-3a0d0a565a85"
     ],
     "filterType": "GMSprite",
     "folderName": "groupCards",

@@ -15,24 +15,24 @@
     "coltolerance": 0,
     "frames": [
         {
-            "id": "38a3385b-2295-45e2-8f62-e305c4623c44",
+            "id": "998681fb-a08b-42f3-923a-8bbd2e8670ff",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "b962c898-7c13-4645-bc78-472b67022e0b",
             "compositeImage": {
-                "id": "ee5afd53-368d-4a08-a61e-e144835c4a33",
+                "id": "7e214325-fb33-4da2-abbc-6c20034c77ce",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "38a3385b-2295-45e2-8f62-e305c4623c44",
+                "FrameId": "998681fb-a08b-42f3-923a-8bbd2e8670ff",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "4e1d1385-d6b3-4cd6-a616-f34c8b5ef58a",
+                    "id": "7367f38e-c42a-4a6c-9378-05a4841cffc3",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "38a3385b-2295-45e2-8f62-e305c4623c44",
-                    "LayerId": "d4665387-72c3-4970-a738-34d2f728576b"
+                    "FrameId": "998681fb-a08b-42f3-923a-8bbd2e8670ff",
+                    "LayerId": "416facc3-9508-42ea-a03f-a399e53c1a73"
                 }
             ]
         }
@@ -42,7 +42,7 @@
     "height": 131,
     "layers": [
         {
-            "id": "d4665387-72c3-4970-a738-34d2f728576b",
+            "id": "416facc3-9508-42ea-a03f-a399e53c1a73",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "b962c898-7c13-4645-bc78-472b67022e0b",
