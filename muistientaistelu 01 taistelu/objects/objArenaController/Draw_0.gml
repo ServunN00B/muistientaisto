@@ -4,23 +4,23 @@ if (floor(alarm_get(0)/room_speed)> 0) {
 	switch(isTurn) {
 		case 1:
 			msg = string("Player 1, Prepare!");
-			
-			draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
+
+			//draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
 			break;
 		case 2:
-			//draw_text(objTimeHolder.x, objTimeHolder.y, "Player 2, Prepare!");
-			
-			msg = string("Player 2, Prepare!");
-			
-			draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
+			//msg = string("Player 2, Prepare!");
+			//draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
 			break;
 	
 	}
+	
 	time = string(floor(alarm_get(0)/room_speed));
-	draw_text_transformed(objTimeHolder.x-string_width(time)/2, (objTimeHolder.y+50)-string_height(time)/2, time, 1.5, 1.5, 0);
+	//time.depth =-10;
+	//draw_text_transformed(objTimeHolder.x-string_width(time)/2, (objTimeHolder.y+50)-string_height(time)/2, time, 1.5, 1.5, 0);
 	//draw_text(objTimeHolder.x, objTimeHolder.y,"Vuoro alkaa " + string(floor(alarm_get(0)/room_speed)));
 } else {
 	time = string(floor(alarm_get(1)/room_speed));
+//	time.depth =-10;
 	//time.depth =-2;
 	draw_text_transformed(objTimeHolder.x-string_width(time)/2, objTimeHolder.y-string_height(time)/2, time, 1.5, 1.5, 0);
 

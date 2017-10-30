@@ -6,43 +6,43 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 17,
+    "bbox_bottom": 67,
     "bbox_left": 0,
-    "bbox_right": 113,
+    "bbox_right": 437,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [
         {
-            "id": "fa4e4a56-d635-4c8d-ac11-02078c821be4",
+            "id": "792c3d86-d97a-4db6-a51f-52ebacfb50dd",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "7c504a54-ef16-47b4-830a-f4e2f7d3c6d5",
             "compositeImage": {
-                "id": "952c4872-7202-4925-9d85-b555bba878a0",
+                "id": "a33bdfdd-5b0c-4cfc-b222-59fed99721eb",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "fa4e4a56-d635-4c8d-ac11-02078c821be4",
+                "FrameId": "792c3d86-d97a-4db6-a51f-52ebacfb50dd",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "44107d05-1e06-46a9-9291-69f68051b28e",
+                    "id": "dafd3147-0f70-4941-a967-6c40fe710e53",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "fa4e4a56-d635-4c8d-ac11-02078c821be4",
-                    "LayerId": "9da10755-e0df-4d15-809f-6152c0d44bd9"
+                    "FrameId": "792c3d86-d97a-4db6-a51f-52ebacfb50dd",
+                    "LayerId": "557a6fb0-3823-49f9-9b1b-8c1bb6a2ed52"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 18,
+    "height": 68,
     "layers": [
         {
-            "id": "9da10755-e0df-4d15-809f-6152c0d44bd9",
+            "id": "557a6fb0-3823-49f9-9b1b-8c1bb6a2ed52",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "7c504a54-ef16-47b4-830a-f4e2f7d3c6d5",
@@ -62,7 +62,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
-    "width": 114,
+    "width": 438,
     "xorig": 0,
     "yorig": 0
 }
