@@ -26,12 +26,37 @@ if (floor(alarm_get(0)/room_speed)> 0) {
 
 //draw_text(objTimeHolder.x, objTimeHolder.y, string(floor(alarmi1/room_speed)));
 }
+/* Healthbar stuff...
+var pc;
+pc = (50 / 100) * 100;
+draw_healthbar(100, 100, 500, 200, pc, c_black, c_red, c_lime, 0, true, true)
+*/
 /*
 if (objPerSave.AI){
 	draw_text(415,25,"Vaikeus " + string(objArenaController.aiDifficulty) + ". Erä " + string(objArenaController.aiRoundLimitNow +1) + "/" + string(objArenaController.aiRoundLimit));
 }*/
 
 //healths = string(objPerSave.p1Health);
+p1 = objPerSave.p1Health/100;
+p2 = objPerSave.p2Health/100;
+show_debug_message("scale is " + string(p1*pl1Hbar) + " : "+ string(pl1Hbar));
+
+objPL1Healthbar.image_xscale = p1*pl1Hbar;
+objPL2Healthbar.image_xscale = p2*pl2Hbar;
+
+if(objPerSave.p1Health < 30) {
+	objPlayerIcon.sprite_index = sprPL1Damaged;
+	if(objPerSave.p2Health > 30) {
+		objEnemyIcon.sprite_index = sprPL2Winning;
+	}
+}
+
+if(objPerSave.p2Health < 30) {
+	objEnemyIcon.sprite_index = sprPL2Damaged;
+	if(objPerSave.p1Health > 30) {
+		objPlayerIcon.sprite_index = sprPL1Winning;
+	}
+}
 
 draw_text(objPL1HP.x, objPL1HP.y, string(objPerSave.p1Health));
 

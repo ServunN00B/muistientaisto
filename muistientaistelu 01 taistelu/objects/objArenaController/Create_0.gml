@@ -1,5 +1,10 @@
 /// @description In the begining of a battle
 
+// Save Health data
+
+pl1Hbar = objPL1Healthbar.image_xscale;
+pl2Hbar = objPL2Healthbar.image_xscale;
+
 // Randomizing seed
 randomize()
 

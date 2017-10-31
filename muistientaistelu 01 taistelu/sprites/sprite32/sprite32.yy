@@ -56,7 +56,7 @@
             "blendMode": 0,
             "isLocked": false,
             "name": "Layer 2",
-            "opacity": 50,
+            "opacity": 30,
             "visible": true
         },
         {
