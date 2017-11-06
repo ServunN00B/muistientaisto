@@ -8,10 +8,9 @@ if (floor(alarm_get(0)/room_speed)> 0) {
 			//draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
 			break;
 		case 2:
-			//msg = string("Player 2, Prepare!");
+			msg = string("Player 2, Prepare!");
 			//draw_text_transformed(objTimeHolder.x-string_width(msg)/2, objTimeHolder.y-string_height(msg)/2, msg, 1.5, 1.5, 0);
 			break;
-	
 	}
 	
 	time = string(floor(alarm_get(0)/room_speed));
@@ -39,7 +38,7 @@ if (objPerSave.AI){
 //healths = string(objPerSave.p1Health);
 p1 = objPerSave.p1Health/100;
 p2 = objPerSave.p2Health/100;
-show_debug_message("scale is " + string(p1*pl1Hbar) + " : "+ string(pl1Hbar));
+//show_debug_message("scale is " + string(p1*pl1Hbar) + " : "+ string(pl1Hbar));
 
 objPL1Healthbar.image_xscale = p1*pl1Hbar;
 objPL2Healthbar.image_xscale = p2*pl2Hbar;

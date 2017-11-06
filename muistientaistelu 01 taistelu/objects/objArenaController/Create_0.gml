@@ -33,7 +33,7 @@ draw_set_color(c_white);
 
 // for turns
 preturnTimer = 3; // seconds
-turnTimer = 20 // seconds
+turnTimer = 100 // seconds
 flipTimer = room_speed*1;//flipping timer
 alarm_set(0,room_speed*preturnTimer); // Turn start timer
 

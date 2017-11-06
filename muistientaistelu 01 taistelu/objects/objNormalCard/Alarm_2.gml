@@ -4,10 +4,10 @@
 switch(objArenaController.isTurn) {
 	case 1:
 		
-		if(objNormalCard.pairs > 3) {depth = -10;
+		if(objNormalCard.pairs > 3) {
+			depth = -10;
 			path2 = path_add();
 			path_add_point(path2, x, y, 100);
-		
 			path_add_point(path2, (objPL1CardHolder.x + (objNormalCard.pairs-1) * 100), objPL1CardHolder.y+150, 100);
 		
 				//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
@@ -16,7 +16,8 @@ switch(objArenaController.isTurn) {
 			path_set_closed(path2, false);
 			path_start(path2, 100, path_action_stop, false);
 		
-			with(objArenaController.instID){depth = -10;
+			with(objArenaController.instID){
+				depth = -10;
 				path2 = path_add();
 				path_add_point(path2, x, y, 100);
 				path_add_point(path2,(objPL1CardHolder.x+(objNormalCard.pairs-1)*100), objPL1CardHolder.y+150, 100);
@@ -24,7 +25,8 @@ switch(objArenaController.isTurn) {
 				path_set_closed(path2, false);
 				path_start(path2, 100, path_action_stop, false);
 			}
-		} else {depth = -10;
+		} else {
+		depth = -10;
 		path2 = path_add();
 		path_add_point(path2, x, y, 100);
 		
