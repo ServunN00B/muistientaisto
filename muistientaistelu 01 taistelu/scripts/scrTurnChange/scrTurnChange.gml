@@ -1,7 +1,22 @@
+//Checking that special card deck is in right order
+var vuorossa;
+if (objPerSave.isTurn = 1) {vuorossa = objPerSave.dsP1SpecialCards; } else {vuorossa = objPerSave.dsP2SpecialCards; }
+		
+for (var k = 0; k < instance_number(objSpecialCard); k +=1) {
+	var spotti = variable_instance_get(instance_find(objSpecialCard,k), "spot");
+	var arvos = variable_instance_get(instance_find(objSpecialCard,k), "sID");
+	var orig_arvo = ds_list_find_value(vuorossa, spotti);
+	//show_message("Korvattiin arvo " + string(orig_arvo) + " paikassa " + string(spotti) + " arvolla " + string(arvos));
+	ds_list_replace(vuorossa,spotti,arvos);
+	
+}
+
 //chancing turn
 alarm_set(1,-1);
 alarm_set(0,room_speed*objArenaController.preturnTimer); // Turn start timer
 if (instance_exists(objAIdriver)) { objAIdriver.arenaAlarm0 = 1; }
+
+
 if (objPerSave.isAttacking = 1){
 
 	if (objPerSave.isTurn = 1){
@@ -11,6 +26,7 @@ if (objPerSave.isAttacking = 1){
 		if (!objPerSave.firstTurn) {
 			objPerSave.p1Coin +=1;
 			}
+		
 		objPerSave.isTurn = 2;
 		
 		if (objPerSave.AI){

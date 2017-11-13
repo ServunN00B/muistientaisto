@@ -3,6 +3,11 @@
 depth = depth - 2;
 orig_xpos = x;
 orig_ypos = y;
-defSprite = sprBackside;
-value = noone;
+sID = noone;
+sNAME = noone;
+sVALUE = noone;
+sTYPE = noone;
+sPRIORITY = noone;
+sSPRITE = noone;
+sTEXT = noone;
 spot = noone;

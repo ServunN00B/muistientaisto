@@ -2,7 +2,7 @@
     "id": "4f3c5353-5e86-4364-b1eb-997f23639a96",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprWeakSpot",
+    "name": "sprWeakspot",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -21,11 +21,11 @@ var damageAmount = 0;
 
 //Calculate total scores 
 for (var i = 0; i<ds_list_size(player1Score); i+=1) {
-	var player1Total = player1Total + ds_list_find_index(player1Score,i);
+	var player1Total = player1Total + ds_list_find_value(player1Score,i);
 }
 
 for (var i = 0; i<ds_list_size(player2Score); i+=1) {
-	var player2Total = player2Total + ds_list_find_index(player2Score,i);
+	var player2Total = player2Total + ds_list_find_value(player2Score,i);
 }
 
 //Compare total scores with each other and decide the winner and calculate damages 
@@ -65,3 +65,6 @@ else if(p2HP <= 0)
 	show_message("Player 2 is dead! Game Over!");
 	room_goto(rooMain);
 }
+
+ds_list_clear(objPerSave.p1Score);
+ds_list_clear(objPerSave.p2Score);

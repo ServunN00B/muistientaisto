@@ -1,6 +1,7 @@
 /// @description End of turn alarm
 
 
+//show_message("Laita arvot ylös");
 instance_destroy(objBackFlash);
 window_set_cursor(cr_default);
 //show_message("End of turn");

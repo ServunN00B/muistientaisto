@@ -32,6 +32,7 @@ if (!self.turned) {
 					if(self.cardValue = objArenaController.isPair) {
 						objNormalCard.pairs +=1;
 						self.found = true;
+						objArenaController.canTurn = false;
 						variable_instance_set(objArenaController.instID,"found",true);
 						if (instance_exists(objAIdriver)){
 							var kortti = self.id;

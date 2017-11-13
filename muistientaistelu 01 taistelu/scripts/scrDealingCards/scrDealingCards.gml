@@ -30,12 +30,12 @@
 							break;
 						case 2:
 							// Sword
-							varSprite = sprSword;
+							varSprite = sprMace;
 							cardValue = "2";
 							break;
 						case 3:
 							// Mace
-							varSprite = sprMace;
+							varSprite = sprSword;
 							cardValue = "3";
 							break;
 					} // End of switch case

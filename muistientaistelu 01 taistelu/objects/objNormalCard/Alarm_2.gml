@@ -100,3 +100,4 @@ switch(objPerSave.isTurn) {
 	default:
 		break;
 }
+objArenaController.canTurn = true;

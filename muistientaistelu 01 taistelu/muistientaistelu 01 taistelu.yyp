@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "365d1ef9-e3ec-4935-b688-d0854943457b",
+            "Value": {
+                "id": "aa3554ce-780d-4dca-8d3f-2bc3877f9cf3",
+                "resourcePath": "views\\365d1ef9-e3ec-4935-b688-d0854943457b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "39c62ba7-a575-4555-97a6-504fd6f8bc86",
             "Value": {
                 "id": "d9afbe4d-fb8a-4aa4-b0c6-2ce66a74a8dc",
@@ -383,11 +391,43 @@
             }
         },
         {
+            "Key": "4b21e363-6817-4b95-8639-758b97f08cdf",
+            "Value": {
+                "id": "8928c1db-3b6d-4be9-8b57-3bacb5bff7c1",
+                "resourcePath": "sprites\\sprTextboxBG\\sprTextboxBG.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b687fa9-b63c-470f-ab5f-4f279d4af370",
+            "Value": {
+                "id": "2511e59c-c4c6-4174-9059-6170e2d8f1e9",
+                "resourcePath": "scripts\\scrLoadPlayer\\scrLoadPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4bdfc94a-f788-4744-aa8e-6d6c467fe474",
             "Value": {
                 "id": "a229f922-8a55-4450-893e-a490b9e6fd10",
                 "resourcePath": "objects\\restart\\restart.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4daedd27-a152-4957-bedc-e417d98716f0",
+            "Value": {
+                "id": "b6c47e1d-1a0f-4e9e-9c9d-4638d80be490",
+                "resourcePath": "sprites\\sprTribute\\sprTribute.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e01e7a1-44b7-4e10-9fab-12e2a9393b72",
+            "Value": {
+                "id": "2c873032-0f53-41a3-a365-c1aeea524d6f",
+                "resourcePath": "scripts\\scrJsonToGame\\scrJsonToGame.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -402,7 +442,7 @@
             "Key": "4f3c5353-5e86-4364-b1eb-997f23639a96",
             "Value": {
                 "id": "b4b60cfc-b2ae-4ddc-a133-580cec269efa",
-                "resourcePath": "sprites\\sprWeakSpot\\sprWeakSpot.yy",
+                "resourcePath": "sprites\\sprWeakspot\\sprWeakspot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -431,6 +471,14 @@
             }
         },
         {
+            "Key": "54f74014-00f0-43a9-b6e8-726d524f34e8",
+            "Value": {
+                "id": "b6831797-5a29-441c-9965-df9c1fcf6224",
+                "resourcePath": "sprites\\sprScreenFade\\sprScreenFade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57630c4e-23c3-48c4-a372-0ce423382cb5",
             "Value": {
                 "id": "63a6dee6-7f1c-4f8d-b554-ce60d15e9837",
@@ -443,6 +491,14 @@
             "Value": {
                 "id": "60e71296-63eb-4109-ba40-56c5210c9e7e",
                 "resourcePath": "objects\\objButton\\objButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5cec4cf6-6206-4cd3-ab92-224d4b3469ee",
+            "Value": {
+                "id": "73942b9e-5842-4f6e-acab-125bf51bc29f",
+                "resourcePath": "objects\\objTextboxWall\\objTextboxWall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -466,7 +522,7 @@
             "Key": "5ecb831b-217c-444c-9895-e4b65f71a355",
             "Value": {
                 "id": "e86b9376-411c-4197-b16a-a93956e040be",
-                "resourcePath": "sprites\\sprite7\\sprite7.yy",
+                "resourcePath": "sprites\\sprScreenBlock\\sprScreenBlock.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -935,6 +991,14 @@
             }
         },
         {
+            "Key": "c8d45ad9-b78f-4267-80e5-f15afe2999ec",
+            "Value": {
+                "id": "698afdff-3f50-420b-969d-52a5cda98727",
+                "resourcePath": "objects\\objTextboxBG\\objTextboxBG.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c913a45e-5484-4542-8833-89eda2fef43d",
             "Value": {
                 "id": "f0665b87-9a3f-4546-a2f4-3378b5efcb46",
@@ -975,6 +1039,14 @@
             }
         },
         {
+            "Key": "d39318bf-4ce2-4700-b1a6-cc91dcf1dc68",
+            "Value": {
+                "id": "f5ac2b5b-dab9-4125-81db-45cc4b952838",
+                "resourcePath": "sprites\\sprTextboxTextBG\\sprTextboxTextBG.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d63e2c3e-8c5f-44b7-970c-a07096a0da12",
             "Value": {
                 "id": "1c3d6e2a-1fa3-4980-af37-b46b9d1980ab",
@@ -991,10 +1063,26 @@
             }
         },
         {
+            "Key": "d82975c0-b2aa-45cd-97b9-cdd3e5178b1b",
+            "Value": {
+                "id": "a8a8f00f-3b35-403e-b155-0d8f90477696",
+                "resourcePath": "objects\\objTextboxText\\objTextboxText.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d9e08677-a8ab-41d0-b38d-2a0342a4b257",
             "Value": {
                 "id": "f0c9d8e6-d4ba-4410-9273-a6cda646e238",
                 "resourcePath": "sprites\\sprBark\\sprBark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "da97f72d-0e22-42b0-8fd1-be8de64f8acf",
+            "Value": {
+                "id": "b180d024-188d-4254-8b03-7aa6e9a2aa4e",
+                "resourcePath": "sprites\\sprPayback\\sprPayback.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1158,7 +1246,9 @@
         "84d9d2d3-3a70-4534-954c-766cb2bdb440",
         "9d2bfba8-2c65-4f02-9b6d-6fc7fd2ed26d",
         "142fa76a-59a2-4c14-bfae-b44fa86fc30b",
-        "fd2c3919-eef8-442e-92bf-93fa64a83b47"
+        "fd2c3919-eef8-442e-92bf-93fa64a83b47",
+        "4e01e7a1-44b7-4e10-9fab-12e2a9393b72",
+        "4b687fa9-b63c-470f-ab5f-4f279d4af370"
     ],
     "tutorial": ""
 }
