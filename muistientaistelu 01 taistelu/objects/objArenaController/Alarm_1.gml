@@ -7,10 +7,10 @@ window_set_cursor(cr_default);
 canTurn = false;
 // Log files go to C:\Users\*username*\AppData\Local\muistientaistelu_01_taistelu
 var debudi = file_text_open_append(working_directory + "debudit.txt");
-var plop =  "Pelaaja " + string(objPerSave.isTurn) + ". Parien määrä " + string(objNormalCard.pairs) + " : ";
+var plop =  "Pelaaja " + string(objArenaController.isTurn) + ". Parien määrä " + string(objNormalCard.pairs) + " : ";
 var plop2 = 0;
 var vuorossa;
-if (objPerSave.isTurn = 1) { vuorossa = objPerSave.p1Score } else { vuorossa = objPerSave.p2Score }
+if (objArenaController.isTurn = 1) { vuorossa = objPerSave.p1Score } else { vuorossa = objPerSave.p2Score }
 
 for (var i = 0; i<ds_list_size(vuorossa); i+=1) {
 	plop = plop + string(ds_list_find_value(vuorossa, i)) + ", ";

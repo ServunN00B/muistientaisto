@@ -9,7 +9,7 @@
 					
 					
 					if (variable_instance_get(arvo,"turned")) {
-						//show_message("Virhe! Kortti " + string(arvo) + " arvoltaan " + string(variable_instance_get(arvo,"cardValue")) + " on jo käännetty!");
+						show_message("Virhe! Kortti " + string(arvo) + " arvoltaan " + string(variable_instance_get(arvo,"cardValue")) + " on jo käännetty!");
 						while (variable_instance_get(arvo,"turned")){
 							arvo = ds_list_find_value(objAIdriver.cardsOnTable, floor(random_range(0, (ds_list_size(objAIdriver.cardsOnTable) - 1))));
 									file_text_write_string(objAIdriver.AItxt, "Hups meinasin klikata jo käännettyä! uusi kortti *-*");

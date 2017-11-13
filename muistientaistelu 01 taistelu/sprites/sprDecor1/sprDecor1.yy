@@ -6,34 +6,34 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 66,
-    "bbox_left": 0,
-    "bbox_right": 479,
-    "bbox_top": 0,
+    "bbox_bottom": 63,
+    "bbox_left": 231,
+    "bbox_right": 477,
+    "bbox_top": 5,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "130b4e1e-3f3b-4515-828e-40cefb8593f7",
+            "id": "a163c953-14fa-4dae-98f0-141f445d7fde",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "54e76a0e-2317-4c2c-81b6-5743547701f5",
             "compositeImage": {
-                "id": "58b11d54-4141-4d5b-a390-c1a3b58691f5",
+                "id": "52696e1e-f180-4f81-b4a3-a7ee1a6e6c9e",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "130b4e1e-3f3b-4515-828e-40cefb8593f7",
+                "FrameId": "a163c953-14fa-4dae-98f0-141f445d7fde",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "59b87f51-6c9f-43ed-a205-06a385179a97",
+                    "id": "62323433-1638-4912-b494-53f893d90770",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "130b4e1e-3f3b-4515-828e-40cefb8593f7",
-                    "LayerId": "1e452f2c-d91b-409e-bb56-d951f8e02504"
+                    "FrameId": "a163c953-14fa-4dae-98f0-141f445d7fde",
+                    "LayerId": "ad7f8187-6d03-4bfb-a2a9-dc62126d6e7e"
                 }
             ]
         }
@@ -43,14 +43,14 @@
     "height": 67,
     "layers": [
         {
-            "id": "1e452f2c-d91b-409e-bb56-d951f8e02504",
+            "id": "ad7f8187-6d03-4bfb-a2a9-dc62126d6e7e",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "54e76a0e-2317-4c2c-81b6-5743547701f5",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
-            "opacity": 40,
+            "opacity": 100,
             "visible": true
         }
     ],

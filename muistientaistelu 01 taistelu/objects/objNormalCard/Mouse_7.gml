@@ -46,7 +46,7 @@ if (!self.turned) {
 							show_debug_message("stop");
 						}
 						
-						if (objPerSave.isTurn = 1) {
+						if (objArenaController.isTurn = 1) {
 							ds_list_add(objPerSave.p1Score, real(self.cardValue));
 							objArenaController.p1ScoreInt += real(self.cardValue);
 						} else {
