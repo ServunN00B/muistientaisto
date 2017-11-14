@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "79fd6a65-4f10-4a75-9c39-8a574847715f",
+            "Value": {
+                "id": "015c5089-6a3b-43da-b8ea-7e47addb9577",
+                "resourcePath": "sprites\\sprTaskinfo\\sprTaskinfo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a7903f3-69e4-4b3b-97dd-04f25bfa28bc",
             "Value": {
                 "id": "5dc67eac-8fb9-4492-bfc8-46f3711e787a",
@@ -828,6 +836,14 @@
                 "id": "4005e565-98ff-4472-b65b-2f2be81e1c9d",
                 "resourcePath": "scripts\\scrTurnChangePureAI\\scrTurnChangePureAI.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "86a6e082-cc9c-4994-ac69-42f6018544d3",
+            "Value": {
+                "id": "0420fe38-52b0-40c3-9f95-fdf2907b2665",
+                "resourcePath": "objects\\objTaskinfo\\objTaskinfo.yy",
+                "resourceType": "GMObject"
             }
         },
         {
