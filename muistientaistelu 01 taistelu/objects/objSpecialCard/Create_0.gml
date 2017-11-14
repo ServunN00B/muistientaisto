@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = depth - 2;
+depth = depth - 7;
 orig_xpos = x;
 orig_ypos = y;
 sID = noone;
@@ -11,3 +11,4 @@ sPRIORITY = noone;
 sSPRITE = noone;
 sTEXT = noone;
 spot = noone;
+

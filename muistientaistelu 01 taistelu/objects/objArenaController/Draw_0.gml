@@ -1,5 +1,7 @@
 /// @description Battle text
 alarmi1 = alarm_get(1);
+
+
 if (floor(alarm_get(0)/room_speed)> -1) {
 	switch(objPerSave.isTurn) {
 		case 1:

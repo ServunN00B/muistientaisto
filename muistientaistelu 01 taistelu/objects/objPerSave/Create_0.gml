@@ -17,8 +17,7 @@ p1Score = ds_list_create();
 p2Score = ds_list_create();
 
 //Player1 Specialcards
-var Spessu = [0,1,4,6,7,10,12,15,16,17];
-//SpessuSpr = [sprChicken, sprDouble, sprWeakSpot, sprPoison, sprCurse, sprVortex];
+var Spessu = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
 
 //Checking if the Special cards data file exists
 if (file_exists(working_directory+"\specialcards.json")) {
@@ -30,18 +29,18 @@ if (file_exists(working_directory+"\specialcards.json")) {
 
 
 
+dsP1SpecialCardsAvailable = ds_list_create();
 dsP1SpecialCards = ds_list_create();
 for (var j=0; j<array_length_1d(Spessu); j+=1){
-ds_list_add(dsP1SpecialCards,Spessu[j]);
+ds_list_add(dsP1SpecialCardsAvailable,Spessu[j]);
 }
-ds_list_shuffle(dsP1SpecialCards);
 
 //Player2 Specialcards
+dsP2SpecialCardsAvailable = ds_list_create();
 dsP2SpecialCards = ds_list_create();
 for (j=0; j<array_length_1d(Spessu); j+=1){
-ds_list_add(dsP2SpecialCards,Spessu[j]);
+ds_list_add(dsP2SpecialCardsAvailable,Spessu[j]);
 }
-ds_list_shuffle(dsP1SpecialCards);
 
 //Special card effects
 p1SpecialEffect = noone;

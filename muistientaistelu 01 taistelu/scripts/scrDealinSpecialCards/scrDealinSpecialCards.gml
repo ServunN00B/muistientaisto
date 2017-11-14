@@ -1,6 +1,6 @@
 var a = objSpecialCardHolder.x;
 var b = objSpecialCardHolder.y;
-var c = 140; //Spire width
+var c = 152; //Sprite width
 var f = 20; //padding
 e = 0;
 if (argument0 > 0) { e = variable_instance_get(argument1, "spot")} //
@@ -10,7 +10,28 @@ if (objPerSave.isTurn = 1) {vuorossa = objPerSave.dsP1SpecialCards; } else {vuor
 switch(argument0) {
 	//Creating cards in the begining of the turn
 	case 0:
+		//Creating cardback
 		for (j=0; j <3; j+=1) {
+			with(instance_create_layer(a+j*(c + f),b, layer_get_id("Instances"), objSpecialCardBack)){
+				switch(string(global.specialCardData[# ds_list_find_value(vuorossa,objArenaController.j), SpecialEnum.TYPE])) {
+					case "offensive":
+						sprite_index = sprOffensive;
+						break;
+		
+					case "defensive":
+						sprite_index = sprDefence;
+						break;
+	
+					case "neutral":
+						sprite_index = sprNeutral;
+						break;
+				}
+				select = false;
+				image_xscale = 0.3;
+				image_yscale = 0.3;
+			}
+			
+			// Creating card front
 			with(instance_create_layer(a+j*(c + f),b, layer_get_id("Instances"), objSpecialCard)) {
 				sID = ds_list_find_value(vuorossa,objArenaController.j);
 				sNAME = global.specialCardData[# sID, SpecialEnum.NAME];
@@ -22,7 +43,7 @@ switch(argument0) {
 				spot = objArenaController.j;
 				//Finding the right index for sprite!
 				sprite_index = asset_get_index(sSPRITE);
-				show_message("ID: " + string(sID) + " Nimi: " + sNAME + " Kuva: " + sSPRITE + " jonka index on " + string(asset_get_index(sSPRITE)));
+				//show_message("ID: " + string(sID) + " Nimi: " + sNAME + " Kuva: " + sSPRITE + " jonka index on " + string(asset_get_index(sSPRITE)));
 				image_xscale = 0.3;
 				image_yscale = 0.3;
 			}
@@ -31,6 +52,27 @@ switch(argument0) {
 	
 	//Creating new card in the place of old
 	case 1:
+		//Creating cardback
+		with(instance_create_layer(a+d*(g + f),b+e*(h+f), layer_get_id("Instances"), objSpecialCardBack)){
+			switch(string(global.specialCardData[# ds_list_find_value(vuorossa,objArenaController.j), SpecialEnum.TYPE])) {
+				case "offensive":
+					sprite_index = sprOffensive;
+					break;
+		
+				case "defensive":
+					sprite_index = sprDefence;
+					break;
+	
+				case "neutral":
+					sprite_index = sprNeutral;
+					break;
+			}
+			select = false;
+			image_xscale = 0.3;
+			image_yscale = 0.3;
+		}
+		
+		// Creating card front
 		with(instance_create_layer(a+e*(c + f),b, layer_get_id("Instances"), objSpecialCard)) {
 			spot = variable_instance_get(argument1, "spot");
 			sID = ds_list_find_value(vuorossa,3);

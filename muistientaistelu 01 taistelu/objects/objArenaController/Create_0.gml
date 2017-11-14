@@ -32,10 +32,10 @@ draw_set_color(c_white);
 
 
 // for turns
+SCardSelectTimer = 15; //seconds
 preturnTimer = 3; // seconds
-turnTimer = 20 // seconds
+turnTimer = 20; // seconds
 flipTimer = room_speed*1;//flipping timer
-alarm_set(0,room_speed*preturnTimer); // Turn start timer
 
 //if (objPerSave.isAttacking = 0) {
 	//if (objPerSave.AI) {coinFlip = 2;} else { 
@@ -57,36 +57,27 @@ alarm_set(0,room_speed*preturnTimer); // Turn start timer
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
 	}
-/*	
-} else {
-	isAttacking = objPerSave.isAttacking;
-	isTurn = objPerSave.isAttacking;
-	if(isTurn = 2) { 
-		objPL1Glow.visible = false;
-		objPL2Glow.visible = true;
-		if (objPerSave.AI) {
-			window_set_cursor(cr_none); 
-			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
-			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
-		}
-	}else {
-		objPL1Glow.visible = true;
-		objPL2Glow.visible = false;
-	}
-}
-*/
-// Suffling and dealing cards in grid
-scrDealingCards();
 // for scoring
 //Player One score
 p1ScoreInt = 0;
 //Player Two score
 p2ScoreInt = 0;
-
+//Ai Difficulty
 aiDifficulty = 0;
+//AI Debugin variables
 aiRoundLimit = 10;
 aiRoundLimitNow = aiRoundLimit -1;
 aiRoundKA = 0;
 alarmi1 = 0;
 
-audio_play_sound(sound0,1,true);
+if(objPerSave.firstTurn){
+	//Starting count down on special card selection
+	alarm_set(2,room_speed*SCardSelectTimer); 
+	//SpeCard choosing variables
+	ChoosingPlayer = objPerSave.isAttacking;
+	//Deal Special cards for selection
+	scrSpeCardSelectDeal();
+} else {
+	alarm_set(0,room_speed*preturnTimer);
+}
+

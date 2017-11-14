@@ -11,7 +11,7 @@
 		for (i=0;i< ds_list_size(objArenaController.dsCarddeck) ;i+=1;){
 			var d = i%c; // Number on a row
 			var e = floor(i/c)%c; // Row number
-			
+
 			//Creating instances of cards with their values and sprites
 			with(instance_create_layer(a+d*(g+padding),b+e*(h+padding),layer_get_id("Instances"),objNormalCard)) {
 				if (objPerSave.isAttacking = objPerSave.isTurn) {
