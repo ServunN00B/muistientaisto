@@ -48,31 +48,15 @@ var prosToUse = (66 + 2 * objNormalCard.pairs) + (2*ds_list_size(objAIdriver.zer
 			if (rand <= prosToUse) {
 				thisId = inMemoryPairs[thisValue, 0];
 				thatId = inMemoryPairs[thisValue, 1];
-				var thisPair = [thisId, thatId];
-				if (!array_equals(objAIdriver.lastPair,thisPair) || memfail) {
-						with(thisId){
-							event_perform(ev_mouse,ev_left_release);
-							objAIdriver.aiCardValue = self.cardValue;
-						}
-						objAIdriver.aiPair = thatId;
-						objAIdriver.remember = true;
-						file_text_write_string(objAIdriver.AItxt, "AI muisti ja valitsi nyt kortin " 
-						+ string(thisId) + " ja seuraavalla " + string(thatId));
-						show_debug_message("Edellinen pari: " + string(objAIdriver.lastPair[0]) + " ja " + string(objAIdriver.lastPair[1]));
-						show_debug_message("Pari(erikoismuisti)");
-						show_debug_message(thisId);
-						show_debug_message(thatId);
-						objAIdriver.lastPair = [thisId, thatId];
-						
-						show_debug_message("stop");
-						file_text_writeln(objAIdriver.AItxt);
-				} else { 
-					show_debug_message("Aikaisempi pari	: " + string(objAIdriver.lastPair[0]) + " & " + string(objAIdriver.lastPair[1]));
-					show_debug_message("Tämä pari		: " + string(thisId) + " & " + string(thatId));
-					objAIdriver.memfail = true;
-					show_debug_message("stop");
-					break;
+				with(thisId){
+					event_perform(ev_mouse,ev_left_release);
+					objAIdriver.aiCardValue = self.cardValue;
 				}
+				objAIdriver.aiPair = thatId;
+				objAIdriver.remember = true;
+				file_text_write_string(objAIdriver.AItxt, "AI muisti ja valitsi nyt kortin " 
+				+ string(thisId) + " ja seuraavalla " + string(thatId));
+				file_text_writeln(objAIdriver.AItxt);
 				
 			} else {
 				file_text_write_string(objAIdriver.AItxt, "AI ei muistanut");

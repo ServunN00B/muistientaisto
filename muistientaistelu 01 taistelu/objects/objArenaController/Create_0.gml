@@ -33,31 +33,27 @@ draw_set_color(c_white);
 
 // for turns
 preturnTimer = 3; // seconds
-turnTimer = 20 // seconds
+turnTimer = 100 // seconds
 flipTimer = room_speed*1;//flipping timer
 alarm_set(0,room_speed*preturnTimer); // Turn start timer
 
-//if (objPerSave.isAttacking = 0) {
-	//if (objPerSave.AI) {coinFlip = 2;} else { 
-	coinFlip = floor(random_range(1,3)); //}
-	objPerSave.isAttacking = coinFlip; // Player which is Attacking
-	objPerSave.isTurn = coinFlip; // Player which is active
-	if(objPerSave.isTurn = 2) { 
+if (objPerSave.isAttacking = 0) {
+	if (objPerSave.AI) {coinFlip = 2;} else { coinFlip = floor(random_range(1,3));}
+	isAttacking = coinFlip; // Player which is Attacking
+	isTurn = coinFlip; // Player which is active
+	if(isTurn = 2) { 
 		objPL1Glow.visible = false;
 		objPL2Glow.visible = true;
 		if (objPerSave.AI) {
+			window_set_cursor(cr_none); 
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
 	} else {
 		objPL1Glow.visible = true;
 		objPL2Glow.visible = false;
-		if (objPerSave.AI) {
-			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
-			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
-		}
 	}
-/*	
+	
 } else {
 	isAttacking = objPerSave.isAttacking;
 	isTurn = objPerSave.isAttacking;
@@ -74,7 +70,6 @@ alarm_set(0,room_speed*preturnTimer); // Turn start timer
 		objPL2Glow.visible = false;
 	}
 }
-*/
 // Suffling and dealing cards in grid
 scrDealingCards();
 // for scoring
@@ -88,5 +83,3 @@ aiRoundLimit = 10;
 aiRoundLimitNow = aiRoundLimit -1;
 aiRoundKA = 0;
 alarmi1 = 0;
-
-audio_play_sound(sound0,1,true);
