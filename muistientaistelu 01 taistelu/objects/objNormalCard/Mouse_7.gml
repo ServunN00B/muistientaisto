@@ -4,7 +4,7 @@ if (!self.turned) {
 	if (objArenaController.canTurn) {
 		self.turned = true;
 		if (objNormalCard.clicks = 0 && self.cardValue = "0") {
-			sprite_index = sprTurnAnimReverse;
+			sprite_index = sprTurnAnim1;
 			alarm_set(1, 15);
 			
 			//sprite_index = self.varSprite;
@@ -21,8 +21,8 @@ if (!self.turned) {
 			}
 			// Changing sprite
 			if (self.varSprite) {
-				sprite_index = sprTurnAnimReverse;
-				alarm_set(1, 10);
+				sprite_index = sprTurnAnim1;
+				alarm_set(1, 15);
 				//sprite_index = self.varSprite;
 				
 				// Turning cards back
