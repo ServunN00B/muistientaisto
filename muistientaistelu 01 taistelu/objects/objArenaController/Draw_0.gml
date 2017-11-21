@@ -39,8 +39,8 @@ if (objPerSave.AI){
 }*/
 
 //healths = string(objPerSave.p1Health);
-p1 = objPerSave.p1Health/100;
-p2 = objPerSave.p2Health/100;
+p1 = objPerSave.p1Health/objPerSave.p1StartHealth;
+p2 = objPerSave.p2Health/objPerSave.p2StartHealth;
 //show_debug_message("scale is " + string(p1*pl1Hbar) + " : "+ string(pl1Hbar));
 
 objPL1Healthbar.image_xscale = p1*pl1Hbar;

@@ -1,2 +1,4 @@
 /// @description Display cards description
-showDes = true;
+if (sCHOSEN = 1) {
+	showDes = true;
+}

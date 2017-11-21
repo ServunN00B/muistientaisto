@@ -5,3 +5,5 @@ image_yscale = 0.3;
 orig_xpos = x;
 orig_ypos = y;
 select = true;
+spCardFront = noone;
+movePos = 0;

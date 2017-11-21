@@ -11,4 +11,5 @@ sPRIORITY = noone;
 sSPRITE = noone;
 sTEXT = noone;
 spot = noone;
+spCardBack = noone;
 

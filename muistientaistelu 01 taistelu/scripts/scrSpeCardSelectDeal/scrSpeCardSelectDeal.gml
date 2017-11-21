@@ -16,7 +16,7 @@ instance_create_layer(0,0, layer_get_id("Instances"), objBlock);
 for (j=0; j <ds_list_size(vuorossa); j+=1) {
 	var d = j%c; // Number on a row
 	var e = floor(j/c)%c; //Row number
-	
+	var SpeCardBack = noone;
 	//Creating cardback
 	with(instance_create_layer(a+d*(g + f),b+e*(h+f), layer_get_id("Instances"), objSpecialCardBack)){
 		switch(string(global.specialCardData[# ds_list_find_value(vuorossa,objArenaController.j), SpecialEnum.TYPE])) {
@@ -35,6 +35,7 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 		select = true;
 		image_xscale = 0.2;
 		image_yscale = 0.2;
+		SpeCardBack = id;
 	}
 	// Creating card front
 	with(instance_create_layer(a+d*(g + f),b+e*(h+f), layer_get_id("Instances"), objSpeCardSelect)) {
@@ -45,9 +46,15 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 		sPRIORITY = global.specialCardData[# sID, SpecialEnum.PRIORITY];
 		sSPRITE = global.specialCardData[# sID, SpecialEnum.SPRITE];
 		sTEXT = global.specialCardData[# sID, SpecialEnum.TEXT];
+		sCHOSEN = global.specialCardData[# sID, SpecialEnum.CHOSEN];
 		spot = objArenaController.j;
 		//Finding the right index for sprite!
 		sprite_index = asset_get_index(sSPRITE);
+		//Checking if is in 12 selected cards
+		if (sCHOSEN = 0) {
+			image_alpha = 0.2;
+			variable_instance_set(SpeCardBack,"image_alpha",0.3);
+		}
 		image_xscale = 0.2;
 		image_yscale = 0.2;
 	}

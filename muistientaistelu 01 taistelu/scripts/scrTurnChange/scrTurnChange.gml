@@ -73,4 +73,5 @@ if (objPerSave.isAttacking = 1){
 //resetting table
 instance_destroy(objNormalCard);
 instance_destroy(objSpecialCard);
+instance_destroy(objSpecialCardBack);
 scrDealingCards();

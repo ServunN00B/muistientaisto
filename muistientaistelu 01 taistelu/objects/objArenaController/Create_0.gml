@@ -58,9 +58,11 @@ flipTimer = room_speed*1;//flipping timer
 		}
 	}
 // for scoring
-//Player One score
+//Player One var
+p1SpeCardUsed = false;
 p1ScoreInt = 0;
-//Player Two score
+//Player Two var
+p2SpeCardUsed = false;
 p2ScoreInt = 0;
 //Ai Difficulty
 aiDifficulty = 0;
@@ -69,7 +71,7 @@ aiRoundLimit = 10;
 aiRoundLimitNow = aiRoundLimit -1;
 aiRoundKA = 0;
 alarmi1 = 0;
-
+drawSelect = true;
 if(objPerSave.firstTurn){
 	//Starting count down on special card selection
 	alarm_set(2,room_speed*SCardSelectTimer); 
@@ -78,6 +80,10 @@ if(objPerSave.firstTurn){
 	//Deal Special cards for selection
 	scrSpeCardSelectDeal();
 } else {
+	drawSelect = false;
 	alarm_set(0,room_speed*preturnTimer);
+	audio_play_sound(sound0,1,true);
+	// Suffling and dealing cards in grid
+	scrDealingCards();
 }
 

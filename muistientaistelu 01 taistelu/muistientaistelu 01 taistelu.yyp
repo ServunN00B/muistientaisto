@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "207cf4dc-1c47-4b80-96bd-6f00b419f68b",
+            "Value": {
+                "id": "6e1f3527-cfe8-4391-a72c-3515fc7fae11",
+                "resourcePath": "datafiles_yy\\specialcards.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "21d33f99-e83a-40d3-bcef-99ed655e008d",
             "Value": {
                 "id": "bb0f8b26-d53c-4dff-879d-792ae701fc0f",
@@ -761,7 +769,7 @@
         {
             "Key": "79fd6a65-4f10-4a75-9c39-8a574847715f",
             "Value": {
-                "id": "015c5089-6a3b-43da-b8ea-7e47addb9577",
+                "id": "b1ec7005-cf34-43a3-af93-333222d49434",
                 "resourcePath": "sprites\\sprTaskinfo\\sprTaskinfo.yy",
                 "resourceType": "GMSprite"
             }
@@ -841,7 +849,7 @@
         {
             "Key": "86a6e082-cc9c-4994-ac69-42f6018544d3",
             "Value": {
-                "id": "0420fe38-52b0-40c3-9f95-fdf2907b2665",
+                "id": "e6d75d0c-6bca-4564-9a5b-e8812ae4c587",
                 "resourcePath": "objects\\objTaskinfo\\objTaskinfo.yy",
                 "resourceType": "GMObject"
             }

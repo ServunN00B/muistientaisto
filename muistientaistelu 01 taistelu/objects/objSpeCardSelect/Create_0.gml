@@ -10,6 +10,7 @@ sTYPE = noone;
 sPRIORITY = noone;
 sSPRITE = noone;
 sTEXT = noone;
+sCHOSEN = noone;
 spot = noone;
 selected = false;
 showDes = false;
