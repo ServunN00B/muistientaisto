@@ -71,7 +71,7 @@ switch(argument0) {
 			sID = ds_list_find_value(vuorossa,3);
 			//Check to see if there is a BOMB
 			if (sID < 0) {
-				vuorossaHP = vuorossaHP - sID;
+				vuorossaHP = vuorossaHP + sID;
 				show_message("Pakassasi oli POMMI! Menetit " + string(sID) + "hp:tä");
 				ds_list_delete(vuorossa, 3);
 				sID = ds_list_find_value(vuorossa,3);
@@ -115,4 +115,9 @@ switch(argument0) {
 		}
 	break;
 }
-	
+
+if (objPerSave.isTurn = 1) {
+	objPerSave.p1Health = vuorossaHP;
+} else {
+	objPerSave.p2Health = vuorossaHP;
+}

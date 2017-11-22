@@ -6,7 +6,7 @@ if (!select) {
 	var playerCoin;
 	var sID = variable_instance_get(spCardFront, "sID");
 	// Choosing players info by whos turn it is
-if (objPerSave.isTurn = 1) {
+	if (objPerSave.isTurn = 1) {
 		vuorossa = objPerSave.dsP1SpecialCards;
 		player = objArenaController.p1SpeCardUsed;
 		playerCoin = objPerSave.p1Coin;
@@ -21,9 +21,9 @@ if (objPerSave.isTurn = 1) {
 /*		var value = variable_instance_get(spCardFront, "sVALUE");
 		// Check if player has enough coins for the card
 		if (playerCoin >= value) {
-			player = true;
 			playerCoin = playerCoin - value;
-*/			scrSpecialCards(sID);
+*/			player = true;
+			scrSpecialCards(sID);
 			show_message("Tämän kortin sID on " + string(sID));
 			scrDealinSpecialCards(1, spCardFront);
 	
@@ -32,5 +32,14 @@ if (objPerSave.isTurn = 1) {
 			instance_destroy(spCardFront);
 			instance_destroy(self.id);
 //		}
+	}
+	if (objPerSave.isTurn = 1) {
+		objPerSave.dsP1SpecialCards = vuorossa;
+		objArenaController.p1SpeCardUsed = player;
+		objPerSave.p1Coin = playerCoin;
+	} else {
+		objPerSave.dsP2SpecialCards = vuorossa;
+		objArenaController.p2SpeCardUsed = player;
+		objPerSave.p2Coin = playerCoin;
 	}
 }
