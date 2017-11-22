@@ -32,10 +32,10 @@ draw_set_color(c_white);
 
 
 // for turns
-SCardSelectTimer = 15; //seconds
-preturnTimer = 3; // seconds
-turnTimer = 20; // seconds
-flipTimer = room_speed*1;//flipping timer
+SCardSelectTimer = objPerSave.SCardSelectTimer;
+preturnTimer = objPerSave.preturnTimer;
+turnTimer = objPerSave.turnTimer;
+flipTimer = objPerSave.flipTimer;
 
 //if (objPerSave.isAttacking = 0) {
 	//if (objPerSave.AI) {coinFlip = 2;} else { 

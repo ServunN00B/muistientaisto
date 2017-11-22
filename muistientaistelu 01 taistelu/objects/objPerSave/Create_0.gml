@@ -3,26 +3,38 @@
 randomize();
 //Enums used thourgh the game
 enum spShortCut { SpecialEffect, LastingSpecialEffect, dsScore, SpeCardUsed, SpecialCards };
-//instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
+
+//Players stats
 playerName = "";
+playerCards = [];
+playerWins = 0;
+playerLose = 0;
+playerTotal = 0;
+
+//Player Profile
+//instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
+
 isAttacking = 0; //Tells attacking player
 isTurn = 0;
 p1Coin = 0;
 p2Coin = 0;
 firstTurn = true;
 AI = false; // Is AI on
-//Options ini
-var file = file_text_open_read(working_directory+"\options.ini");
-ini_open(file);
-//Reading options
-var basicHp = ini_read_real("basic","hp", 50);
-//closing ini
-ini_close();
 
-p1StartHealth = basicHp;
-p2StartHealth = basicHp;
-p1Health = p1StartHealth;
-p2Health = p2StartHealth;
+//Basic Options for game
+	basicStartHealth = 20;
+	// for turns
+	SCardSelectTimer = 15; //seconds
+	preturnTimer = 3; // seconds
+	turnTimer = 20; // seconds
+	flipTimer = 1;//flipping timer
+	
+//Checking for Options ini for modified options
+scrOptionsini();
+p1StartHealth = basicStartHealth;
+p2StartHealth = basicStartHealth;
+p1Health = basicStartHealth;
+p2Health = basicStartHealth;
 
 
 p1Score = ds_list_create();
@@ -55,8 +67,9 @@ ds_list_add(dsP2SpecialCardsAvailable,Spessu[j]);
 }
 
 //Special card effects
-p1SpecialEffect = noone;
-p1LastingSpecialEffect = noone;
-p2SpecialEffect = noone;
-p2LastingSpecialEffect = noone;
+p1SpecialEffect = -1;
+p1LastingSpecialEffect = false;
+p2SpecialEffect = -1;
+p2LastingSpecialEffect = false;
 vortex = false;
+scriptDone = true;

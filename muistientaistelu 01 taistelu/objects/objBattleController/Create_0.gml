@@ -4,7 +4,7 @@ damageMod = 0;
 p1addCon = false;
 p2addCon = false;
 if (!objPerSave.vortex) {
-	alarm[1] = 15;
+	alarm[0] = 3*room_speed;
 } else {
 	var mssg = "Joku käytti vortexin! \n molemmat saavat 5 damagea";
 	show_message(mssg);

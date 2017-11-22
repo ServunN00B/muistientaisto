@@ -487,14 +487,6 @@
             }
         },
         {
-            "Key": "4b687fa9-b63c-470f-ab5f-4f279d4af370",
-            "Value": {
-                "id": "2511e59c-c4c6-4174-9059-6170e2d8f1e9",
-                "resourcePath": "scripts\\scrLoadPlayer\\scrLoadPlayer.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4bdfc94a-f788-4744-aa8e-6d6c467fe474",
             "Value": {
                 "id": "a229f922-8a55-4450-893e-a490b9e6fd10",
@@ -548,6 +540,14 @@
                 "id": "a3ba1a5d-c9ed-4142-b1b0-d2a92a44cbc8",
                 "resourcePath": "objects\\objPlayerIcon\\objPlayerIcon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "50f2275d-390c-4f80-a260-f94bda21bcdc",
+            "Value": {
+                "id": "4bd97e7c-47e2-45e1-802c-23eae106622c",
+                "resourcePath": "scripts\\scrOptionsini\\scrOptionsini.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1463,6 +1463,14 @@
             }
         },
         {
+            "Key": "f7765366-31ab-4e1b-9c6e-4453d3d3c3cd",
+            "Value": {
+                "id": "ab045409-0c30-45d8-ada2-3a6357e6f2b8",
+                "resourcePath": "scripts\\scrSavegame\\scrSavegame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fab10ae0-ae8c-4d1b-b229-143d51c25654",
             "Value": {
                 "id": "153d8c55-d005-428c-8e95-0e1b136bbe0c",
@@ -1520,8 +1528,9 @@
         "142fa76a-59a2-4c14-bfae-b44fa86fc30b",
         "fd2c3919-eef8-442e-92bf-93fa64a83b47",
         "4e01e7a1-44b7-4e10-9fab-12e2a9393b72",
-        "4b687fa9-b63c-470f-ab5f-4f279d4af370",
-        "483256dd-fc82-4547-88f6-3f48b30eb502"
+        "483256dd-fc82-4547-88f6-3f48b30eb502",
+        "50f2275d-390c-4f80-a260-f94bda21bcdc",
+        "f7765366-31ab-4e1b-9c6e-4453d3d3c3cd"
     ],
     "tutorial": ""
 }
