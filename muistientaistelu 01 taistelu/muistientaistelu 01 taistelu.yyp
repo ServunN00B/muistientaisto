@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "7bdead46-2a98-47d6-929e-752971f7148b",
+            "Value": {
+                "id": "4c3c5151-a0b3-4a67-84b4-3578f7f9624f",
+                "resourcePath": "sprites\\sprCIBg\\sprCIBg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c504a54-ef16-47b4-830a-f4e2f7d3c6d5",
             "Value": {
                 "id": "ca8fcf6c-ad43-4b91-9ae9-fa7628f63faa",

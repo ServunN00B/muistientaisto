@@ -8,4 +8,5 @@ if (drawSelect) {
 						c_black, c_black, c_black, c_black,	false);
 	draw_text_color(objSpeCardSelectionHolder.x,objSpeCardSelectionHolder.y -20, 
 					deksti, c_white, c_white, c_white, c_white, 1);
+					
 }
