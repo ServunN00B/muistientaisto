@@ -27,10 +27,10 @@ AI = false; // Is AI on
 	SCardSelectTimer = 15; //seconds
 	preturnTimer = 3; // seconds
 	turnTimer = 20; // seconds
-	flipTimer = 1;//flipping timer
+	flipTimer = 0.7;//flipping timer
 	
 //Checking for Options ini for modified options
-scrOptionsini();
+//scrOptionsini();
 p1StartHealth = basicStartHealth;
 p2StartHealth = basicStartHealth;
 p1Health = basicStartHealth;
