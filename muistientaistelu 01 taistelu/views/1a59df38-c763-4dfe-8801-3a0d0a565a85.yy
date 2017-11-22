@@ -4,10 +4,9 @@
     "mvc": "1.1",
     "name": "1a59df38-c763-4dfe-8801-3a0d0a565a85",
     "children": [
-        "a90831a5-7aa1-48bb-87a1-ad2c22e44717",
-        "ae7bb89d-fcda-4564-85b5-594c4838c840",
-        "724fbbfc-0290-443e-b9e4-58838f32907d",
-        "0060df38-d4fd-4df5-a0cd-3c66c1159487"
+        "7ff2d0d5-dc9c-43ad-88fd-3701d1d9f905",
+        "c928af19-fef9-451a-87c3-06c494922d61",
+        "f1f2b34b-5467-45be-bfd4-6e3267c2d79e"
     ],
     "filterType": "GMSprite",
     "folderName": "groupSpecial",

@@ -12,7 +12,7 @@ if (!self.turned) {
 			objArenaController.instID = 0;
 			objArenaController.canTurn = false;
 			self.turned = false;
-			alarm_set(0,objArenaController.flipTimer);
+			alarm_set(0,objArenaController.flipTimer * room_speed);
 		} else {
 			objNormalCard.clicks += 1;
 			if (clicks = 1) {
@@ -32,6 +32,7 @@ if (!self.turned) {
 					if(self.cardValue = objArenaController.isPair) {
 						objNormalCard.pairs +=1;
 						self.found = true;
+						objArenaController.canTurn = false;
 						variable_instance_set(objArenaController.instID,"found",true);
 						if (instance_exists(objAIdriver)){
 							var kortti = self.id;
@@ -46,7 +47,7 @@ if (!self.turned) {
 							show_debug_message("stop");
 						}
 						
-						if (objArenaController.isTurn = 1) {
+						if (objPerSave.isTurn = 1) {
 							ds_list_add(objPerSave.p1Score, real(self.cardValue));
 							objArenaController.p1ScoreInt += real(self.cardValue);
 						} else {
@@ -74,7 +75,7 @@ if (!self.turned) {
 						}
 					// End finding pairs
 					} else {
-						alarm_set(0, objArenaController.flipTimer);
+						alarm_set(0, objArenaController.flipTimer * room_speed);
 						if (instance_exists(objAIdriver)) {objAIdriver.normalAlarm0 = 1;}
 						objArenaController.canTurn=false;
 						self.turned = false;

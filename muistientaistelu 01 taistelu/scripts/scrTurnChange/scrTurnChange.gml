@@ -1,17 +1,33 @@
+//Checking that special card deck is in right order
+var vuorossa;
+if (objPerSave.isTurn = 1) {vuorossa = objPerSave.dsP1SpecialCards; } else {vuorossa = objPerSave.dsP2SpecialCards; }
+		
+for (var k = 0; k < instance_number(objSpecialCard); k +=1) {
+	var spotti = variable_instance_get(instance_find(objSpecialCard,k), "spot");
+	var arvos = variable_instance_get(instance_find(objSpecialCard,k), "sID");
+	var orig_arvo = ds_list_find_value(vuorossa, spotti);
+	//show_message("Korvattiin arvo " + string(orig_arvo) + " paikassa " + string(spotti) + " arvolla " + string(arvos));
+	ds_list_replace(vuorossa,spotti,arvos);
+	
+}
+
 //chancing turn
 alarm_set(1,-1);
 alarm_set(0,room_speed*objArenaController.preturnTimer); // Turn start timer
 if (instance_exists(objAIdriver)) { objAIdriver.arenaAlarm0 = 1; }
-if (objArenaController.isAttacking = 1){
 
-	if (objArenaController.isTurn = 1){
+
+if (objPerSave.isAttacking = 1){
+
+	if (objPerSave.isTurn = 1){
 		//show_debug_message("Player 1 turn....");
-		/*objPL1Glow.visible = true;
-		objPL2Glow.visible = false;*/
+		objPL1Glow.visible = true;
+		objPL2Glow.visible = false;
 		if (!objPerSave.firstTurn) {
 			objPerSave.p1Coin +=1;
 			}
-		objArenaController.isTurn = 2;
+		
+		objPerSave.isTurn = 2;
 		
 		if (objPerSave.AI){
 			window_set_cursor(cr_none);
@@ -22,22 +38,21 @@ if (objArenaController.isAttacking = 1){
 	} else {
 		objPerSave.p2Coin +=1;
 		objPerSave.firstTurn=false;
-		objPerSave.isAttacking = 2;
-		objPerSave.isTurn = 2; //Here goes animated battle scene
+		//Here goes animated battle scene
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
 		room_goto(2);
 	}
 } else {
 
-	if (objArenaController.isTurn = 2){
+	if (objPerSave.isTurn = 2){
 		//show_debug_message("Player 2 turn....");
-	/*	objPL1Glow.visible = false;
-		objPL2Glow.visible = true;*/
+		objPL1Glow.visible = false;
+		objPL2Glow.visible = true;
 		
 		if (!objPerSave.firstTurn) {
 			objPerSave.p2Coin +=1;
 			}
-		objArenaController.isTurn = 1;
+		objPerSave.isTurn = 1;
 		
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
 		if (objPerSave.AI){ 
@@ -50,12 +65,13 @@ if (objArenaController.isAttacking = 1){
 		
 		objPerSave.p1Coin +=1;
 		objPerSave.firstTurn=false;
-		objPerSave.isAttacking = 1;
-		objPerSave.isTurn = 1; //Here goes animated battle scene
+		//Here goes animated battle scene
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
 		room_goto(2);
 	}
 }
 //resetting table
 instance_destroy(objNormalCard);
+instance_destroy(objSpecialCard);
+instance_destroy(objSpecialCardBack);
 scrDealingCards();

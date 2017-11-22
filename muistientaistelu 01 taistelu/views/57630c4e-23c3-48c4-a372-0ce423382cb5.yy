@@ -11,7 +11,11 @@
         "3abbf2d6-ab21-45bd-99c9-1620966bee84",
         "4655ffc9-2e94-40d2-855f-6a55005f3bc5",
         "d6ec27f8-2031-494e-a2b8-a42cf82c46c1",
-        "cecac372-0023-4d8a-8804-206916b0239a"
+        "cecac372-0023-4d8a-8804-206916b0239a",
+        "18e3e4ce-f5be-4d1a-9694-e12c45ba2daa",
+        "b14931cb-5865-4763-8a23-50744fbfdcb2",
+        "e8bab222-0dde-4fa0-b363-7bc4dfb25f20",
+        "a4db55f9-8106-4474-929c-1f8d155bb9c3"
     ],
     "filterType": "GMObject",
     "folderName": "groupUI",

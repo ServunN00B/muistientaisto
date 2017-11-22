@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 y = orig_ypos;
-x = orig_xpos;
+variable_instance_set(spCardBack,"y",orig_ypos);
