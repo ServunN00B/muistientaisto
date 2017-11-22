@@ -12,7 +12,7 @@ if (!self.turned) {
 			objArenaController.instID = 0;
 			objArenaController.canTurn = false;
 			self.turned = false;
-			alarm_set(0,objArenaController.flipTimer);
+			alarm_set(0,objArenaController.flipTimer * room_speed);
 		} else {
 			objNormalCard.clicks += 1;
 			if (clicks = 1) {
@@ -75,7 +75,7 @@ if (!self.turned) {
 						}
 					// End finding pairs
 					} else {
-						alarm_set(0, objArenaController.flipTimer);
+						alarm_set(0, objArenaController.flipTimer * room_speed);
 						if (instance_exists(objAIdriver)) {objAIdriver.normalAlarm0 = 1;}
 						objArenaController.canTurn=false;
 						self.turned = false;

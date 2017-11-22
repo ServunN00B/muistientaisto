@@ -16,7 +16,9 @@ while(ds_list_size(vuorossaK) < 6) {
 	}
 	ra += 1;
 }
-ds_list_shuffle(vuorossaK);
+//Suffling Specialcard deck
+//ds_list_shuffle(vuorossaK);
+
 //Which Player is Choosing
 if (ChoosingPlayer = objPerSave.isAttacking) {
 	if (ChoosingPlayer = 1) { ChoosingPlayer = 2; } else { ChoosingPlayer = 1; }
