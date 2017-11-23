@@ -23,6 +23,7 @@ file_text_writeln(debudi);
 //show_message(objNormalCard.pairs);
 		
 //Empty the score
+/*
 if (objPerSave.AI) {
 	if (objArenaController.aiDifficulty < (array_length_1d(objAIdriver.aiDifficultyArray) - 1)) {
 		if (objArenaController.aiRoundLimitNow < 1) {
@@ -49,7 +50,7 @@ if (objPerSave.AI) {
 			objArenaController.aiRoundLimitNow -=1;
 			objArenaController.aiRoundKA += plop2;
 		}
-}
+	}
 }
 if(objPerSave.AI) {
 	ds_list_clear(objPerSave.p2Score);
@@ -57,7 +58,9 @@ if(objPerSave.AI) {
 	objNormalCard.pairs = 0;
 }
 
+*/
 
 file_text_close(debudi);
 //Changin turn
-if (objPerSave.AI) { scrTurnChangePureAI(); } else { scrTurnChange(); }
+scrTurnChange();
+//if (objPerSave.AI) { scrTurnChangePureAI(); } else { scrTurnChange(); }

@@ -39,6 +39,7 @@ flipTimer = objPerSave.flipTimer;
 
 //if (objPerSave.isAttacking = 0) {
 	//if (objPerSave.AI) {coinFlip = 2;} else { 
+if (objPerSave.firstTurn) {
 	coinFlip = floor(random_range(1,3)); //}
 	objPerSave.isAttacking = coinFlip; // Player which is Attacking
 	objPerSave.isTurn = coinFlip; // Player which is active
@@ -49,14 +50,17 @@ flipTimer = objPerSave.flipTimer;
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
-	} else {
+	}
+} else {
 		objPL1Glow.visible = true;
 		objPL2Glow.visible = false;
 		if (objPerSave.AI) {
-			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
-			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
+			if(objPerSave.isTurn = 2) { 
+				instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
+				if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
+			}
 		}
-	}
+} 
 // for scoring
 //Player One var
 p1SpeCardUsed = false;
@@ -72,6 +76,7 @@ aiRoundLimitNow = aiRoundLimit -1;
 aiRoundKA = 0;
 alarmi1 = 0;
 drawSelect = true;
+aikaJ = -1;
 if(objPerSave.firstTurn){
 	//Starting count down on special card selection
 	alarm_set(2,room_speed*SCardSelectTimer); 

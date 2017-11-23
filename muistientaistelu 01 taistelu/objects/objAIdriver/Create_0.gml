@@ -4,7 +4,7 @@ cardsOnTable = ds_list_create();
 cardsOnMemory = ds_list_create();
 zeroOnMemory = ds_list_create();
 aiDifficultyArray = [20, 40, 60, 80, 100];
-instance_create_layer(60,60,layer_get_id("Instances"),objBlock);
+//instance_create_layer(60,60,layer_get_id("Instances"),objBlock);
 arenaAlarm0 = 1;
 normalAlarm0 = 0;
 go = true;

@@ -194,11 +194,31 @@ objPerSave.p2Health = p2HP - p1damage;
 if(p1HP <= 0)
 {
 	show_message("Player 1 is dead! Game Over!");
+	objPerSave.firstTurn = true;
+	ds_list_clear(objPerSave.p1Score);
+	ds_list_clear(objPerSave.p2Score);
+	objPerSave.p1LastingSpecialEffect = false;
+	objPerSave.p2LastingSpecialEffect = false;
+	objPerSave.p1SpecialEffect = -1;
+	objPerSave.p2SpecialEffect = -1;
+	objPerSave.isAttacking = 0;
+	ds_list_clear(objPerSave.dsP1SpecialCards);
+	ds_list_clear(objPerSave.dsP2SpecialCards);
 	room_goto(rooMain);
 }
 else if(p2HP <= 0)
 {
 	show_message("Player 2 is dead! Game Over!");
+	objPerSave.firstTurn = true;
+	ds_list_clear(objPerSave.p1Score);
+	ds_list_clear(objPerSave.p2Score);
+	objPerSave.p1LastingSpecialEffect = false;
+	objPerSave.p2LastingSpecialEffect = false;
+	objPerSave.p1SpecialEffect = -1;
+	objPerSave.p2SpecialEffect = -1;
+	objPerSave.isAttacking = 0;
+	ds_list_clear(objPerSave.dsP1SpecialCards);
+	ds_list_clear(objPerSave.dsP2SpecialCards);
 	room_goto(rooMain);
 }
 

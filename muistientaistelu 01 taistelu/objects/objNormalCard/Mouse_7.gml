@@ -5,7 +5,7 @@ if (!self.turned) {
 		self.turned = true;
 		if (objNormalCard.clicks = 0 && self.cardValue = "0") {
 			sprite_index = sprTurnAnimReverse;
-			alarm_set(1, 15);
+			alarm_set(1, 10);
 			
 			//sprite_index = self.varSprite;
 			

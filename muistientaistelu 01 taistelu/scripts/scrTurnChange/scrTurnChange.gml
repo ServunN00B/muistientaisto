@@ -55,12 +55,13 @@ if (objPerSave.isAttacking = 1){
 		objPerSave.isTurn = 1;
 		
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
+		/*
 		if (objPerSave.AI){ 
 			window_set_cursor(cr_none);
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 		}
 		if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
-		
+		*/
 	} else {
 		
 		objPerSave.p1Coin +=1;
