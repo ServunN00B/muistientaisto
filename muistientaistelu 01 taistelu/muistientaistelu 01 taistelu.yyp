@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "5044d2de-d977-452a-862a-6412c756dba0",
+            "Value": {
+                "id": "0e4ae021-e116-420c-a93c-9d91ca02f5b4",
+                "resourcePath": "objects\\debugMode\\debugMode.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50f2275d-390c-4f80-a260-f94bda21bcdc",
             "Value": {
                 "id": "4bd97e7c-47e2-45e1-802c-23eae106622c",
@@ -556,6 +564,14 @@
                 "id": "1aac1db8-4efb-47ec-bc7b-ee3fbd1d04df",
                 "resourcePath": "rooms\\rooArena\\rooArena.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "53021d97-35f4-4a78-a6df-ff26f41e4c81",
+            "Value": {
+                "id": "e88124f6-b915-4bf0-b8ac-f427448e7e06",
+                "resourcePath": "sprites\\sprDebugModeOn\\sprDebugModeOn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -852,6 +868,14 @@
                 "id": "4005e565-98ff-4472-b65b-2f2be81e1c9d",
                 "resourcePath": "scripts\\scrTurnChangePureAI\\scrTurnChangePureAI.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "85a92402-f017-45ac-9886-600f43e2a8c8",
+            "Value": {
+                "id": "6a46f859-fca4-410c-8e18-213c17115f22",
+                "resourcePath": "sprites\\sprDebugMode\\sprDebugMode.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

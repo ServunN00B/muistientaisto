@@ -20,6 +20,7 @@ p1Coin = 0;
 p2Coin = 0;
 firstTurn = true;
 AI = false; // Is AI on
+debugMod = false;
 
 //Basic Options for game
 	basicStartHealth = 20;

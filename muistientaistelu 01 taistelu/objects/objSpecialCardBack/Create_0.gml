@@ -6,4 +6,4 @@ orig_xpos = x;
 orig_ypos = y;
 select = true;
 spCardFront = noone;
-movePos = 0;
+mouseOver = false;
