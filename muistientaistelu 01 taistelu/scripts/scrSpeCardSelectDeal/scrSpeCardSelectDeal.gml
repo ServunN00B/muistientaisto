@@ -54,6 +54,10 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 		if (sCHOSEN = 0) {
 			image_alpha = 0.2;
 			variable_instance_set(SpeCardBack,"image_alpha",0.3);
+		} else {
+			if(objArenaController.firstDeal) {
+				ds_list_add(objPerSave.cardsInUse,sID);
+			}
 		}
 		image_xscale = 0.2;
 		image_yscale = 0.2;

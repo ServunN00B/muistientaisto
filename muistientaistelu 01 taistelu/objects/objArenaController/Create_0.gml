@@ -79,6 +79,7 @@ aiRoundKA = 0;
 alarmi1 = 0;
 drawSelect = true;
 aikaJ = -1;
+firstDeal = true;
 if(objPerSave.firstTurn){
 	//Starting count down on special card selection
 	alarm_set(2,room_speed*SCardSelectTimer); 

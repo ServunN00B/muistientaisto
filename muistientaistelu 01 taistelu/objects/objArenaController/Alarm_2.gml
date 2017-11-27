@@ -3,18 +3,20 @@ instance_destroy(objBlock);
 instance_destroy(objSpeCardSelect);
 instance_destroy(objSpecialCardBack);
 instance_destroy(objSpeCardDone);
-
+firstDeal = false;
 if (ChoosingPlayer = 1) {
 	var vuorossaK = objPerSave.dsP1SpecialCards
 } else {
 	var vuorossaK = objPerSave.dsP2SpecialCards
 }
-var ra = 0;
+
+var kaytKoko = ds_list_size(objPerSave.cardsInUse) - 1;
 while(ds_list_size(vuorossaK) < 6) {
-	if (ds_list_find_index(vuorossaK,ra)<0) {
-		ds_list_add(vuorossaK,ra)
+	var ra = floor(random_range(0,kaytKoko));
+	var ka = ds_list_find_value(objPerSave.cardsInUse,ra);
+	if (ds_list_find_index(vuorossaK,ka)<0) {
+		ds_list_add(vuorossaK,ka)
 	}
-	ra += 1;
 }
 //Suffling Specialcard deck
 //ds_list_shuffle(vuorossaK);

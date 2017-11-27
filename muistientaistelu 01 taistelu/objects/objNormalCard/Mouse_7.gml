@@ -42,9 +42,12 @@ if (!self.turned) {
 						
 							ds_list_delete(objAIdriver.cardsOnMemory, ds_list_find_index(objAIdriver.cardsOnMemory, kortti));
 							ds_list_delete(objAIdriver.cardsOnMemory, ds_list_find_index(objAIdriver.cardsOnMemory, objArenaController.instID));
-							show_debug_message(string(kortti));
-							show_debug_message(string(kortti2));
-							show_debug_message("stop");
+							
+							if (objPerSave.debugMod) {
+								show_debug_message(string(kortti));
+								show_debug_message(string(kortti2));
+								show_debug_message("stop");
+							}
 						}
 						
 						if (objPerSave.isTurn = 1) {

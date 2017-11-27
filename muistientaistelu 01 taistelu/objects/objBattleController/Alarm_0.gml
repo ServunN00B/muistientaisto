@@ -221,6 +221,7 @@ alarm_set(2,28);
 //Compare total scores with each other and decide the winner and calculate damages 
 if(player1Total > player2Total)
 {
+	//This could be done in draw_text
 	show_message("Player 1 won!");
 	if(attackingPlayer = 1)
 	{
@@ -259,6 +260,7 @@ if(player1Total > player2Total)
 }
 else if(player2Total > player1Total)
 {
+	//This could be done in draw_text
 	show_message("Player 2 won!");
 	if(attackingPlayer = 2)
 	{
@@ -297,11 +299,13 @@ else if(player2Total > player1Total)
 }
 else if(player2Total == player1Total)
 {
+	//This could be done with draw_text
 	show_message("It's a tie!");
 }
 objPerSave.p1Health = p1HP - p2damage;
 objPerSave.p2Health = p2HP - p1damage;
 
+//Gameover screen?
 if(p1HP <= 0)
 {
 	show_message("Player 1 is dead! Game Over!");
@@ -315,6 +319,7 @@ if(p1HP <= 0)
 	objPerSave.isAttacking = 0;
 	ds_list_clear(objPerSave.dsP1SpecialCards);
 	ds_list_clear(objPerSave.dsP2SpecialCards);
+	ds_list_clear(objPerSave.cardsInUse);
 	room_goto(rooMain);
 }
 else if(p2HP <= 0)
@@ -330,6 +335,7 @@ else if(p2HP <= 0)
 	objPerSave.isAttacking = 0;
 	ds_list_clear(objPerSave.dsP1SpecialCards);
 	ds_list_clear(objPerSave.dsP2SpecialCards);
+	ds_list_clear(objPerSave.cardsInUse);
 	room_goto(rooMain);
 }
 

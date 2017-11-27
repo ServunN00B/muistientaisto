@@ -20,9 +20,11 @@ aiStLastPick = undefined;
 remember = false;
 memfail = false;
 lastPair = [undefined,undefined];
-file_text_write_string(AItxt, "*****************************");
-file_text_writeln(AItxt);
-file_text_write_string(AItxt, "AI vuoro alkaa");
-file_text_writeln(AItxt);
-file_text_write_string(AItxt, "*****************************");
-file_text_writeln(AItxt);
+if (objPerSave.debugMod) {
+	file_text_write_string(AItxt, "*****************************");
+	file_text_writeln(AItxt);
+	file_text_write_string(AItxt, "AI vuoro alkaa");
+	file_text_writeln(AItxt);
+	file_text_write_string(AItxt, "*****************************");
+	file_text_writeln(AItxt);
+}

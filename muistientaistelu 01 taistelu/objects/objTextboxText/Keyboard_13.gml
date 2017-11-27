@@ -6,4 +6,6 @@ instance_destroy(objBlock);
 instance_destroy(objTextboxBG);
 instance_destroy(objTextboxWall);
 instance_destroy(objTextboxText);
-show_debug_message(string(objPerSave.playerName));
+if (objPerSave.debugMod) {
+	show_debug_message(string(objPerSave.playerName));
+}

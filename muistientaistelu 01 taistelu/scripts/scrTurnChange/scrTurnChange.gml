@@ -6,7 +6,6 @@ for (var k = 0; k < instance_number(objSpecialCard); k +=1) {
 	var spotti = variable_instance_get(instance_find(objSpecialCard,k), "spot");
 	var arvos = variable_instance_get(instance_find(objSpecialCard,k), "sID");
 	var orig_arvo = ds_list_find_value(vuorossa, spotti);
-	//show_message("Korvattiin arvo " + string(orig_arvo) + " paikassa " + string(spotti) + " arvolla " + string(arvos));
 	ds_list_replace(vuorossa,spotti,arvos);
 	
 }
@@ -20,7 +19,7 @@ if (instance_exists(objAIdriver)) { objAIdriver.arenaAlarm0 = 1; }
 if (objPerSave.isAttacking = 1){
 
 	if (objPerSave.isTurn = 1){
-		//show_debug_message("Player 1 turn....");
+		
 		objPL1Glow.visible = true;
 		objPL2Glow.visible = false;
 		if (!objPerSave.firstTurn) {
@@ -45,7 +44,7 @@ if (objPerSave.isAttacking = 1){
 } else {
 
 	if (objPerSave.isTurn = 2){
-		//show_debug_message("Player 2 turn....");
+		
 		objPL1Glow.visible = false;
 		objPL2Glow.visible = true;
 		
@@ -55,13 +54,7 @@ if (objPerSave.isAttacking = 1){
 		objPerSave.isTurn = 1;
 		
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
-		/*
-		if (objPerSave.AI){ 
-			window_set_cursor(cr_none);
-			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
-		}
-		if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
-		*/
+		
 	} else {
 		
 		objPerSave.p1Coin +=1;

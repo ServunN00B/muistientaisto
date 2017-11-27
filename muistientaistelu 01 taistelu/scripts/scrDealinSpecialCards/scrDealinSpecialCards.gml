@@ -32,7 +32,6 @@ switch(argument0) {
 				spCardBack = noone;
 				//Finding the right index for sprite!
 				sprite_index = asset_get_index(sSPRITE);
-				//show_message("ID: " + string(sID) + " Nimi: " + sNAME + " Kuva: " + sSPRITE + " jonka index on " + string(asset_get_index(sSPRITE)));
 				image_xscale = 0.3;
 				image_yscale = 0.3;
 				frontID = self.id;
@@ -86,7 +85,6 @@ switch(argument0) {
 			spCardBack = noone;
 			//Finding the right index for sprite!
 			sprite_index = asset_get_index(sSPRITE);
-			//show_message("ID: " + string(sID) + " Nimi: " + sNAME + " Kuva: " + sSPRITE + " jonka index on " + string(asset_get_index(sSPRITE)));
 			image_xscale = 0.3;
 			image_yscale = 0.3;
 			frontID = self.id;

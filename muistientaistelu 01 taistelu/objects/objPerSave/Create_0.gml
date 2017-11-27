@@ -41,15 +41,23 @@ p2Health = basicStartHealth;
 p1Score = ds_list_create();
 p2Score = ds_list_create();
 
-//Player1 Specialcards
+//Creating list of cards Available in game
+cardsInUse = ds_list_create();
+
+
+//All Specialcards
 var Spessu = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
 
 //Checking if the Special cards data file exists
 if (file_exists(working_directory+"\specialcards.json")) {
-	//show_message("Löytyi!");
+	if (objPerSave.debugMod) {
+		show_message("Löytyi!");
+	}
 	scrJsonToGame();
 } else {
-	show_message("Ei löytynyt!");
+	if (objPerSave.debugMod) {
+		show_message("Ei löytynyt!");
+	}
 }
 
 

@@ -65,10 +65,7 @@ if (room = rooArena) {
 } else {
 	huone = 1;
 }
-//Checking values
-//show_message("Huone on " + string(room_get_name(room)) + ", vuoro on "
-//			+ string(objPerSave.isTurn) + " ja erikoiskortti on " + string(argument0));
-			
+
 switch(argument0) {
 	case 0: //ChickenShield
 		if(huone = 0) {
