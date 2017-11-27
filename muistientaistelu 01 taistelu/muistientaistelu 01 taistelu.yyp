@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "206293e6-fc28-4aaa-b2df-091056f4000e",
+            "Value": {
+                "id": "5f26f89e-4ffe-437f-807b-3d1661291688",
+                "resourcePath": "objects\\objP2Fight\\objP2Fight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "207cf4dc-1c47-4b80-96bd-6f00b419f68b",
             "Value": {
                 "id": "6e1f3527-cfe8-4391-a72c-3515fc7fae11",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "4a820958-3deb-44bb-96da-537cede8214f",
+            "Value": {
+                "id": "37e3fd04-0b70-4c97-8f51-16281fa94847",
+                "resourcePath": "views\\4a820958-3deb-44bb-96da-537cede8214f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4af9e0ff-2cd6-4da5-8eb7-2c10243402cd",
             "Value": {
                 "id": "958b67ae-d91a-4165-87cf-dad46db664fc",
@@ -695,10 +711,26 @@
             }
         },
         {
+            "Key": "6674201f-3c60-4324-b74d-06f77b4b4db4",
+            "Value": {
+                "id": "b4409212-276c-4d4c-b8c1-afd69564974d",
+                "resourcePath": "sprites\\sprAnimEnemyAttackSwordIdle\\sprAnimEnemyAttackSwordIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "66ac248c-b1df-428f-bea1-973a4307e8e4",
             "Value": {
                 "id": "d6f9f888-3d6e-4280-80a1-51aad54e9cf9",
                 "resourcePath": "sprites\\sprChain\\sprChain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6b86a7d9-c7f9-4cbb-b0f9-6fcd7c24a169",
+            "Value": {
+                "id": "04837e11-99df-45c0-9eab-a2176df42570",
+                "resourcePath": "sprites\\sprAnimAttackDagger\\sprAnimAttackDagger.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -743,6 +775,14 @@
             }
         },
         {
+            "Key": "703d0c98-47b1-4854-a1f7-b525a24fbe55",
+            "Value": {
+                "id": "e3bd60a2-c378-426d-8bad-cd1ec4a42c67",
+                "resourcePath": "sprites\\sprAnimIdleDefence\\sprAnimIdleDefence.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "724fbbfc-0290-443e-b9e4-58838f32907d",
             "Value": {
                 "id": "cb043a08-34a1-4e0d-bde5-f512ee854864",
@@ -751,10 +791,26 @@
             }
         },
         {
+            "Key": "73066dae-145d-401c-9fa4-8bd8e800d675",
+            "Value": {
+                "id": "5f41207d-9466-41d9-9ec5-01bd1b788064",
+                "resourcePath": "views\\73066dae-145d-401c-9fa4-8bd8e800d675.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "73a15e7a-1b44-4ccf-9532-7188da480b9e",
             "Value": {
                 "id": "b4463c26-03fa-4a3f-9022-2a9d07182195",
                 "resourcePath": "objects\\objPerSave\\objPerSave.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "740c05a4-4b0f-4bb8-85cc-cafb20b722f1",
+            "Value": {
+                "id": "4e7f5510-e37e-4bb4-a039-77d1af8a5dc6",
+                "resourcePath": "objects\\objP1Fight\\objP1Fight.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -863,6 +919,14 @@
             }
         },
         {
+            "Key": "84966d20-bb29-4a06-a782-b66c7318ef28",
+            "Value": {
+                "id": "264528b8-6faf-4131-815f-6ce87b09db23",
+                "resourcePath": "sprites\\sprAnimEnemyAttackSword\\sprAnimEnemyAttackSword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "84d9d2d3-3a70-4534-954c-766cb2bdb440",
             "Value": {
                 "id": "4005e565-98ff-4472-b65b-2f2be81e1c9d",
@@ -967,11 +1031,27 @@
             }
         },
         {
+            "Key": "954ba8d9-4a4c-42e9-b75e-120e650aa354",
+            "Value": {
+                "id": "4c649a0c-5fd4-4e04-a99c-5affcf04c2c6",
+                "resourcePath": "sprites\\sprAnimEnemyAttackDaggerIdle\\sprAnimEnemyAttackDaggerIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96baae92-588a-4fed-bc54-db352da9dd60",
             "Value": {
                 "id": "c63e57da-b57c-4f98-9b61-5b04b430e250",
                 "resourcePath": "objects\\objBackground\\objBackground.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "97eec3ec-e16a-4190-ac6e-f7edf3e38324",
+            "Value": {
+                "id": "93c08df2-34c5-4036-b210-563aa1c67d91",
+                "resourcePath": "sprites\\sprAnimAttackMace\\sprAnimAttackMace.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1183,6 +1263,14 @@
             }
         },
         {
+            "Key": "bf6fa079-6053-42c1-aff1-365265e42a67",
+            "Value": {
+                "id": "a3316f3a-2cb2-4e92-9313-34b7f9b48039",
+                "resourcePath": "views\\bf6fa079-6053-42c1-aff1-365265e42a67.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c2eab7aa-1e47-42cf-a2a9-c34d9f83f5ab",
             "Value": {
                 "id": "264a46eb-a134-4b40-bec0-5c6abe1ff476",
@@ -1319,6 +1407,14 @@
             }
         },
         {
+            "Key": "daca443d-1703-457d-a03e-7bd14a08b52c",
+            "Value": {
+                "id": "147fcb30-7518-4b09-a794-0139112093cc",
+                "resourcePath": "sprites\\sprAnimAttackSword\\sprAnimAttackSword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dc99b938-1d68-4c17-b122-aa172853efbf",
             "Value": {
                 "id": "1804a440-ffa2-4172-add9-835170cd1020",
@@ -1340,6 +1436,22 @@
                 "id": "3b13423e-ff93-4056-b393-d2ab77937f59",
                 "resourcePath": "objects\\objChicken\\objChicken.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e0058dc2-ed46-4366-b304-6b27d60d4cd7",
+            "Value": {
+                "id": "4b378736-361f-4ff7-8e0c-2fd6b8bae9df",
+                "resourcePath": "sprites\\sprAnimIdle\\sprAnimIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e31c908b-340e-4ae6-b463-7bd36d357a97",
+            "Value": {
+                "id": "809809c6-3a17-4312-adcc-65bc8fc421ad",
+                "resourcePath": "sprites\\sprAnimEnemyAttackDagger\\sprAnimEnemyAttackDagger.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1508,6 +1620,14 @@
                 "id": "adfdf454-bb5b-4b76-bd62-92a6c171f1b1",
                 "resourcePath": "views\\fac5f380-5a34-4210-9b22-0f3386002368.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fb4d8adc-a6a9-4841-ba25-c9933250ff80",
+            "Value": {
+                "id": "5d83744a-4a69-4a15-834d-248426baef8f",
+                "resourcePath": "sprites\\sprAnimIdleMace\\sprAnimIdleMace.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,5 +1,7 @@
 /// @description In the begining of a battle
-
+if (objPerSave.debugMod) {
+	instance_create_depth(1300,30,-10,restart);
+}
 // Save Health data
 
 pl1Hbar = objPL1Healthbar.image_xscale;

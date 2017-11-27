@@ -3,6 +3,12 @@ alarmi = 2;
 damageMod = 0;
 p1addCon = false;
 p2addCon = false;
+p1EndPlace = objP1Fight.x + 300;
+p2EndPlace = objP1Fight.x - 300;
+p1OrigPlace = objP1Fight.x;
+p2OrigPlace = objP2Fight.x;
+spriteStep = 5;
+firstSprite = true;
 if (!objPerSave.vortex) {
 	alarm[0] = 3*room_speed;
 } else {

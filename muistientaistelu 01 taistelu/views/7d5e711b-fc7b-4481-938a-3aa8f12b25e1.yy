@@ -11,7 +11,9 @@
         "5fba0fb9-2d0d-41c8-8a48-526dcbcf2cd9",
         "bb6bafb8-2668-4f06-af07-85ed765057c2",
         "6e0a69e3-1e2b-4516-8711-c2d400d15d59",
-        "4af9e0ff-2cd6-4da5-8eb7-2c10243402cd"
+        "4af9e0ff-2cd6-4da5-8eb7-2c10243402cd",
+        "740c05a4-4b0f-4bb8-85cc-cafb20b722f1",
+        "206293e6-fc28-4aaa-b2df-091056f4000e"
     ],
     "filterType": "GMObject",
     "folderName": "groupHolders",

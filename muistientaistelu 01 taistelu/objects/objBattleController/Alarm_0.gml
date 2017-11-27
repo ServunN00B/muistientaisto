@@ -98,16 +98,125 @@ var p2HP = objPerSave.p2Health;
 
 //Damage
 var damageAmount = 0;
-
+var p1Highest = 0;
+var p2Highest = 0;
 
 //Calculate total scores 
 for (var i = 0; i<ds_list_size(player1Score); i+=1) {
+	if (ds_list_find_value(player1Score,i) > p1Highest) {
+		p1Highest = ds_list_find_value(player1Score,i);
+	}
 	player1Total = player1Total + ds_list_find_value(player1Score,i);
 }
 
 for (var i = 0; i<ds_list_size(player2Score); i+=1) {
+	if (ds_list_find_value(player2Score,i) > p2Highest) {
+		p2Highest = ds_list_find_value(player2Score,i);
+	}
 	player2Total = player2Total + ds_list_find_value(player2Score,i);
 }
+//(Debug)Show highest scores from both
+if (objPerSave.debugMod) {
+	var highest = @"Player 1 highest point was " + string(p1Highest) + ". " +
+					"Player 2 highest point was " + string(p2Highest) + ".";
+	show_message(highest);
+}
+
+//Sprites
+p1sprite = noone;
+p2sprite = noone;
+var p1spriteIdle = noone;
+var p2spriteIdle = noone;
+var spriteSize = 0.3;
+
+//Player Battle animations
+if (attackingPlayer = 1) {
+	// Player 1 Attacking animation
+		switch(p1Highest) {
+			case 0: 
+				p1sprite = sprAnimIdleMace;
+				p1spriteIdle = sprAnimIdle;
+				break;
+					
+			case 1:
+				p1sprite = sprAnimAttackDagger;
+				p1spriteIdle = sprAnimIdleMace;
+				break;
+					
+			case 2:
+				p1sprite = sprAnimAttackSword;
+				p1spriteIdle = sprAnimIdleMace;
+				break;	
+				
+			default:
+				p1sprite = sprAnimAttackMace;
+				p1spriteIdle = sprAnimIdleMace;
+				break;
+		}
+		
+		//Player 2 defence animation
+		switch(p2Highest) {
+			case 0: 
+				p2sprite = sprAnimEnemyAttackDaggerIdle;
+				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				break;
+				
+			default:
+				p2sprite = sprAnimEnemyAttackDaggerIdle;
+				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				break;
+		}
+		
+} else {
+		// Player 2 Attacking animation
+		switch(p2Highest) {
+			case 0: 
+				p2sprite = sprAnimEnemyAttackDaggerIdle;
+				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				break;
+					
+			case 1:
+				p2sprite = sprAnimEnemyAttackDagger;
+				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				break;
+					
+			case 2:
+				p2sprite = sprAnimEnemyAttackSword;
+				p2spriteIdle = sprAnimEnemyAttackSwordIdle;
+				break;	
+				
+			default:
+				p2sprite = sprAnimEnemyAttackSword;
+				p2spriteIdle = sprAnimEnemyAttackSwordIdle;
+				break;
+		}
+		
+		//Player 1 defence animation
+		switch(p1Highest) {
+			case 0: 
+				p1sprite = sprAnimIdleDefence;
+				p1spriteIdle = sprAnimIdle;
+				break;
+				
+			default:
+				p1sprite = sprAnimIdleDefence;
+				p1spriteIdle = sprAnimIdle;
+				break;
+		}
+}
+
+with(objP1Fight) {
+	sprite_index = p1spriteIdle;
+	image_xscale = spriteSize;
+	image_yscale = spriteSize;
+}
+with(objP2Fight) {
+	sprite_index = p2spriteIdle;
+	image_xscale = spriteSize;
+	image_yscale = spriteSize;
+}
+
+alarm_set(2,28);
 
 //Compare total scores with each other and decide the winner and calculate damages 
 if(player1Total > player2Total)
@@ -126,9 +235,10 @@ if(player1Total > player2Total)
 		}
 		else
 		{
-		damageAmount = player1Total - player2Total;
-		p2HP = p2HP - damageAmount;
+			damageAmount = player1Total - player2Total;
+			p2HP = p2HP - damageAmount;
 		}
+		
 	} 
 	else 
 	{
@@ -166,6 +276,7 @@ else if(player2Total > player1Total)
 		damageAmount = player2Total - player1Total;
 		p1HP = p1HP - damageAmount;
 		}
+		
 	} 
 	else 
 	{
