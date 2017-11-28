@@ -2,7 +2,6 @@
 
 
 instance_destroy(objBackFlash);
-window_set_cursor(cr_default);
 canTurn = false;
 // Log files go to C:\Users\*username*\AppData\Local\muistientaistelu_01_taistelu
 if (objPerSave.debugMod) {
@@ -32,13 +31,13 @@ if (objPerSave.debugMod) {
 //Empty the score
 /*
 if (objPerSave.AI) {
-	if (objArenaController.aiDifficulty < (array_length_1d(objAIdriver.aiDifficultyArray) - 1)) {
+	if (objPerSave.aiDifficulty < (array_length_1d(objAIdriver.aiDifficultyArray) - 1)) {
 		if (objArenaController.aiRoundLimitNow < 1) {
 			objArenaController.aiRoundKA = objArenaController.aiRoundKA/objArenaController.aiRoundLimit;
-			file_text_write_string(debudi, "Vaikeusaste " + string(objArenaController.aiDifficulty) + " prosentilla "  + string(objAIdriver.aiDifficultyArray[objArenaController.aiDifficulty]) + "% KA " + string(objArenaController.aiRoundKA));
+			file_text_write_string(debudi, "Vaikeusaste " + string(objPerSave.aiDifficulty) + " prosentilla "  + string(objAIdriver.aiDifficultyArray[objPerSave.aiDifficulty]) + "% KA " + string(objArenaController.aiRoundKA));
 			file_text_writeln(debudi);
 			objArenaController.aiRoundKA = 0;
-			objArenaController.aiDifficulty +=1;
+			objPerSave.aiDifficulty +=1;
 			objArenaController.aiRoundLimitNow = objArenaController.aiRoundLimit; 
 		} else { 
 			objArenaController.aiRoundLimitNow -=1;
@@ -47,11 +46,11 @@ if (objPerSave.AI) {
 	} else { 
 		if (objArenaController.aiRoundLimitNow < 1) {
 			objArenaController.aiRoundKA = objArenaController.aiRoundKA/objArenaController.aiRoundLimit;
-			file_text_write_string(debudi, "Vaikeusaste " + string(objArenaController.aiDifficulty) + " prosentilla "  + string(objAIdriver.aiDifficultyArray[objArenaController.aiDifficulty]) + "% KA " + string(objArenaController.aiRoundKA));
+			file_text_write_string(debudi, "Vaikeusaste " + string(objPerSave.aiDifficulty) + " prosentilla "  + string(objAIdriver.aiDifficultyArray[objPerSave.aiDifficulty]) + "% KA " + string(objArenaController.aiRoundKA));
 			file_text_writeln(debudi);
 			file_text_close(debudi);
 			objArenaController.aiRoundKA = 0;
-			objArenaController.aiDifficulty = 0;
+			objPerSave.aiDifficulty = 0;
 			objArenaController.aiRoundLimitNow = objArenaController.aiRoundLimit; 
 		} else { 
 			objArenaController.aiRoundLimitNow -=1;

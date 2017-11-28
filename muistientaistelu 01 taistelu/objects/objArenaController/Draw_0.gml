@@ -35,7 +35,7 @@ draw_healthbar(100, 100, 500, 200, pc, c_black, c_red, c_lime, 0, true, true)
 */
 /*
 if (objPerSave.AI){
-	draw_text(415,25,"Vaikeus " + string(objArenaController.aiDifficulty) + ". Erä " + string(objArenaController.aiRoundLimitNow +1) + "/" + string(objArenaController.aiRoundLimit));
+	draw_text(415,25,"Vaikeus " + string(objPerSave.aiDifficulty) + ". Erä " + string(objArenaController.aiRoundLimitNow +1) + "/" + string(objArenaController.aiRoundLimit));
 }*/
 
 //healths = string(objPerSave.p1Health);

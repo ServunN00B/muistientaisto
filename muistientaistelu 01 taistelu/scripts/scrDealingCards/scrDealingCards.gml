@@ -14,6 +14,7 @@
 
 			//Creating instances of cards with their values and sprites
 			with(instance_create_layer(a+d*(g+padding),b+e*(h+padding),layer_get_id("Instances"),objNormalCard)) {
+				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.cardsOnTable, id); }
 				if (objPerSave.isAttacking = objPerSave.isTurn) {
 					//Attacking turn
 					switch(ds_list_find_value(objArenaController.dsCarddeck, objArenaController.i)){

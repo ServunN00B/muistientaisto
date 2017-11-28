@@ -29,6 +29,8 @@ debugMod = false;
 	preturnTimer = 3; // seconds
 	turnTimer = 20; // seconds
 	flipTimer = 0.7;//flipping timer
+	aiDifficulty = 0; //AI default difficulty
+	aiDifficultyArray = [20, 40, 60, 80, 100]; //Difficulty levels for AI
 	
 //Checking for Options ini for modified options
 //scrOptionsini();

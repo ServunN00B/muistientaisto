@@ -1,7 +1,7 @@
 					//random card from the table
 					var plop = ""
 					var arvo = ds_list_find_value(objAIdriver.cardsOnTable, floor(random_range(0, (ds_list_size(objAIdriver.cardsOnTable) - 1))));
-					var aiPros = objAIdriver.aiDifficultyArray[objArenaController.aiDifficulty];
+					var aiPros = objAIdriver.aiDifficultyArray[objPerSave.aiDifficulty];
 					var rand = floor(random_range(0,9));
 					var i = 0;
 						

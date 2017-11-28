@@ -1,3 +1,9 @@
+//Options vars
+var aiDifficultyString;
+var difficultyArray = [];
+var stringLength;
+var pilkunpaikka;
+
 //Options ini
 if (file_exists(working_directory+"\options.ini")) {
 	ini_open("options.ini");
@@ -10,6 +16,15 @@ if (file_exists(working_directory+"\options.ini")) {
 			objPerSave.preturnTimer = ini_read_real("turn","PreTurnTime", 3);
 			objPerSave.turnTimer = ini_read_real("turn","TurnTime", 20);
 			objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
+			objPerSave.aiDifficulty = ini_read_real("AI","aiDifficulty", 0);
+			
+		//AI modifiers
+			aiDifficultyString =  ini_read_string("AI","aiDifficulty", "20, 40, 60, 80, 100");
+			stringLength = string_length(aiDifficultyString);
+			while (stringLength > 0) {
+				pilkunpaikka = string_pos(",", aiDifficultyString);
+			}
+			objPerSave.aiDifficultyArray = [20, 40, 60, 80, 100];
 
 	//closing ini
 	ini_close();

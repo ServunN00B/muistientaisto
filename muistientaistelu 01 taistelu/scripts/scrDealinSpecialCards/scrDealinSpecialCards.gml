@@ -35,6 +35,7 @@ switch(argument0) {
 				image_xscale = 0.3;
 				image_yscale = 0.3;
 				frontID = self.id;
+				if(instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
 			
 			//Creating cardback
@@ -57,6 +58,7 @@ switch(argument0) {
 				image_yscale = 0.3;
 				spCardFront = frontID;
 				variable_instance_set(frontID,"spCardBack",self.id);
+				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 			}
 			
 		}
