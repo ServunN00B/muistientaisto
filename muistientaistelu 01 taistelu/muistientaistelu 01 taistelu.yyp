@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "67e53f76-c419-4287-bcf7-4f4a04a7f5f6",
+            "Value": {
+                "id": "0d6ded7e-3bd8-466b-b60c-a14c48f6ded5",
+                "resourcePath": "sprites\\sprDecor3\\sprDecor3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6c73838a-ff7d-4caa-a800-7732f60bbf85",
             "Value": {
                 "id": "e372551d-d8e2-4b49-b858-b599fa65ef23",
