@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "82c9a4d5-35f8-4438-bb1a-2e2235f2020a",
+            "Value": {
+                "id": "81710271-359f-4367-8a13-8d857424b8e9",
+                "resourcePath": "sprites\\sprTimeDecor\\sprTimeDecor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8343ddc0-bcf2-4b37-b8a5-0354550b6dff",
             "Value": {
                 "id": "be6c972d-5927-4c79-89b1-b65fa3ff9b1f",
