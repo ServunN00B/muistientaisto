@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "07a8ba46-6cb6-4974-abb0-bec3188d13ed",
+            "Value": {
+                "id": "f44895af-2c79-4564-b44a-532a84b6ccb9",
+                "resourcePath": "objects\\objMenu\\objMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "07b1bb89-9a2c-4de1-bcf0-0f6fcfe34173",
             "Value": {
                 "id": "e31d5684-d9bc-44d8-adcb-5b17bd99a178",
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "8f03f739-c41d-4ab4-a90a-72ef57252ae8",
+            "Value": {
+                "id": "0df23ad9-c083-48f7-accb-5abeee3e0f48",
+                "resourcePath": "objects\\objQuitButton1\\objQuitButton1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9178f55d-2d28-499a-8313-a8d9a55f9c2b",
             "Value": {
                 "id": "c0392e34-608e-4a74-82ba-da2c9192b8a6",
@@ -1159,6 +1175,14 @@
             }
         },
         {
+            "Key": "b9cf045c-b9f8-4799-9a9e-9e838b6494d1",
+            "Value": {
+                "id": "f73e3705-2fcc-4ef5-886b-d364faccc89f",
+                "resourcePath": "sprites\\sprAudio\\sprAudio.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb6bafb8-2668-4f06-af07-85ed765057c2",
             "Value": {
                 "id": "0cfbbe7a-80b4-4094-92b9-d03eb72bcf61",
@@ -1271,11 +1295,27 @@
             }
         },
         {
+            "Key": "d495eaf0-c1ee-4e6b-9430-7a6b8482e62b",
+            "Value": {
+                "id": "6aa7a9ff-846e-47cc-8007-47beca14555a",
+                "resourcePath": "objects\\objMusicButton\\objMusicButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d63e2c3e-8c5f-44b7-970c-a07096a0da12",
             "Value": {
                 "id": "1c3d6e2a-1fa3-4980-af37-b46b9d1980ab",
                 "resourcePath": "objects\\objStart\\objStart.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d64c01e8-8e3f-4995-92d4-119f9bd67cda",
+            "Value": {
+                "id": "05816500-5e8f-4fbe-9be0-8a6742ab7663",
+                "resourcePath": "sprites\\sprMusic\\sprMusic.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1484,6 +1524,14 @@
                 "id": "3f01f4fa-f87f-4690-a4aa-0b123ccd1e30",
                 "resourcePath": "sprites\\sprTurnAnimReverse\\sprTurnAnimReverse.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f66db442-57e8-4e65-a2e4-9c17cbc36f79",
+            "Value": {
+                "id": "ee0817d7-979f-49cf-9371-aa5d372506cb",
+                "resourcePath": "objects\\objAudioButton\\objAudioButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {

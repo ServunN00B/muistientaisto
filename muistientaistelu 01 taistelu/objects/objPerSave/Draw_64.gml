@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //Debug drawings
+/*
 draw_set_color(c_black);
 draw_rectangle(15,12,90,170,false);
 draw_set_color(c_white);
@@ -32,3 +33,4 @@ draw_text(1035, 25 + (15*j), string(ds_list_find_value(p2Score,j)));
 draw_text(1010, 115, "EF");
 draw_text(1010, 130, string(objPerSave.p2SpecialEffect));
 draw_text(1010, 145, string(objPerSave.p2LastingSpecialEffect));
+*/
