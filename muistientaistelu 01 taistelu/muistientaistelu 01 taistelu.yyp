@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "10418f4d-cf5a-4981-be41-c675c9ffbf83",
+            "Value": {
+                "id": "4d42aaf1-dfd4-4bb4-b785-945475ecbe53",
+                "resourcePath": "rooms\\rooHowTo\\rooHowTo.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "125f28ec-3c83-46c6-a2e2-c9d48c155f25",
             "Value": {
                 "id": "bd34534f-7818-445e-b42e-1b8f7b10172f",
@@ -1063,6 +1071,14 @@
             }
         },
         {
+            "Key": "a6a58371-9720-48c7-aba9-cc1c1ad06c26",
+            "Value": {
+                "id": "5fb6a2b4-adb0-4864-8496-ec6d5f004ba2",
+                "resourcePath": "objects\\objTurnChangeHolder\\objTurnChangeHolder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a84b4d5e-4e46-4796-a91e-63f533023420",
             "Value": {
                 "id": "8b444459-34e2-4dd8-a06f-77a9578a04d3",
@@ -1388,6 +1404,14 @@
                 "id": "3b13423e-ff93-4056-b393-d2ab77937f59",
                 "resourcePath": "objects\\objChicken\\objChicken.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e0cf8c11-e2a6-49e7-a069-0a1d01472104",
+            "Value": {
+                "id": "ea4ee993-3c68-44e7-a3f9-ab264256731c",
+                "resourcePath": "rooms\\rooTrophy\\rooTrophy.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
