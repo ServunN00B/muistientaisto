@@ -24,7 +24,6 @@ if (!self.turned) {
 				sprite_index = sprTurnAnimReverse;
 				alarm_set(1, 10);
 				//sprite_index = self.varSprite;
-				
 				// Turning cards back
 				if (objNormalCard.clicks > 1) {
 				
@@ -68,7 +67,6 @@ if (!self.turned) {
 
 						// When all the pairs are found, reset timer and deal new cards
 						if (objNormalCard.pairs > 5) {
-							
 							with(objArenaController) {
 								alarm_set(1,1);
 							}
