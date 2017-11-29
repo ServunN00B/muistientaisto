@@ -4,3 +4,4 @@ clicks = 0;
 found = false;
 pairs = 0;
 turned = false;
+depth = 2;
