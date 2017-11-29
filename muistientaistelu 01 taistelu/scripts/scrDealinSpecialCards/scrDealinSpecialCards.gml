@@ -34,6 +34,7 @@ switch(argument0) {
 				sprite_index = asset_get_index(sSPRITE);
 				image_xscale = 0.3;
 				image_yscale = 0.3;
+				OrigScale = 0.3;
 				frontID = self.id;
 				if(instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
@@ -56,11 +57,14 @@ switch(argument0) {
 				select = false;
 				image_xscale = 0.3;
 				image_yscale = 0.3;
+				OrigScale = 0.3;
 				spCardFront = frontID;
 				variable_instance_set(frontID,"spCardBack",self.id);
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 			}
-			
+			if (objPerSave.debugMod) {
+				show_message(string(variable_instance_get(frontID,"sID")));
+			}
 		}
 		break;
 	
@@ -89,6 +93,7 @@ switch(argument0) {
 			sprite_index = asset_get_index(sSPRITE);
 			image_xscale = 0.3;
 			image_yscale = 0.3;
+			OrigScale = 0.3;
 			frontID = self.id;
 		}
 			
@@ -110,6 +115,7 @@ switch(argument0) {
 			select = false;
 			image_xscale = 0.3;
 			image_yscale = 0.3;
+			OrigScale = 0.3;
 			spCardFront = frontID;
 			variable_instance_set(frontID,"spCardBack",self.id);
 		}

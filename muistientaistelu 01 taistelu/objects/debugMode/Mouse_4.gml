@@ -7,3 +7,6 @@ if(objPerSave.debugMod) {
 	objPerSave.debugMod = true;
 	sprite_index = sprDebugModeOn;
 }
+
+
+	

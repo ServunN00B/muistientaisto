@@ -3,7 +3,10 @@ var aiDifficultyString;
 var difficultyArray = [];
 var stringLength;
 var pilkunpaikka;
-
+var toAr;
+var orSt;
+var i = 0;
+var mssg = " ";
 //Options ini
 if (file_exists(working_directory+"\options.ini")) {
 	ini_open("options.ini");
@@ -16,15 +19,42 @@ if (file_exists(working_directory+"\options.ini")) {
 			objPerSave.preturnTimer = ini_read_real("turn","PreTurnTime", 3);
 			objPerSave.turnTimer = ini_read_real("turn","TurnTime", 20);
 			objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
-			objPerSave.aiDifficulty = ini_read_real("AI","aiDifficulty", 0);
 			
-		//AI modifiers
-			aiDifficultyString =  ini_read_string("AI","aiDifficulty", "20, 40, 60, 80, 100");
+		//Reading string to array
+			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+			orSt = aiDifficultyString;
 			stringLength = string_length(aiDifficultyString);
+			if (objPerSave.debugMod) {
+				show_message(aiDifficultyString);
+			}
 			while (stringLength > 0) {
 				pilkunpaikka = string_pos(",", aiDifficultyString);
+				if (pilkunpaikka = 0) {
+					toAr = string_copy(aiDifficultyString,1,stringLength);
+					stringLength = 0;
+				} else {
+					toAr = string_copy(aiDifficultyString,1,pilkunpaikka);
+				}
+				difficultyArray[i] = real(string_digits(toAr));
+				i += 1;
+				aiDifficultyString = string_copy(aiDifficultyString,pilkunpaikka+1,stringLength);
+				stringLength = string_length(aiDifficultyString);
+				if (objPerSave.debugMod) {
+					for (var j = 0; j < array_length_1d(difficultyArray); j += 1) {
+						mssg = mssg + " \n " + string(difficultyArray[j]);
+					}
+					show_message("Original string: " + orSt + " \n Copied part is: " + toAr + "\n rest of the string is: " + aiDifficultyString +
+								"\n" + mssg );
+					mssg = " ";
+				}
+				if (pilkunpaikka = 0) {
+					stringLength = 0;
+				}
 			}
-			objPerSave.aiDifficultyArray = [20, 40, 60, 80, 100];
+			
+		//AI modifiers
+			objPerSave.aiDifficulty = ini_read_real("AI","aiDifficulty", 0);
+			objPerSave.aiDifficultyArray = difficultyArray;
 
 	//closing ini
 	ini_close();
@@ -38,6 +68,9 @@ if (file_exists(working_directory+"\options.ini")) {
 		file_text_write_string(file, "PreTurnTime = ");
 		file_text_write_string(file, "TurnTime = ");
 		file_text_write_string(file, "FlipTime = ");
+		file_text_write_string(file, "[AI]");
+		file_text_write_string(file, "aiDifficulty = ");
+		file_text_write_string(file, "aiDifficultyArray = ");
 		file_text_close(file);
 		ini_open("options.ini");
 	//Writing options
@@ -48,7 +81,12 @@ if (file_exists(working_directory+"\options.ini")) {
 		ini_write_real("turn","SpecialSelectTime", 15);
 		ini_write_real("turn","PreTurnTime", 3);
 		ini_write_real("turn","TurnTime", 20);
-		ini_write_real("turn","FlipTime", 1);
+		ini_write_real("turn","FlipTime", 1);	
+		
+		//AI modifiers
+		ini_write_real("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+		ini_write_real("AI","aiDifficulty", 0);
+
 			
 	//closing ini
 		ini_close();
@@ -63,6 +101,37 @@ if (file_exists(working_directory+"\options.ini")) {
 		objPerSave.preturnTimer = ini_read_real("turn","PreTurnTime", 3);
 		objPerSave.turnTimer = ini_read_real("turn","TurnTime", 20);
 		objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
+			
+		//Reading string to array
+			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+			orSt = aiDifficultyString;
+			stringLength = string_length(aiDifficultyString);
+			if (objPerSave.debugMod) {
+				show_message(aiDifficultyString);
+			}
+			while (stringLength > 0) {
+				pilkunpaikka = string_pos(",", aiDifficultyString);
+				toAr = string_copy(aiDifficultyString,1,pilkunpaikka);
+				difficultyArray[i] = real(string_digits(toAr));
+				i += 1;
+				aiDifficultyString = string_copy(aiDifficultyString,pilkunpaikka+1,stringLength);
+				stringLength = string_length(aiDifficultyString);
+				if (objPerSave.debugMod) {
+					for (var j = 0; j < array_length_1d(difficultyArray); j += 1) {
+						mssg = mssg + " \n " + string(difficultyArray[j]);
+					}
+					show_message("Original string: " + orSt + " \n Copied part is: " + toAr + "\n rest of the string is: " + aiDifficultyString +
+								"\n" + mssg );
+					mssg = " ";
+				}
+				if (pilkunpaikka = 0) {
+					stringLength = 0;
+				}
+			}
+			
+		//AI modifiers
+			objPerSave.aiDifficulty = ini_read_real("AI","aiDifficulty", 0);
+			objPerSave.aiDifficultyArray = difficultyArray;
 
 	//closing ini
 	ini_close();

@@ -33,7 +33,7 @@ debugMod = false;
 	aiDifficultyArray = [20, 40, 60, 80, 100]; //Difficulty levels for AI
 	
 //Checking for Options ini for modified options
-//scrOptionsini();
+scrOptionsini();
 p1StartHealth = basicStartHealth;
 p2StartHealth = basicStartHealth;
 p1Health = basicStartHealth;

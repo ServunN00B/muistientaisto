@@ -35,6 +35,7 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 		select = true;
 		image_xscale = 0.2;
 		image_yscale = 0.2;
+		OrigScale = 0.2;
 		SpeCardBack = id;
 	}
 	// Creating card front
@@ -61,6 +62,7 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 		}
 		image_xscale = 0.2;
 		image_yscale = 0.2;
+		OrigScale = 0.2;
 	}
 	
 }

@@ -9,7 +9,7 @@ switch(objPerSave.isTurn) {
 			path_add_point(path2, x, y, 100);
 		
 			path_add_point(path2, (objPL1CardHolder.x + (objNormalCard.pairs-4) * 100), objPL1CardHolder.y+150, 100);
-		
+			
 				//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
 			// path_end();
 			//path_insert_point(path2, 0, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
@@ -29,6 +29,7 @@ switch(objPerSave.isTurn) {
 		path_add_point(path2, x, y, 100);
 		
 		path_add_point(path2, (objPL1CardHolder.x + (objNormalCard.pairs-1) * 100), objPL1CardHolder.y, 100);
+			
 		
 			//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
 		// path_end();
@@ -57,6 +58,7 @@ switch(objPerSave.isTurn) {
 			path_add_point(path2, x, y, 100);
 		
 			path_add_point(path2, (objPL2CardHolder.x + (objNormalCard.pairs-4) * 100), objPL2CardHolder.y+150, 100);
+			
 		
 				//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
 			// path_end();
@@ -79,6 +81,7 @@ switch(objPerSave.isTurn) {
 		path_add_point(path2, x, y, 100);
 		
 		path_add_point(path2, (objPL2CardHolder.x + (objNormalCard.pairs-1) * 100), objPL2CardHolder.y, 100);
+		
 		
 			//path_add_point(path2, objPL1CardHolder.x+(objNormalCard.pairs-1)*100, objPL1CardHolder.y, 100);
 		// path_end();

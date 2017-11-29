@@ -13,9 +13,20 @@ var p2Specialcard = objPerSave.p2SpecialEffect;
 
 var p1damage = 0;
 var p2damage = 0;
+
+//Player HP
+var p1HP = objPerSave.p1Health;
+var p2HP = objPerSave.p2Health;
+
 //Checking if there is effects that effect the score calculation
 if (p1LastEffect){
 	switch (p1Specialcard) {
+				case 5:
+					if(p2LastEffect) {
+						p2HP = p2HP - 3;
+					}
+				break;
+				
 				case 14:
 					var ol = ds_list_size(objPerSave.p2Score);
 					if (ol < 0) {
@@ -47,6 +58,12 @@ if (p1LastEffect){
 }
 if (p2LastEffect){
 	switch (p2Specialcard) {
+				case 5:
+					if(p1LastEffect) {
+						p1HP = p1HP - 3;
+					}
+				break;
+				
 				case 14:
 					var ol = ds_list_size(objPerSave.p1Score);
 					if (ol < 0) {
@@ -91,10 +108,6 @@ var player2Total = 0;
 
 //Get attacking player
 var attackingPlayer = objPerSave.isAttacking;
-
-//Player HP
-var p1HP = objPerSave.p1Health;
-var p2HP = objPerSave.p2Health;
 
 //Damage
 var damageAmount = 0;

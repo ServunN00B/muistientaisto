@@ -2,16 +2,23 @@ var damageMod = 0;
 var huone;
 var player = [];
 var enemy = [];
+//Player vars
 var pSpecialEffect;
 var pLastingSpecialEffect;
 var pScore;
 var pSpeCardUsed;
 var pSpecialCards;
+var pHealth;
+
+//Enemy vars
 var eSpecialEffect;
 var eLastingSpecialEffect;
 var eScore;
 var eSpeCardUsed;
 var eSpecialCards;
+var eHealth;
+
+//Other vars
 var oD;
 var oL;
 var pMod;
@@ -22,11 +29,13 @@ if (objPerSave.isTurn = 1) {
 	pLastingSpecialEffect = objPerSave.p1LastingSpecialEffect;	// "p1LastingSpecialEffect"
 	pScore = objPerSave.p1Score;								// "p1Score"
 	pSpecialCards = objPerSave.dsP1SpecialCards;				// "p1SpecialCards"
+	pHealth = objPerSave.p1Health;
 	
 	eSpecialEffect = objPerSave.p2SpecialEffect;				// "p1SpecialEffect",
 	eLastingSpecialEffect = objPerSave.p2LastingSpecialEffect;	// "p1LastingSpecialEffect"
 	eScore = objPerSave.p2Score;								// "p1Score"
 	eSpecialCards = objPerSave.dsP2SpecialCards;				// "p1SpecialCards"
+	eHealth = objPerSave.p2Health;
 	
 	if (instance_exists(objArenaController)){
 	pSpeCardUsed = objArenaController.p1SpeCardUsed;			// "p1SpeCardUsed"
@@ -43,11 +52,13 @@ if (objPerSave.isTurn = 1) {
 	pLastingSpecialEffect = objPerSave.p2LastingSpecialEffect;	// "p2LastingSpecialEffect"
 	pScore = objPerSave.p2Score;								// "p2Score"
 	pSpecialCards = objPerSave.dsP2SpecialCards;				// "p2SpecialCards"
+	pHealth = objPerSave.p2Health;
 	
 	eSpecialEffect = objPerSave.p1SpecialEffect;				// "p1SpecialEffect",
 	eLastingSpecialEffect = objPerSave.p1LastingSpecialEffect;	// "p1LastingSpecialEffect"
 	eScore = objPerSave.p1Score;								// "p1Score"
 	eSpecialCards = objPerSave.dsP1SpecialCards;				// "p1SpecialCards"
+	eHealth = objPerSave.p1Health;
 	
 	if (instance_exists(objArenaController)){
 	pSpeCardUsed = objArenaController.p2SpeCardUsed;			// "p2SpeCardUsed"
@@ -118,6 +129,16 @@ switch(argument0) {
 	break;
 	
 	case 5: //Gruel
+		if(huone = 0) {
+			pSpecialEffect = 5;
+			pLastingSpecialEffect = true;
+		} else {
+			if (eLastingSpecialEffect) {
+				eHealth = eHealth - 3;
+			}
+			pSpecialEffect = -1;
+			pLastingSpecialEffect = false;
+		}
 	break;
 	
 	case 6: //Payback
@@ -142,9 +163,16 @@ switch(argument0) {
 	break;
 	
 	case 9: //Bomb
-		oL = ds_list_size(eSpecialCards);
-		var place = floor(random_range(3,oL));
-		ds_list_insert(eSpecialCards,place,-3);
+		if(huone = 0) {
+			oL = ds_list_size(eSpecialCards);
+			var place = floor(random_range(3,oL));
+			ds_list_insert(eSpecialCards,place,-3);
+			pSpecialEffect = 9;
+			pLastingSpecialEffect = true;
+		} else {
+			pSpecialEffect = -1;
+			pLastingSpecialEffect = false;
+		}
 	break;
 	
 	case 10: //Poison
@@ -154,10 +182,17 @@ switch(argument0) {
 	break;
 	
 	case 12: //Time elixir
-		show_message("5 sekunttia lisäaikaa");
-		with(objArenaController) {
-			var alarmi = alarm_get(1);
-			alarm_set(1,alarmi + 5);
+		if(huone = 0) {
+			show_message("5 sekunttia lisäaikaa");
+			with(objArenaController) {
+				var alarmi = alarm_get(1);
+				alarm_set(1,alarmi + 5);
+			}
+			pSpecialEffect = 12;
+			pLastingSpecialEffect = true;
+		} else {
+			pSpecialEffect = -1;
+			pLastingSpecialEffect = false;
 		}
 	break;
 	
@@ -193,11 +228,13 @@ if (objPerSave.isTurn = 1) {
 	objPerSave.p1LastingSpecialEffect =	pLastingSpecialEffect;	// "p1LastingSpecialEffect"
 	objPerSave.p1Score = pScore;								// "p1Score"
 	objPerSave.dsP1SpecialCards = pSpecialCards;				// "p1SpecialCards"
+	objPerSave.p1Health = pHealth;								// "p1Health"
 	
-	objPerSave.p2SpecialEffect = eSpecialEffect;				// "p1SpecialEffect",
-	objPerSave.p2LastingSpecialEffect = eLastingSpecialEffect;	// "p1LastingSpecialEffect"
-	objPerSave.p2Score = eScore;								// "p1Score"
-	objPerSave.dsP2SpecialCards = eSpecialCards;				// "p1SpecialCards"
+	objPerSave.p2SpecialEffect = eSpecialEffect;				// "p2SpecialEffect",
+	objPerSave.p2LastingSpecialEffect = eLastingSpecialEffect;	// "p2LastingSpecialEffect"
+	objPerSave.p2Score = eScore;								// "p2Score"
+	objPerSave.dsP2SpecialCards = eSpecialCards;				// "p2SpecialCards"
+	objPerSave.p2Health = eHealth;								// "p2Health"
 	
 	if (instance_exists(objArenaController)){
 	objArenaController.p1SpeCardUsed = pSpeCardUsed;			// "p1SpeCardUsed"
@@ -214,15 +251,17 @@ if (objPerSave.isTurn = 1) {
 	objPerSave.p2LastingSpecialEffect = pLastingSpecialEffect;	// "p2LastingSpecialEffect"
 	objPerSave.p2Score = pScore;								// "p2Score"
 	objPerSave.dsP2SpecialCards = pSpecialCards;				// "p2SpecialCards"
+	objPerSave.p2Health = pHealth;								// "p2Health"
 	
 	objPerSave.p1SpecialEffect = eSpecialEffect;				// "p1SpecialEffect",
 	objPerSave.p1LastingSpecialEffect = eLastingSpecialEffect;	// "p1LastingSpecialEffect"
 	objPerSave.p1Score = eScore;								// "p1Score"
 	objPerSave.dsP1SpecialCards = eSpecialCards;				// "p1SpecialCards"
+	objPerSave.p1Health = eHealth;								// "p1Health"
 	
 	if (instance_exists(objArenaController)){
-	objArenaController.p2SpeCardUsed = pSpeCardUsed;			// "p1SpeCardUsed"
-	objArenaController.p1SpeCardUsed = eSpeCardUsed;			// "p1SpeCardUsed"
+	objArenaController.p2SpeCardUsed = pSpeCardUsed;			// "p2SpeCardUsed"
+	objArenaController.p1SpeCardUsed = eSpeCardUsed;			// "p2SpeCardUsed"
 	}
 	
 	if (instance_exists(objBattleController)){

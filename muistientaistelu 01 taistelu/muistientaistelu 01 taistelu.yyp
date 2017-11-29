@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "527ac316-1a9a-45dd-8936-3e5526d770fb",
+            "Value": {
+                "id": "d17c3dff-4159-43b2-955e-327ed2a2b338",
+                "resourcePath": "objects\\pause\\pause.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "529a9027-7cf4-49a2-b78c-8ca9666bbe7a",
             "Value": {
                 "id": "1aac1db8-4efb-47ec-bc7b-ee3fbd1d04df",
@@ -911,6 +919,14 @@
             }
         },
         {
+            "Key": "817ddb8f-24d9-4f19-8e0a-21b2922fef47",
+            "Value": {
+                "id": "b4c9b70d-4e67-4d9d-8e45-33592d8667ee",
+                "resourcePath": "sprites\\sprRestart\\sprRestart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8190a22d-4619-481c-b4e5-dd959e178543",
             "Value": {
                 "id": "8123ea91-f176-42aa-a84b-6f24e7ab4834",
@@ -1059,6 +1075,14 @@
             "Value": {
                 "id": "93c08df2-34c5-4036-b210-563aa1c67d91",
                 "resourcePath": "sprites\\sprAnimAttackMace\\sprAnimAttackMace.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "991747b8-ea3a-4d15-bfb0-6ce7ee65501a",
+            "Value": {
+                "id": "633a1f0f-6e68-4c62-a550-bbaba5fa8bc0",
+                "resourcePath": "sprites\\sprPause\\sprPause.yy",
                 "resourceType": "GMSprite"
             }
         },

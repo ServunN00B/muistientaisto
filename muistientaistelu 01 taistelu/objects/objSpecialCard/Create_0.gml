@@ -3,6 +3,7 @@
 depth = depth - 7;
 orig_xpos = x;
 orig_ypos = y;
+OrigScale = 0;
 sID = noone;
 sNAME = noone;
 sVALUE = noone;

@@ -68,9 +68,12 @@ instance_destroy(objNormalCard);
 instance_destroy(objSpecialCard);
 instance_destroy(objSpecialCardBack);
 
-//Deal back pairs
+//Deal back found pairs & used special card
 var scoreNum;
 var vuorossaParit;
+var vuorossaErikois;
+var erikoisKayt;
+var erikoisLista;
 var onPareja = false;
 if (objPerSave.isTurn = 1) {
 	vuorossa = objPerSave.p2Score;
@@ -79,12 +82,22 @@ if (objPerSave.isTurn = 1) {
 		vuorossaParit = objPL2CardHolder;
 		onPareja = true;
 	}
+	erikoisKayt = objArenaController.p2SpeCardUsed;
+	if (erikoisKayt) {
+		erikoisLista = objPerSave.dsP2SpecialCards
+		vuorossaErikois = objPerSave.p2SpecialEffect;
+	}
 } else {
 	vuorossa = objPerSave.p1Score;
 	if (!ds_list_empty(vuorossa)) {
 		scoreNum = ds_list_size(vuorossa);
 		vuorossaParit = objPL1CardHolder;
 		onPareja = true;
+	}
+	erikoisKayt = objArenaController.p1SpeCardUsed;
+	if (erikoisKayt) {
+		erikoisLista = objPerSave.dsP1SpecialCards
+		vuorossaErikois = objPerSave.p1SpecialEffect;
 	}
 }
 
@@ -151,5 +164,55 @@ if (onPareja) {
 				}
 		}
 	}
+}
+
+if (erikoisKayt) {
+	var frontID = noone;
+		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCard)) {
+			sID = vuorossaErikois;
+			if (objPerSave.debugMod) {
+				show_message(string(sID));
+			}
+			sNAME = global.specialCardData[# sID, SpecialEnum.NAME];
+			sVALUE = global.specialCardData[# sID, SpecialEnum.VALUE];
+			sTYPE = global.specialCardData[# sID, SpecialEnum.TYPE];
+			sPRIORITY = global.specialCardData[# sID, SpecialEnum.PRIORITY];
+			sSPRITE = global.specialCardData[# sID, SpecialEnum.SPRITE];
+			sTEXT = global.specialCardData[# sID, SpecialEnum.TEXT];
+			spCardBack = noone;
+			//Finding the right index for sprite!
+			if (objPerSave.debugMod) {
+				show_message(sSPRITE);
+			}
+			sprite_index = asset_get_index(sSPRITE);
+			image_xscale = 0.2;
+			image_yscale = 0.2;
+			OrigScale = 0.2;
+			frontID = self.id;
+		}
+			
+		//Creating cardback
+		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCardBack)){
+			switch(string(global.specialCardData[# vuorossaErikois, SpecialEnum.TYPE])) {
+				case "offensive":
+					sprite_index = sprOffensive;
+					break;
+		
+				case "defensive":
+					sprite_index = sprDefence;
+					break;
+
+				case "neutral":
+					sprite_index = sprNeutral;
+					break;
+			}
+			select = false;
+			image_xscale = 0.2;
+			image_yscale = 0.2;
+			OrigScale = 0.2;
+			spCardFront = frontID;
+			variable_instance_set(frontID,"spCardBack",self.id);
+			canClick = false;
+		}	
 }
 scrDealingCards();
