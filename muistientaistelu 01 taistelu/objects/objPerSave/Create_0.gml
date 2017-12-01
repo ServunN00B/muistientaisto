@@ -12,7 +12,7 @@ playerLose = 0;
 playerTotal = 0;
 
 //Player Profile
-//instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
+instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
 
 isAttacking = 0; //Tells attacking player
 isTurn = 0;

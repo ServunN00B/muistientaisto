@@ -1,4 +1,10 @@
-audio_stop_sound(sound0);
+ds_list_delete(objSound.allSounds,sound0);
+ds_list_delete(objMusic.allMusic ,sound0);
+if (objSound.sound) {
+	if (objMusic.music) {
+		audio_stop_sound(sound0);
+	}
+}
 alarmi = 2;
 damageMod = 0;
 p1addCon = false;

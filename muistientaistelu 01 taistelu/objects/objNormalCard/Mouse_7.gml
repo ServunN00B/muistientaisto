@@ -4,10 +4,11 @@ if (self.canClick) {
 		if (!self.turned) {
 			if (objArenaController.canTurn) {
 				self.turned = true;
+				scaling = true;
+				alarm_set(4, 1);
 				if (objNormalCard.clicks = 0 && self.cardValue = "0") {
 					sprite_index = sprTurnAnimReverse;
 					alarm_set(1, 10);
-			
 					//sprite_index = self.varSprite;
 			
 					objArenaController.instID = 0;

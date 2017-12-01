@@ -10,3 +10,4 @@ with(instance_create_depth(self.x + sprite_width,self.y+34,self.depth-5, objText
 	image_angle = 180;
 }
 instance_create_depth(self.x+(sprite_width/2-120),self.y + (self.sprite_height/2),self.depth-5, objTextboxText);
+instance_create_depth(self.x+(sprite_width/2),self.y + self.sprite_height,self.depth-6, objTextOk);
