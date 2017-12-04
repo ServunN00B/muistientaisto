@@ -19,6 +19,7 @@ switch(argument0) {
 	case 0:
 		for (j=0; j <3; j+=1) {
 			var frontID = noone;
+			var coinID = noone;
 			// Creating card front
 			with(instance_create_depth(a+j*(c + f),b, -10, objSpecialCard)) {
 				sID = ds_list_find_value(vuorossa,objArenaController.j);
@@ -38,7 +39,13 @@ switch(argument0) {
 				frontID = self.id;
 				if(instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
-			
+			with(instance_create_depth(a+j*(c + f)+ frontID.sprite_width,b, -12, objCoin)) {
+				image_xscale = 0.15;
+				image_yscale = 0.15;
+				self.x -= sprite_width;
+				coinID = self.id;
+				variable_instance_set(frontID,"myCoin",self.id);
+			}
 			//Creating cardback
 			with(instance_create_depth(a+j*(c + f),b, -8, objSpecialCardBack)){
 				switch(string(global.specialCardData[# ds_list_find_value(vuorossa,objArenaController.j), SpecialEnum.TYPE])) {
@@ -59,6 +66,7 @@ switch(argument0) {
 				image_yscale = 0.3;
 				OrigScale = 0.3;
 				spCardFront = frontID;
+				myCoin = coinID;
 				variable_instance_set(frontID,"spCardBack",self.id);
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 			}
@@ -72,6 +80,7 @@ switch(argument0) {
 	case 1:
 		//Creating card front
 		var frontID = noone;
+		var coinID = noone;
 		with(instance_create_depth(a+e*(c + f),b, -10, objSpecialCard)) {
 			sID = ds_list_find_value(vuorossa,3);
 			//Check to see if there is a BOMB
@@ -96,6 +105,13 @@ switch(argument0) {
 			OrigScale = 0.3;
 			frontID = self.id;
 		}
+			with(instance_create_depth(a+e*(c + f)+ frontID.sprite_width,b, -12, objCoin)) {
+				image_xscale = 0.15;
+				image_yscale = 0.15;
+				self.x -= sprite_width;
+				coinID = self.id;
+				variable_instance_set(frontID,"myCoin",self.id);
+			}
 			
 		//Creating cardback
 		with(instance_create_depth(a+e*(c + f),b, -10, objSpecialCardBack)){
@@ -117,6 +133,7 @@ switch(argument0) {
 			image_yscale = 0.3;
 			OrigScale = 0.3;
 			spCardFront = frontID;
+			myCoin = coinID;
 			variable_instance_set(frontID,"spCardBack",self.id);
 		}
 	break;

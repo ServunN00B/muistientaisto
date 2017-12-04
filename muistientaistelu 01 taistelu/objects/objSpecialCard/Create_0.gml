@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = depth - 7;
+depth = -11;
 orig_xpos = x;
 orig_ypos = y;
 OrigScale = 0;
@@ -13,4 +13,5 @@ sSPRITE = noone;
 sTEXT = noone;
 spot = noone;
 spCardBack = noone;
+myCoin = noone;
 

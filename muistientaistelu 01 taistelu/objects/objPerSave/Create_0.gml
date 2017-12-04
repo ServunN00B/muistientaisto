@@ -18,7 +18,7 @@ dsWLratio = ds_list_create();	//first victory from total as for
 	
 
 //Player Profile
-instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
+//instance_create_depth(room_width/2-219,room_height/2-100,-5, objTextboxBG)
 
 isAttacking = 0; //Tells attacking player
 isTurn = 0;
@@ -34,7 +34,7 @@ debugMod = false;
 	SCardSelectTimer = 15; //seconds
 	preturnTimer = 3; // seconds
 	turnTimer = 20; // seconds
-	flipTimer = 0.7;//flipping timer
+	flipTimer = 0.8;//flipping timer
 	aiDifficulty = 0; //AI default difficulty
 	aiDifficultyArray = [20, 50, 100, 0]; //Difficulty levels for AI
 	

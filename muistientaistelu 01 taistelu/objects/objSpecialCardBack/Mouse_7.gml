@@ -8,6 +8,7 @@ if (canClick) {
 		var playerCoin;
 		var turnHolder;
 		var sID = variable_instance_get(spCardFront, "sID");
+		var myCoin = variable_instance_get(spCardFront, "myCoin");
 		var sTYPE = variable_instance_get(spCardFront, "sTYPE");
 		// Choosing players info by whos turn it is
 		if (objPerSave.isTurn = 1) {
@@ -45,7 +46,7 @@ if (canClick) {
 						show_message("Tämän kortin sID on " + string(sID));
 					}
 					scrDealinSpecialCards(1, spCardFront);
-	
+					instance_destroy(myCoin);
 					ds_list_delete(vuorossa, ds_list_find_index(vuorossa, sID))
 					ds_list_add(vuorossa, sID);
 				

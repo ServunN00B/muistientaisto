@@ -140,43 +140,53 @@ p1sprite = noone;
 p2sprite = noone;
 var p1spriteIdle = noone;
 var p2spriteIdle = noone;
-var spriteSize = 0.3;
+var spriteSize = 0.5;
 
 //Player Battle animations
 if (attackingPlayer = 1) {
 	// Player 1 Attacking animation
 		switch(p1Highest) {
 			case 0: 
-				p1sprite = sprAnimIdleMace;
-				p1spriteIdle = sprAnimIdle;
+				p1sprite = sprAnimPlayerAttackDagger;
+				p1spriteIdle = sprAnimPlayerAttackDaggerIdle;
 				break;
 					
 			case 1:
-				p1sprite = sprAnimAttackDagger;
-				p1spriteIdle = sprAnimIdleMace;
+				p1sprite = sprAnimPlayerAttackDagger;
+				p1spriteIdle = sprAnimPlayerAttackDaggerIdle;
 				break;
 					
 			case 2:
-				p1sprite = sprAnimAttackSword;
-				p1spriteIdle = sprAnimIdleMace;
+				p1sprite = sprAnimPlayerAttackSword;
+				p1spriteIdle = sprAnimPlayerAttackSwordIdle;
 				break;	
 				
 			default:
-				p1sprite = sprAnimAttackMace;
-				p1spriteIdle = sprAnimIdleMace;
+				p1sprite = sprAnimPlayerAttackMace;
+				p1spriteIdle = sprAnimPlayerAttackMaceIdle;
 				break;
 		}
 		
 		//Player 2 defence animation
 		switch(p2Highest) {
 			case 0: 
-				p2sprite = sprAnimEnemyAttackDaggerIdle;
-				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				p2sprite = sprAnimEnemyDefendBark;
+				p2spriteIdle = sprAnimEnemyDefendBarkIdle;
+				break;
+				
+			case 1: 
+				p2sprite = sprAnimEnemyDefendBark;
+				p2spriteIdle = sprAnimEnemyDefendBarkIdle;
+				break;
+				
+			case 2: 
+				p2sprite = sprAnimEnemyDefendStool;
+				p2spriteIdle = sprAnimEnemyDefendStool;
 				break;
 				
 			default:
-				p2sprite = sprAnimEnemyAttackDaggerIdle;
-				p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+				p2sprite = sprAnimEnemyDefendShield;
+				p2spriteIdle = sprAnimEnemyDefendShieldIdle;
 				break;
 		}
 		
@@ -199,21 +209,30 @@ if (attackingPlayer = 1) {
 				break;	
 				
 			default:
-				p2sprite = sprAnimEnemyAttackSword;
-				p2spriteIdle = sprAnimEnemyAttackSwordIdle;
+				p2sprite = sprAnimEnemyAttackMace;
+				p2spriteIdle = sprAnimEnemyAttackMaceIdle;
 				break;
 		}
 		
 		//Player 1 defence animation
 		switch(p1Highest) {
 			case 0: 
-				p1sprite = sprAnimIdleDefence;
-				p1spriteIdle = sprAnimIdle;
+				p1sprite = sprAnimPlayerDefendBark;
+				p1spriteIdle = sprAnimPlayerDefendBarkIdle;
 				break;
 				
+			case 1: 
+				p1sprite = sprAnimPlayerDefendBark;
+				p1spriteIdle = sprAnimPlayerDefendBarkIdle;
+				break;
+				
+			case 2: 
+				p1sprite = sprAnimPlayerDefendStool;
+				p1spriteIdle = sprAnimPlayerDefendStoolIdle;
+				break;
 			default:
-				p1sprite = sprAnimIdleDefence;
-				p1spriteIdle = sprAnimIdle;
+				p1sprite = sprAnimPlayerDefendShield;
+				p1spriteIdle = sprAnimPlayerDefendShieldIdle;
 				break;
 		}
 }

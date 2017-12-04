@@ -1,12 +1,16 @@
 /// @description Cooldown between turning cards
 
 if (found = false) {
-	self.sprite_index = sprTurnAnim;
+	self.sprite_index = sprTurnAnimReverse;
 	alarm_set(3, 15);
+				scaling = true;
+				alarm_set(4, 1);
 		if (objArenaController.instID != 0) {
 		with(objArenaController.instID) {
-			self.sprite_index = sprTurnAnim;
+			self.sprite_index = sprTurnAnimReverse;
 			alarm_set(3, 15);
+				scaling = true;
+				alarm_set(4, 1);
 		}
 			//variable_instance_set(objArenaController.instID,"sprite_index",sprBackside);
 		}

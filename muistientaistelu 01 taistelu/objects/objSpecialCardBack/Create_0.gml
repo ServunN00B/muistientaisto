@@ -6,4 +6,5 @@ orig_xpos = x;
 orig_ypos = y;
 select = true;
 spCardFront = noone;
+myCoin = noone;
 mouseOver = false;
