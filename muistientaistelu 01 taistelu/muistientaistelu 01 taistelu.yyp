@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "077bf15b-dbfd-482f-b227-435cb7ef4abf",
+            "Value": {
+                "id": "74f4cd45-042e-4535-8d9c-8b40764fec4c",
+                "resourcePath": "objects\\objArrowButton\\objArrowButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0797b2d3-a553-4b48-bcfb-7d26d4d7dc7d",
             "Value": {
                 "id": "576fa25f-b1f6-4c9f-84b2-54d24208c07a",
@@ -220,6 +228,14 @@
                 "id": "901c78bd-dd77-474e-95ac-4e3242d38546",
                 "resourcePath": "views\\1e29421a-6697-4a1f-97fa-6d5778a1f4bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1edbe422-cfbe-499c-9d99-1d89deaf3a52",
+            "Value": {
+                "id": "fdedf3ba-fa59-46be-81ab-00916201c378",
+                "resourcePath": "scripts\\iniToDsList\\iniToDsList.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -839,6 +855,14 @@
             }
         },
         {
+            "Key": "71102963-c7cf-48ce-b61d-b6ab3493d780",
+            "Value": {
+                "id": "4a65e9a9-596b-4731-97b4-680e490eaaef",
+                "resourcePath": "scripts\\iniToArray\\iniToArray.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "724fbbfc-0290-443e-b9e4-58838f32907d",
             "Value": {
                 "id": "cb043a08-34a1-4e0d-bde5-f512ee854864",
@@ -1076,6 +1100,14 @@
                 "id": "295a527e-7309-486d-8c92-c0f22b6a8f8a",
                 "resourcePath": "objects\\objBackFlash\\objBackFlash.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c01cc70-0f80-41c2-958d-fa98182853bd",
+            "Value": {
+                "id": "67de0bca-ac60-4355-8db1-456eecf636bb",
+                "resourcePath": "sprites\\sprArrowButton\\sprArrowButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1835,7 +1867,9 @@
         "483256dd-fc82-4547-88f6-3f48b30eb502",
         "50f2275d-390c-4f80-a260-f94bda21bcdc",
         "f7765366-31ab-4e1b-9c6e-4453d3d3c3cd",
-        "2f746c34-e185-4a7a-ad1e-87d5f467849f"
+        "2f746c34-e185-4a7a-ad1e-87d5f467849f",
+        "71102963-c7cf-48ce-b61d-b6ab3493d780",
+        "1edbe422-cfbe-499c-9d99-1d89deaf3a52"
     ],
     "tutorial": ""
 }

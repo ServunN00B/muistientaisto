@@ -21,7 +21,7 @@ if (file_exists(working_directory+"\options.ini")) {
 			objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
 			
 		//Reading string to array
-			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 50, 100, 0");
 			orSt = aiDifficultyString;
 			stringLength = string_length(aiDifficultyString);
 			if (objPerSave.debugMod) {
@@ -84,7 +84,7 @@ if (file_exists(working_directory+"\options.ini")) {
 		ini_write_real("turn","FlipTime", 1);	
 		
 		//AI modifiers
-		ini_write_real("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+		ini_write_real("AI","aiDifficultyArray", "20, 50, 100, 0");
 		ini_write_real("AI","aiDifficulty", 0);
 
 			
@@ -103,7 +103,7 @@ if (file_exists(working_directory+"\options.ini")) {
 		objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
 			
 		//Reading string to array
-			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 40, 60, 80, 100");
+			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 50, 100, 0");
 			orSt = aiDifficultyString;
 			stringLength = string_length(aiDifficultyString);
 			if (objPerSave.debugMod) {

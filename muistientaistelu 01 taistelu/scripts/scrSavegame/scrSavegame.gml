@@ -8,28 +8,20 @@ switch(argument0) {
 			//Parsing playerCards string to array
 			var pKortit = ini_read_string(nameField,"playerCards", "0");
 			if (string_length(pKortit) > 1) {
-				var loppu = false;
-				var pPituus = string_length(pKortit);
-				var pPaikka = string_pos(pKortit,",");
-				var pKopio = string_copy(pKortit,1,pPaikka-1);
-				for (var i = 0; loppu = false; i += 1) {
-					if (pPaikka = 0) {
-						pPituus = string_length(pKortit);
-						pKopio = string_copy(pKortit,1,pPituus);
-						objPerSave.playerCards[i] = real(pKopio);
-						loppu = true;
-					} else {
-						pKopio = string_copy(pKortit,1,pPaikka-1);
-						objPerSave.playerCards[i] = real(pKopio);
-					}
-					pKortit = string_copy(pKortit,pPaikka+1,pPituus);
-					pPaikka = string_pos(pKortit,",");
-				}
+				objPerSave.playerCards = iniToArray(pKortit);
 			}
 			//reading rest of player data
 			objPerSave.playerWins = ini_read_real(argument1, "playerWins", 0);
 			objPerSave.playerLose = ini_read_real(argument1, "playerLose", 0);
 			objPerSave.playerTotal = ini_read_real(argument1, "playerTotal", 0);
+			objPerSave.howManyBeforeWin = ini_read_real(argument1, "howManyBeforeWin", 0);
+			objPerSave.trainingWheels = ini_read_real(argument1, "trainingWheels", 0);
+			var pWLratio = ini_read_real(argument1, "dsWLratio", 0);
+			if (string_length(pWLratio) > 1) {
+				objPerSave.dsWLratio = iniToArray(pWLratio);
+			}
+			
+
 		} else {
 		
 			var file = file_text_open_append(working_directory+"\savegame.ini");
@@ -48,33 +40,26 @@ switch(argument0) {
 				ini_write_real(argument1,"playerWins", 0);
 				ini_write_real(argument1,"playerLose", 0);
 				ini_write_real(argument1,"playerTotal", 0);
+			ini_write_real(argument1,"howManyBeforeWin", 0);
+			ini_write_real(argument1,"trainingWheels", true);
 		
 			//Reading Player Profile
 			objPerSave.playerName = argument1;
 			//Parsing playerCards string to array
 			var pKortit = ini_read_string(argument1,"playerCards", "0");
 			if (string_length(pKortit) > 1) {
-				var loppu = false;
-				var pPituus = string_length(pKortit);
-				var pPaikka = string_pos(pKortit,",");
-				var pKopio = string_copy(pKortit,1,pPaikka-1);
-				for (var i = 0; loppu = false; i += 1) {
-					if (pPaikka = 0) {
-						pPituus = string_length(pKortit);
-						pKopio = string_copy(pKortit,1,pPituus);
-						objPerSave.playerCards[i] = real(pKopio);
-						loppu = true;
-					} else {
-						pKopio = string_copy(pKortit,1,pPaikka-1);
-						objPerSave.playerCards[i] = real(pKopio);
-					}
-					pKortit = string_copy(pKortit,pPaikka+1,pPituus);
-					pPaikka = string_pos(pKortit,",");
-				}
+				objPerSave.playerCards = iniToArray(pKortit);
 			}
 			objPerSave.playerWins = ini_read_real(argument1, "playerWins", 0);
 			objPerSave.playerLose = ini_read_real(argument1, "playerLose", 0);
 			objPerSave.playerTotal = ini_read_real(argument1, "playerTotal", 0);
+			objPerSave.howManyBeforeWin = ini_read_real(argument1, "howManyBeforeWin", 0);
+			objPerSave.trainingWheels = ini_read_real(argument1, "trainingWheels", 0);
+			var pWLratio = ini_read_real(argument1, "dsWLratio", 0);
+			if (string_length(pWLratio) > 1) {
+				objPerSave.dsWLratio = iniToArray(pWLratio);
+			}
+			
 		//closing ini
 			ini_close();
 		}
@@ -86,7 +71,10 @@ switch(argument0) {
 			file_text_write_string(file, "playerCards = ");		
 			file_text_write_string(file, "playerWins = ");
 			file_text_write_string(file, "playerLose = ");
-			file_text_write_string(file, "playerTotal = ");
+			file_text_write_string(file, "playerTotal = ");	
+			file_text_write_string(file, "howManyBeforeWin = ");
+			file_text_write_string(file, "trainingWheels = ");
+			file_text_write_string(file, "dsWLratio = ");
 			file_text_close(file);
 		
 			ini_open("savegame.ini");
@@ -95,6 +83,8 @@ switch(argument0) {
 			ini_write_real(argument1,"playerWins", 0);
 			ini_write_real(argument1,"playerLose", 0);
 			ini_write_real(argument1,"playerTotal", 0);
+			ini_write_real(argument1,"howManyBeforeWin", 0);
+			ini_write_real(argument1,"trainingWheels", true);
 		
 		//Reading Player Profile
 	
@@ -102,27 +92,18 @@ switch(argument0) {
 			//Parsing playerCards string to array
 			var pKortit = ini_read_string(argument1,"playerCards", "0");
 			if (string_length(pKortit) > 1) {
-				var loppu = false;
-				var pPituus = string_length(pKortit);
-				var pPaikka = string_pos(pKortit,",");
-				var pKopio = string_copy(pKortit,1,pPaikka-1);
-				for (var i = 0; loppu = false; i += 1) {
-					if (pPaikka = 0) {
-						pPituus = string_length(pKortit);
-						pKopio = string_copy(pKortit,1,pPituus);
-						objPerSave.playerCards[i] = real(pKopio);
-						loppu = true;
-					} else {
-						pKopio = string_copy(pKortit,1,pPaikka-1);
-						objPerSave.playerCards[i] = real(pKopio);
-					}
-					pKortit = string_copy(pKortit,pPaikka+1,pPituus);
-					pPaikka = string_pos(pKortit,",");
-				}
+				objPerSave.playerCards = iniToArray(pKortit);
 			}
 			objPerSave.playerWins = ini_read_real(argument1, "playerWins", 0);
 			objPerSave.playerLose = ini_read_real(argument1, "playerLose", 0);
 			objPerSave.playerTotal = ini_read_real(argument1, "playerTotal", 0);
+			objPerSave.howManyBeforeWin = ini_read_real(argument1, "howManyBeforeWin", 0);
+			objPerSave.trainingWheels = ini_read_real(argument1, "trainingWheels", 0);
+			var pWLratio = ini_read_real(argument1, "dsWLratio", 0);
+			if (string_length(pWLratio) > 1) {
+				objPerSave.dsWLratio = iniToArray(pWLratio);
+			}
+			
 		//closing ini
 		ini_close();
 		}
