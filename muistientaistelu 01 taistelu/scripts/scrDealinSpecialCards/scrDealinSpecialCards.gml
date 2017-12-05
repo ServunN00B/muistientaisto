@@ -37,7 +37,8 @@ switch(argument0) {
 				image_yscale = 0.3;
 				OrigScale = 0.3;
 				frontID = self.id;
-				if(instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
+				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
+				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
 			with(instance_create_depth(a+j*(c + f)+ frontID.sprite_width,b, -12, objCoin)) {
 				image_xscale = 0.15;
@@ -68,7 +69,6 @@ switch(argument0) {
 				spCardFront = frontID;
 				myCoin = coinID;
 				variable_instance_set(frontID,"spCardBack",self.id);
-				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 			}
 			if (objPerSave.debugMod) {
 				show_message(string(variable_instance_get(frontID,"sID")));

@@ -6,35 +6,56 @@ var kaytjono = objAIdriver.spePriority;
 if (objPerSave.isAttacking = 2) {
 	var canNotUse = "defensive";
 } else {
-	var canNotUse = "offensive"
+	var canNotUse = "offensive";
 }
 	
 // Check what cards are on the table and que them by priority
 for (var i = 0; i < 3; i += 1) {
-	var arvo = ds_list_find_value(speCards,i);		// Getting card instance id
-	var prio = ds_list_find_value(spePriot,i);		// Getting card priority
+	var arvo = ds_list_find_value(objAIdriver.speCardsOnTable,i);		// Getting card instance id
+	if (objPerSave.debugMod) {
+		show_message("kortin arvo on " + string(arvo));
+	}
+	var prio = ds_list_find_value(objAIdriver.speValueOnTable,i);		// Getting card priority
 	var type = variable_instance_get(arvo, "sTYPE"); // Getting card type
 	if (type != canNotUse) {						//Check if card type can be used this turn
 		if (ds_list_empty(kaytjono)) {				//if there is nothing in que add to it,
 			ds_list_add(kaytjono,arvo);
+			if (objPerSave.debugMod) {
+				show_message("Jono tyhjä lisätään " + string(variable_instance_get(arvo, "sNAME")) + " tyypiltään " + string(variable_instance_get(arvo, "sTYPE")));
+			}
 		} else {									// else go through the que to see where card goes
 			var jonoPituus = ds_list_size(kaytjono);
 			for (var j = 0; j < jonoPituus; j += 1) {
 				var jonoArvo = ds_list_find_value(kaytjono, j);
 				var jonoPrio = ds_list_find_value(spePriot, ds_list_find_index(speCards,jonoArvo));
-				if (jonoPrio > prio) {
-					ds_list_insert(kaytjono, j, arvo);
+				if (jonoPrio < prio) {
+					ds_list_insert(kaytjono, j, arvo);if (objPerSave.debugMod) {
+						show_message("Jonossa on kortteja, lisätään " + string(variable_instance_get(arvo, "sNAME")) + " tyypiltään " + string(variable_instance_get(arvo, "sTYPE")));
+					}
 					j = jonoPituus
 				}
 			}
 		}
 	}
 }
+var SpeCardChosen = noone;
 
 if (ds_list_empty(kaytjono)) {
 	objAIdriver.canUseSpecial = false;
 } else {
-	var SpeCardChosen = ds_list_find_value(kaytjono,0);
+	/*
+	var jono1 = variable_instance_get(ds_list_find_value(kaytjono,0), "spCardBack");
+	var jono2 = variable_instance_get(ds_list_find_value(kaytjono,1), "spCardBack");
+	while(SpeCardChosen = noone) {
+		if (jono1.sPRIORITY > jono2.sPRIORITY) {
+			SpeCardChosen = jono1;
+		}
+		if (jono1.sPRIORITY = jono2.sPRIORITY) {
+			scrAiSpecialCards(variable_instance_get(jono1, "sID"),variable_instance_get(jono2, "sID"));
+		}
+			
+	}
+	*/
 	var kortinEtu = variable_instance_get(SpeCardChosen, "spCardFront");
 	var nimi = variable_instance_get(kortinEtu, "sNAME");
 	if (objPerSave.debugMod) {
