@@ -4,7 +4,7 @@
    "NAME": "Chicken shield",
    "VALUE": 2,
    "TYPE": "defensive",
-   "PRIORITY": 0,
+   "PRIORITY": 1,
    "SPRITE": "sprChicken",
    "TEXT": "Full protection against first strike",
    "CHOSEN": 1
@@ -14,7 +14,7 @@
    "NAME": "Double whammy",
    "VALUE": 2,
    "TYPE": "offensive",
-   "PRIORITY": 0,
+   "PRIORITY": 1,
    "SPRITE": "sprDouble",
    "TEXT": "Doubles the first strike's damage",
    "CHOSEN": 1
@@ -24,7 +24,7 @@
    "NAME": "The squire",
    "VALUE": 2,
    "TYPE": "offensive",
-   "PRIORITY": 0,
+   "PRIORITY": 1,
    "SPRITE": "sprSquire",
    "TEXT": "Replaces the last attack pair with another random attack pair",
    "CHOSEN": 1
@@ -34,7 +34,7 @@
    "NAME": "Lady Ingrid",
    "VALUE": 2,
    "TYPE": "defensive",
-   "PRIORITY": 0,
+   "PRIORITY": 1,
    "SPRITE": "sprLady",
    "TEXT": "Heals the hero based on the remaining protection",
    "CHOSEN": 1
@@ -54,7 +54,7 @@
    "NAME": "Gruel",
    "VALUE": 2,
    "TYPE": "offensive",
-   "PRIORITY": 0,
+   "PRIORITY": -1,
    "SPRITE": "sprGruel",
    "TEXT": "If opponent uses special card deal 3 damage (goes through protection)",
    "CHOSEN": 1
@@ -74,7 +74,7 @@
    "NAME": "Tribute",
    "VALUE": 3,
    "TYPE": "defensive",
-   "PRIORITY": 0,
+   "PRIORITY": 1,
    "SPRITE": "sprTribute",
    "TEXT": "Receive three protection",
    "CHOSEN": 1
@@ -94,7 +94,7 @@
    "NAME": "Bomb",
    "VALUE": 3,
    "TYPE": "neutral",
-   "PRIORITY": 0,
+   "PRIORITY": -1,
    "SPRITE": "sprBomb",
    "TEXT": "Randomly place a bomb to the opponent's special card deck - once revealed deal 3 damage (goes through protection)",
    "CHOSEN": 1
@@ -144,7 +144,7 @@
    "NAME": "Thief",
    "VALUE": 5,
    "TYPE": "defensive",
-   "PRIORITY": 0,
+   "PRIORITY": -1,
    "SPRITE": "sprThief",
    "TEXT": "Steals random attack pair and replaces it with a corresponding protection pair",
    "CHOSEN": 1
@@ -164,7 +164,7 @@
    "NAME": "Vortex",
    "VALUE": 5,
    "TYPE": "offensive",
-   "PRIORITY": 0,
+   "PRIORITY": 2,
    "SPRITE": "sprVortex",
    "TEXT": "Both heroes take 5 damage - ends both turns immediately without turn phase (all found pairs are discarded)",
    "CHOSEN": 1
@@ -174,7 +174,7 @@
    "NAME": "Catapult",
    "VALUE": 5,
    "TYPE": "offensive",
-   "PRIORITY": 0,
+   "PRIORITY": 2,
    "SPRITE": "sprCatapult",
    "TEXT": "Completely destroy the opponents shield, but damages your hero in equal amount",
    "CHOSEN": 1

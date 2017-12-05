@@ -319,14 +319,6 @@
             }
         },
         {
-            "Key": "207cf4dc-1c47-4b80-96bd-6f00b419f68b",
-            "Value": {
-                "id": "6e1f3527-cfe8-4391-a72c-3515fc7fae11",
-                "resourcePath": "datafiles_yy\\specialcards.json.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "21d33f99-e83a-40d3-bcef-99ed655e008d",
             "Value": {
                 "id": "bb0f8b26-d53c-4dff-879d-792ae701fc0f",
@@ -900,6 +892,14 @@
                 "id": "62311ae9-6b52-41e9-9b74-e351ab1fe6d8",
                 "resourcePath": "objects\\objSpecialCardHolder\\objSpecialCardHolder.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6e7af748-5d03-49b1-bacb-030f39f0ea86",
+            "Value": {
+                "id": "c96c62ad-f7bb-463a-a141-a9abf365abf0",
+                "resourcePath": "datafiles_yy\\specialcards.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

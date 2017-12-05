@@ -92,7 +92,7 @@ if(objPerSave.firstTurn){
 	alarm_set(0,room_speed*preturnTimer);
 	ds_list_add(objSound.allSounds,sound0);
 	ds_list_add(objMusic.allMusic ,sound0);
-	if(objPerSave.sound) {
+	if(objSound.sound) {
 		
 	}
 	audio_play_sound(sound0,1,true);
