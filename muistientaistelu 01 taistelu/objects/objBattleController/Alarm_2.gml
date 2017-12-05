@@ -11,6 +11,13 @@ if (firstSprite) {
 	firstSprite = false;
 }
 
+if (p1EndPlace==p1place)
+{
+	shake = true;
+	alarm_set(3,10);
+}
+
+
 if (p1EndPlace>p1place) {
 	objP1Fight.x += spriteStep;
 	objP2Fight.x -= spriteStep;
