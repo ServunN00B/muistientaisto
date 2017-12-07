@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "name": "font0",
     "AntiAlias": 1,
-    "TTFName": "${project_dir}\\fonts\\font0\\Almendra-Regular.otf",
+    "TTFName": null,
     "bold": false,
     "charset": 0,
     "first": 0,
@@ -1437,7 +1437,7 @@
         }
     ],
     "image": null,
-    "includeTTF": true,
+    "includeTTF": false,
     "italic": false,
     "kerningPairs": [
         {

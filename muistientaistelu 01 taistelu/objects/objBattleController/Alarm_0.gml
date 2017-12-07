@@ -280,7 +280,7 @@ if(player1Total > player2Total)
 			switch (p1Specialcard) {
 				case 3:
 					damageAmount = player1Total - player2Total;
-					p2HP = p2HP + damageAmount;
+					p1HP = p1HP + damageAmount;
 					break;
 				case 6:
 					damageAmount = player1Total - player2Total;
@@ -336,6 +336,12 @@ else if(player2Total == player1Total)
 }
 objPerSave.p1Health = p1HP - p2damage;
 objPerSave.p2Health = p2HP - p1damage;
+if (objPerSave.p1Health > objPerSave.basicStartHealth) {
+	objPerSave.p1Health = objPerSave.basicStartHealth;
+}
+if (objPerSave.p2Health > objPerSave.basicStartHealth) {
+	objPerSave.p2Health = objPerSave.basicStartHealth;
+}
 
 //Gameover screen?
 if(p1HP <= 0)
