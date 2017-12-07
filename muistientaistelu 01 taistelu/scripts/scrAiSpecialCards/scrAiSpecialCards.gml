@@ -7,22 +7,22 @@ var erotus1 = 0;
 var erotus2 = 0;
 var j;
 for (j = 0; j < ds_list_size(eneCards); j += 1) {
-	erotus += ds_list_find_value(eneCards, j);
+	erotus -= ds_list_find_value(eneCards, j);
 }
 for (j = 0; j < ds_list_size(myCards); j += 1) {
-	erotus -= ds_list_find_value(myCards, j);
+	erotus += ds_list_find_value(myCards, j);
 }
 
-var card1 = argument0;
-var card2 = argument1;
+var card1 = variable_instance_get(argument0, "sID");
+var card2 = variable_instance_get(argument1, "sID");
 var myVcards;
 var eneVcards;
 var myhp = objPerSave.p1Health;
 var enehp = objPerSave.p2Health;
-var myhpV;
-var enehpV;
-var myhpV1;
-var enehpV1;
+var myhpV = myhp;
+var enehpV = enehp;
+var myhpV1 = myhp;
+var enehpV1 = enehp;
 var varvo;
 
 //Checking if AI is attacking
@@ -140,13 +140,33 @@ switch(attacker) {
 						eneVcards = eneCards;
 						ds_list_replace(eneVcards, 0, 0);
 						for (j = 0; j < ds_list_size(eneVcards); j += 1) {
-							erotus1 += ds_list_find_value(eneVcards, j);
+							erotus1 -= ds_list_find_value(eneVcards, j);
+						}
+						for (j = 0; j < ds_list_size(myCards); j += 1) {
+							erotus1 += ds_list_find_value(myCards, j);
 						}
 					break;
 				
-					case 7:
-					
+					case 3:
+						erotus1 = erotus;
 					break;
+				
+					case 7:
+						erotus1 = erotus + 3;
+					break;
+				
+					case 9:
+						erotus1 = erotus + 4;
+					break;
+				
+					case 12:
+						erotus1 = -1;
+					break;
+				
+					case 14:
+						erotus1 = -1;
+					break;
+				
 				}
 				
 				switch(card2) {
@@ -156,16 +176,113 @@ switch(attacker) {
 						for (j = 0; j < ds_list_size(eneVcards); j += 1) {
 							erotus2 += ds_list_find_value(eneVcards, j);
 						}
+						for (j = 0; j < ds_list_size(myCards); j += 1) {
+							erotus2 -= ds_list_find_value(myCards, j);
+						}
+					break;
+				
+					case 3:
+						erotus2 = erotus;
 					break;
 				
 					case 7:
-					
+						erotus2 = erotus + 3;
 					break;
-				}
+				
+					case 9:
+						erotus2 = erotus + 4;
+					break;
+				
+					case 12:
+						erotus2 = -1;
+					break;
+				
+					case 14:
+						erotus2 = -1;
+					break;
+			}
 			
 			case false:
-	
+				switch(card1) {
+					case 0:
+						eneVcards = eneCards;
+						ds_list_replace(eneVcards, 0, 0);
+						for (j = 0; j < ds_list_size(eneVcards); j += 1) {
+							erotus1 -= ds_list_find_value(eneVcards, j);
+						}
+						for (j = 0; j < ds_list_size(myCards); j += 1) {
+							erotus1 += ds_list_find_value(myCards, j);
+						}
+					break;
+				
+					case 3:
+						erotus1 = erotus;
+					break;
+				
+					case 7:
+						erotus1 = erotus + 3;
+					break;
+				
+					case 9:
+						erotus1 = erotus + 4;
+					break;
+				
+					case 12:
+						erotus1 = 4;
+					break;
+				
+					case 14:
+						erotus1 = 4;
+					break;
+				
+				}
+				
+				switch(card2) {
+					case 0:
+						eneVcards = eneCards;
+						ds_list_replace(eneVcards, 0, 0);
+						for (j = 0; j < ds_list_size(eneVcards); j += 1) {
+							erotus2 += ds_list_find_value(eneVcards, j);
+						}
+						for (j = 0; j < ds_list_size(myCards); j += 1) {
+							erotus2 -= ds_list_find_value(myCards, j);
+						}
+					break;
+				
+					case 3:
+						erotus2 = erotus;
+					break;
+				
+					case 7:
+						erotus2 = erotus + 3;
+					break;
+				
+					case 9:
+						erotus2 = erotus + 4;
+					break;
+				
+					case 12:
+						erotus2 = 4;
+					break;
+				
+					case 14:
+						erotus2 = 4;
+					break;
+			}
 			break;
 		}
 	break;
+}
+if (enehpV = enehpV1) {
+	if (erotus1 > erotus2) {
+		return argument0;
+	} else {
+		return argument1;
+	}
+} else {
+	if (enehpV > enehpV1) {
+		return argument0;
+	} else {
+		return argument1;
+	}
 }

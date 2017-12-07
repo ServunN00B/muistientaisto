@@ -11,11 +11,12 @@ if (objPerSave.firstTurn){
 }
 if (arenaAlarm0 == 0 ){
 		if (normalAlarm0 == 0) {
-			if (canUseSpecial) {
-				if (!objArenaController.p2SpeCardUsed) {
-					scrAIspeCardUse();
+				if (canUseSpecial) {
+					if (!objArenaController.p2SpeCardUsed) {
+						scrAIspeCardUse();
+					}
 				}
-			}
+			
 			
 			if (objArenaController.alarmi1 > 5) {
 					if (memfail) {

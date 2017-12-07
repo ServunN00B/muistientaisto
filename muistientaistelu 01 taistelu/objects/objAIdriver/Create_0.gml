@@ -7,7 +7,7 @@ cardsOnMemory = ds_list_create();
 zeroOnMemory = ds_list_create();
 aiDifficultyArray = [20, 40, 60, 80, 100];
 spePriority = ds_list_create();
-canUseSpecial = true;
+canUseSpecial = false;
 //instance_create_layer(60,60,layer_get_id("Instances"),objBlock);
 arenaAlarm0 = 1;
 normalAlarm0 = 0;

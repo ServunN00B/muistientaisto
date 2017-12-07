@@ -1,7 +1,7 @@
 var speCards = objAIdriver.speCardsOnTable;
 var spePriot = objAIdriver.speValueOnTable;
 var kaytjono = objAIdriver.spePriority;
-
+var lisattu = false;
 //Checking what type cannot be used
 if (objPerSave.isAttacking = 2) {
 	var canNotUse = "defensive";
@@ -29,11 +29,19 @@ for (var i = 0; i < 3; i += 1) {
 				var jonoArvo = ds_list_find_value(kaytjono, j);
 				var jonoPrio = ds_list_find_value(spePriot, ds_list_find_index(speCards,jonoArvo));
 				if (jonoPrio < prio) {
-					ds_list_insert(kaytjono, j, arvo);if (objPerSave.debugMod) {
+					ds_list_insert(kaytjono, j, arvo);
+					if (objPerSave.debugMod) {
 						show_message("Jonossa on kortteja, lisätään " + string(variable_instance_get(arvo, "sNAME")) + " tyypiltään " + string(variable_instance_get(arvo, "sTYPE")));
 					}
-					j = jonoPituus
+					j = jonoPituus;
+					lisattu = true;
 				}
+			}
+			if (!lisattu) {
+				if (objPerSave.debugMod) {
+					show_message("Jonossa on kortteja \n mutta ei löytynyt paikkaa \n lisätään " + string(variable_instance_get(arvo, "sNAME")) + " tyypiltään " + string(variable_instance_get(arvo, "sTYPE")));
+				}
+				ds_list_add(kaytjono, arvo);
 			}
 		}
 	}
@@ -43,19 +51,22 @@ var SpeCardChosen = noone;
 if (ds_list_empty(kaytjono)) {
 	objAIdriver.canUseSpecial = false;
 } else {
-	/*
-	var jono1 = variable_instance_get(ds_list_find_value(kaytjono,0), "spCardBack");
-	var jono2 = variable_instance_get(ds_list_find_value(kaytjono,1), "spCardBack");
-	while(SpeCardChosen = noone) {
-		if (jono1.sPRIORITY > jono2.sPRIORITY) {
-			SpeCardChosen = jono1;
-		}
-		if (jono1.sPRIORITY = jono2.sPRIORITY) {
-			scrAiSpecialCards(variable_instance_get(jono1, "sID"),variable_instance_get(jono2, "sID"));
-		}
+	
+	if (ds_list_size(kaytjono) > 1) {
+		var jono1 = variable_instance_get(ds_list_find_value(kaytjono,0), "spCardBack");
+		var jono2 = variable_instance_get(ds_list_find_value(kaytjono,1), "spCardBack");
+		while(SpeCardChosen = noone) {
+			if (variable_instance_get(jono1, "sPRIORITY") > variable_instance_get(jono2, "sPRIORITY")) {
+				SpeCardChosen = jono1;
+			}
+			if (variable_instance_get(jono1, "sPRIORITY") = variable_instance_get(jono2, "sPRIORITY")) {
+				SpeCardChosen = scrAiSpecialCards(jono1,jono2);
+			}
 			
+		}
+	} else {
+		SpeCardChosen = variable_instance_get(ds_list_find_value(kaytjono,0), "spCardBack");
 	}
-	*/
 	var kortinEtu = variable_instance_get(SpeCardChosen, "spCardFront");
 	var nimi = variable_instance_get(kortinEtu, "sNAME");
 	if (objPerSave.debugMod) {
