@@ -47,6 +47,7 @@ p2 = objPerSave.p2Health/objPerSave.p2StartHealth;
 objPL1Healthbar.image_xscale = p1*pl1Hbar;
 objPL2Healthbar.image_xscale = p2*pl2Hbar;
 
+/*
 if(objPerSave.p1Health < 30) {
 	objPlayerIcon.sprite_index = sprPL1Damaged;
 	if(objPerSave.p2Health > 30) {
@@ -60,7 +61,7 @@ if(objPerSave.p2Health < 30) {
 		objPlayerIcon.sprite_index = sprPL1Winning;
 	}
 }
-
+*/
 draw_text(objPL1HP.x, objPL1HP.y, string(objPerSave.p1Health));
 
 //healths = string(objPerSave.p2Health);

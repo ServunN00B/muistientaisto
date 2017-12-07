@@ -1,5 +1,6 @@
 /// @description Card resize
 var nowScale = self.image_xscale;
+/*
 if (scaling) {
 	if (BigScale > nowScale) {
 		self.image_xscale = nowScale + scaleStep;
@@ -30,4 +31,4 @@ if (scaling) {
 		alarm_set(4,1)
 	}
 }
-		
+	*/	

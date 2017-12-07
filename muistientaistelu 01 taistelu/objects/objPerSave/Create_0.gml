@@ -4,6 +4,7 @@ randomize();
 //Enums used thourgh the game
 enum spShortCut { SpecialEffect, LastingSpecialEffect, dsScore, SpeCardUsed, SpecialCards };
 
+
 //Players stats
 playerName = "";
 playerCards = [];
@@ -34,13 +35,13 @@ debugMod = false;
 	SCardSelectTimer = 15; //seconds
 	preturnTimer = 3; // seconds
 	turnTimer = 20; // seconds
-	flipTimer = 0.8;//flipping timer
+	flipTimer = 0.5;//flipping timer
 	aiDifficulty = 0; //AI default difficulty
 	aiDifficultyArray = [20, 50, 100, 0]; //Difficulty levels for AI
 	
 	
 //Checking for Options ini for modified options
-scrOptionsini();
+//scrOptionsini();
 p1StartHealth = basicStartHealth;
 p2StartHealth = basicStartHealth;
 p1Health = basicStartHealth;

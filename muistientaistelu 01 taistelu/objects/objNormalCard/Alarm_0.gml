@@ -2,13 +2,13 @@
 
 if (found = false) {
 	self.sprite_index = sprTurnAnimReverse;
-	alarm_set(3, 15);
+	alarm_set(3, 10);
 				scaling = true;
 				alarm_set(4, 1);
 		if (objArenaController.instID != 0) {
 		with(objArenaController.instID) {
 			self.sprite_index = sprTurnAnimReverse;
-			alarm_set(3, 15);
+			alarm_set(3, 10);
 				scaling = true;
 				alarm_set(4, 1);
 		}

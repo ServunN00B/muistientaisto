@@ -6,7 +6,7 @@ if (self.canClick) {
 				self.turned = true;
 				if (objNormalCard.clicks = 0 && self.cardValue = "0") {
 					sprite_index = sprTurnAnim;
-					alarm_set(1, 14);
+					alarm_set(1, 10);
 					scaling = true;
 					alarm_set(4, 1);
 					//sprite_index = self.varSprite;
@@ -24,7 +24,7 @@ if (self.canClick) {
 					// Changing sprite
 					if (self.varSprite) {
 						sprite_index = sprTurnAnim;
-						alarm_set(1, 14);
+						alarm_set(1, 10);
 						scaling = true;
 						alarm_set(4, 1);
 						//sprite_index = self.varSprite;

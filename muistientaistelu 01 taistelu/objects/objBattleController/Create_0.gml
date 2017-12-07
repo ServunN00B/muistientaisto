@@ -21,8 +21,38 @@ p2OrigPlace = objP2Fight.x;
 spriteStep = 5;
 firstSprite = true;
 if (!objPerSave.vortex) {
-	alarm[0] = 3*room_speed;
+	alarm[0] = 1*room_speed;
 } else {
+	
+	//Incase vortex
+	var p1spriteIdle = noone;
+	var p2spriteIdle = noone;
+	var spriteSize = 0.5;
+	if (objPerSave.isAttacking = 1) {
+		p1sprite = sprAnimPlayerAttackDagger;
+		p1spriteIdle = sprAnimPlayerAttackDagger;
+		p2sprite = sprAnimEnemyDefendStoolIdle;
+		p2spriteIdle = sprAnimEnemyDefendStoolIdle;
+	} else {
+		p1sprite = sprAnimPlayerDefendStoolIdle;
+		p1spriteIdle = sprAnimPlayerDefendStoolIdle;
+		p2sprite = sprAnimEnemyAttackDaggerIdle;
+		p2spriteIdle = sprAnimEnemyAttackDaggerIdle;
+	}
+	
+	with(objP1Fight) {
+		sprite_index = p1spriteIdle;
+		image_xscale = spriteSize;
+		image_yscale = spriteSize;
+	}
+	with(objP2Fight) {
+		sprite_index = p2spriteIdle;
+		image_xscale = spriteSize;
+		image_yscale = spriteSize;
+	}
+
+	alarm_set(2,28);
+
 	var mssg = "Joku käytti vortexin! \n molemmat saavat 5 damagea";
 	show_message(mssg);
 	objPerSave.vortex = false;
