@@ -4,7 +4,7 @@ randomize();
 //Enums used thourgh the game
 enum spShortCut { SpecialEffect, LastingSpecialEffect, dsScore, SpeCardUsed, SpecialCards };
 
-
+draw_set_font(font0);
 //Players stats
 playerName = "";
 playerCards = [];
