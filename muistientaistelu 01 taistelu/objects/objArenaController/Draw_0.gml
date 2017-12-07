@@ -24,8 +24,9 @@ if (floor(alarm_get(0)/room_speed)> -1) {
 	time = string(floor(alarm_get(1)/room_speed));
 //	time.depth =-10;
 	//time.depth =-2;
-	draw_text_transformed(objTimeHolder.x-string_width(time)/2, objTimeHolder.y-string_height(time)/2, time, 1.5, 1.5, 0);
-
+	if (alarm_get(1) != -1) {
+		draw_text_transformed(objTimeHolder.x-string_width(time)/2, objTimeHolder.y-string_height(time)/2, time, 1.5, 1.5, 0);
+	}
 //draw_text(objTimeHolder.x, objTimeHolder.y, string(floor(alarmi1/room_speed)));
 }
 /* Healthbar stuff...

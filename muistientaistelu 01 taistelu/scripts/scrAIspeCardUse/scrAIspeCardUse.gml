@@ -28,7 +28,7 @@ for (var i = 0; i < 3; i += 1) {
 			for (var j = 0; j < jonoPituus; j += 1) {
 				var jonoArvo = ds_list_find_value(kaytjono, j);
 				var jonoPrio = ds_list_find_value(spePriot, ds_list_find_index(speCards,jonoArvo));
-				if (jonoPrio < prio) {
+				if (jonoPrio > prio) {
 					ds_list_insert(kaytjono, j, arvo);
 					if (objPerSave.debugMod) {
 						show_message("Jonossa on kortteja, lisätään " + string(variable_instance_get(arvo, "sNAME")) + " tyypiltään " + string(variable_instance_get(arvo, "sTYPE")));

@@ -186,7 +186,7 @@ switch(argument0) {
 			show_message("5 sekunttia lisäaikaa");
 			with(objArenaController) {
 				var alarmi = alarm_get(1);
-				alarm_set(1,alarmi + 5);
+				alarm_set(1,alarmi + 5*room_speed);
 			}
 			pSpecialEffect = 12;
 			pLastingSpecialEffect = true;

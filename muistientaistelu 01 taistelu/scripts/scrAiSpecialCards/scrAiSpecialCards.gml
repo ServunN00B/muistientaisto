@@ -69,6 +69,7 @@ switch(attacker) {
 				if (enehp - 5 < 1) {
 					if (myhp - 5 > 0) {
 						enehpV = enehp -5;
+						erotus1 = 5;
 					}
 				}
 			break;
@@ -114,6 +115,7 @@ switch(attacker) {
 				if (enehp - 5 < 1) {
 					if (myhp - 5 > 0) {
 						enehpV1 = enehp -5;
+						erotus2 = 5;
 					}
 				}
 			break;
