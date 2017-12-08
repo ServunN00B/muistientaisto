@@ -48,16 +48,12 @@ if (objPerSave.firstTurn) {
 	objPerSave.isAttacking = coinFlip; // Player which is Attacking
 	objPerSave.isTurn = coinFlip; // Player which is active
 	if(objPerSave.isTurn = 2) { 
-		objPL1Glow.visible = false;
-		objPL2Glow.visible = true;
 		if (objPerSave.AI) {
 			instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
 			if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 1;}
 		}
 	}
 } else {
-		objPL1Glow.visible = true;
-		objPL2Glow.visible = false;
 		if (objPerSave.AI) {
 			if(objPerSave.isTurn = 2) { 
 				instance_create_layer(1,1,layer_get_id("Instances"),objAIdriver);
@@ -65,6 +61,13 @@ if (objPerSave.firstTurn) {
 			}
 		}
 } 
+if (objPerSave.isTurn = 1) {
+	objPL1Glow.visible = true;
+	objPL2Glow.visible = false;
+} else {
+	objPL1Glow.visible = false;
+	objPL2Glow.visible = true;
+}
 // for scoring
 //Player One var
 p1SpeCardUsed = false;
@@ -94,11 +97,6 @@ if(objPerSave.firstTurn){
 } else {
 	drawSelect = false;
 	alarm_set(0,room_speed*preturnTimer);
-	ds_list_add(objSound.allSounds,sound0);
-	ds_list_add(objMusic.allMusic ,sound0);
-	if(objSound.sound) {
-		
-	}
 	audio_play_sound(sound0,1,true);
 	// Suffling and dealing cards in grid
 	scrDealingCards();

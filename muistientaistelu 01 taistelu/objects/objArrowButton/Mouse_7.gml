@@ -2,7 +2,10 @@
 // You can write your code in this editor
 var target = instance_find(asset_get_index(targetObj),0);
 var varToMod = real(variable_instance_get(target, targetVar));
-show_message("Entinen arvo " + string(varToMod));
+
+if (objPerSave.debugMod) {
+	show_message("Entinen arvo " + string(varToMod));
+}
 
 switch(moreless) {
 	case "more": 
@@ -19,5 +22,7 @@ switch(moreless) {
 		
 	break;
 }
-show_message("Uusi arvo " + string(varToMod));
+if (objPerSave.debugMod) {
+	show_message("Uusi arvo " + string(varToMod));
+}
 variable_instance_set(target, targetVar, varToMod);

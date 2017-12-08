@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "69993993-f4ea-408f-a139-93520cabdc95",
+            "Value": {
+                "id": "ec16135b-e40d-473a-9b4a-9d61727b426f",
+                "resourcePath": "sprites\\sprTurnSign\\sprTurnSign.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6aa2ad09-8b24-40ee-ad01-a5b6d35c453a",
             "Value": {
                 "id": "59f2f8a2-708a-46d0-b84a-6424ecc04524",
@@ -1164,14 +1172,6 @@
                 "id": "264528b8-6faf-4131-815f-6ce87b09db23",
                 "resourcePath": "sprites\\sprAnimEnemyAttackSword\\sprAnimEnemyAttackSword.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "84d9d2d3-3a70-4534-954c-766cb2bdb440",
-            "Value": {
-                "id": "4005e565-98ff-4472-b65b-2f2be81e1c9d",
-                "resourcePath": "scripts\\scrTurnChangePureAI\\scrTurnChangePureAI.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1535,6 +1535,14 @@
             }
         },
         {
+            "Key": "b6414a26-f4cd-4ff7-a5a1-d13b8a354a21",
+            "Value": {
+                "id": "07a68381-13ff-4c91-a1d4-39ff3333ceb2",
+                "resourcePath": "sprites\\sprTutorialButton\\sprTutorialButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b66f9be0-188e-4576-93a9-2683cf5ec45f",
             "Value": {
                 "id": "607ea3f3-291e-4ad8-b3c8-d7fb5f8ced8c",
@@ -1547,6 +1555,14 @@
             "Value": {
                 "id": "cc843cf3-1ddb-414d-a623-5df2a832c836",
                 "resourcePath": "sprites\\sprTribute\\sprTribute.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7e0d802-226b-46c7-b300-ae3a130ba7b5",
+            "Value": {
+                "id": "dd4d3ed4-b26e-49ac-a26e-b2031d7cd11d",
+                "resourcePath": "sprites\\sprSwordNum\\sprSwordNum.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2067,7 +2083,6 @@
         "dcf73209-26b2-408f-b443-5c50f3d0e4c5",
         "050024e6-231e-4697-8bc6-e33d86cd1f04",
         "622cab11-41df-4e08-af2b-78bddf64388f",
-        "84d9d2d3-3a70-4534-954c-766cb2bdb440",
         "9d2bfba8-2c65-4f02-9b6d-6fc7fd2ed26d",
         "142fa76a-59a2-4c14-bfae-b44fa86fc30b",
         "fd2c3919-eef8-442e-92bf-93fa64a83b47",

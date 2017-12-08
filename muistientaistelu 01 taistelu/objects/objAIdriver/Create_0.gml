@@ -5,13 +5,35 @@ speCardsOnTable = ds_list_create();
 speValueOnTable = ds_list_create();
 cardsOnMemory = ds_list_create();
 zeroOnMemory = ds_list_create();
-aiDifficultyArray = [20, 40, 60, 80, 100];
+aiDifficultyArray = objPerSave.aiDifficultyArray;
 spePriority = ds_list_create();
 canUseSpecial = false;
 //instance_create_layer(60,60,layer_get_id("Instances"),objBlock);
 arenaAlarm0 = 1;
 normalAlarm0 = 0;
 go = true;
+goTimer = objPerSave.aiDifficultyArray[objPerSave.aiDifficulty] / 2;
+
+/*
+switch(objPerSave.aiDifficulty) {
+	case 0:
+		goTimer = 40;
+	break;
+	
+	case 1:
+		goTimer = 25;
+	break;
+	
+	case 2:
+		goTimer = 10;
+	break;
+	
+	case 3:
+		goTimer = 35;
+	break;
+}
+*/
+	
 aiCardValue = 0;
 aiPair = undefined;
 aiIsSame = undefined;

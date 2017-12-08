@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objPL1Glow",
     "eventList": [
-        
+        {
+            "id": "8d9b45da-e3d7-4c40-9723-85a1c68cb540",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8343ddc0-bcf2-4b37-b8a5-0354550b6dff"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",

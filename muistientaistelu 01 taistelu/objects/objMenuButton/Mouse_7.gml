@@ -9,6 +9,7 @@ if (room != rooMain) {
 	objPerSave.p1SpecialEffect = -1;
 	objPerSave.p2SpecialEffect = -1;
 	objPerSave.isAttacking = 0;
+	objPerSave.isTurn = 0;
 	objPerSave.p1Health = objPerSave.basicStartHealth;
 	objPerSave.p2Health = objPerSave.basicStartHealth;
 	ds_list_clear(objPerSave.dsP1SpecialCards);
