@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "6462a2d7-ef39-446b-ad2f-3865e080b1dc",
+            "Value": {
+                "id": "2b66705c-3da9-408f-9abe-128f8ba32aeb",
+                "resourcePath": "sprites\\tutorial4\\tutorial4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6468c545-19ad-4eb9-b28c-3ab00db73f0a",
             "Value": {
                 "id": "2bd1b944-4d5e-43eb-a228-6a5581d5649c",
@@ -876,6 +884,30 @@
                 "id": "d6f9f888-3d6e-4280-80a1-51aad54e9cf9",
                 "resourcePath": "sprites\\sprChain\\sprChain.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "678c5694-e6d5-4f41-b547-7586beb3989c",
+            "Value": {
+                "id": "6b9b9f3e-ab51-4a4e-ace2-212a88173803",
+                "resourcePath": "objects\\objTutorialHolder\\objTutorialHolder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6867ad56-a2a1-4e50-829c-2923dcd5f825",
+            "Value": {
+                "id": "01a1f207-5951-4afe-8935-b7175007e5b1",
+                "resourcePath": "sprites\\tutorial3\\tutorial3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6aa2ad09-8b24-40ee-ad01-a5b6d35c453a",
+            "Value": {
+                "id": "59f2f8a2-708a-46d0-b84a-6424ecc04524",
+                "resourcePath": "views\\6aa2ad09-8b24-40ee-ad01-a5b6d35c453a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1087,6 +1119,14 @@
             }
         },
         {
+            "Key": "81505d77-e356-477c-b3a4-4d5e768ffba0",
+            "Value": {
+                "id": "284038ab-d4aa-4c58-9900-6af9a86393f7",
+                "resourcePath": "sprites\\tutorial5\\tutorial5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "817ddb8f-24d9-4f19-8e0a-21b2922fef47",
             "Value": {
                 "id": "b4c9b70d-4e67-4d9d-8e45-33592d8667ee",
@@ -1223,6 +1263,14 @@
             }
         },
         {
+            "Key": "8f7c009a-ec80-4f13-bdce-b8913063bffc",
+            "Value": {
+                "id": "68b315f2-4736-4938-8fa5-fac6f07ffb84",
+                "resourcePath": "objects\\objTutorialButton\\objTutorialButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9178f55d-2d28-499a-8313-a8d9a55f9c2b",
             "Value": {
                 "id": "c0392e34-608e-4a74-82ba-da2c9192b8a6",
@@ -1343,6 +1391,14 @@
             }
         },
         {
+            "Key": "a4758faa-88d4-4c86-87dc-68be35d02f0f",
+            "Value": {
+                "id": "58563311-4a64-4edf-b929-c403106736f2",
+                "resourcePath": "sprites\\tutorial2\\tutorial2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4bd7326-c169-48c0-b339-3db4321d7ce1",
             "Value": {
                 "id": "21a51bfa-5822-4a0c-97c9-752b0a5d906a",
@@ -1363,6 +1419,14 @@
             "Value": {
                 "id": "8b444459-34e2-4dd8-a06f-77a9578a04d3",
                 "resourcePath": "sprites\\sprMist\\sprMist.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a8c7c736-d3df-4896-95f8-e519da812526",
+            "Value": {
+                "id": "3197643a-13de-4777-8e96-7326506a6300",
+                "resourcePath": "sprites\\haluatkokuollasaatana\\haluatkokuollasaatana.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1863,6 +1927,14 @@
             }
         },
         {
+            "Key": "f1657798-c680-44da-ace4-a3130da8198d",
+            "Value": {
+                "id": "8f42759e-0c54-4ea5-873d-cc8b3787386a",
+                "resourcePath": "views\\f1657798-c680-44da-ace4-a3130da8198d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f1f2b34b-5467-45be-bfd4-6e3267c2d79e",
             "Value": {
                 "id": "96042de5-377b-472d-9664-81a0dcb187bc",
@@ -1908,6 +1980,14 @@
                 "id": "0a88374d-2334-41cd-b82f-0066c664aaac",
                 "resourcePath": "views\\f6c310b6-2897-453c-b355-e11840f72169.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f7515079-0fa4-403f-a8cc-98089adf0645",
+            "Value": {
+                "id": "51a8d9f1-71b2-4ed1-b6e8-f3fb70f9a76b",
+                "resourcePath": "sprites\\tutorial1\\tutorial1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

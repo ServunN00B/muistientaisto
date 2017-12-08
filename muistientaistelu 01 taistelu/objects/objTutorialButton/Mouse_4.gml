@@ -6,6 +6,5 @@ if (objTutorialHolder.sprite_index != sprEmpty || objTutorialHolder.recentlyview
 }
 else
 {
-	objPerSave.AI = true;
-	room_goto(1);
+	objTutorialHolder.sprite_index = tutorial1;
 }
