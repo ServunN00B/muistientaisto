@@ -8,3 +8,4 @@ select = true;
 spCardFront = noone;
 myCoin = noone;
 mouseOver = false;
+showDes = false;

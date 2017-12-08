@@ -8,6 +8,7 @@ if(canClick) {
 				variable_instance_set(spCardFront,"y",orig_ypos);
 				variable_instance_set(myCoin,"y",orig_ypos);
 				mouseOver = false;
+				showDes = false;
 			}
 		} else {
 			if(point_in_rectangle(mouse_x,mouse_y, self.x, self.y, self.x + sprite_width, self.y + sprite_height)) {
@@ -15,6 +16,7 @@ if(canClick) {
 				variable_instance_set(spCardFront,"y",self.y);
 				variable_instance_set(myCoin,"y",self.y);
 				mouseOver = true;
+				showDes = true;
 			}
 		}
 	}
