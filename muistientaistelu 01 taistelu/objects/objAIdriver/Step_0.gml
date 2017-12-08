@@ -1,14 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (objPerSave.firstTurn){
-	if (objArenaController.ChoosingPlayer = 2){
-			if (instance_exists(objSpeCardDone)){
-				with(objSpeCardDone){
-					event_perform(ev_mouse,ev_left_release);
-				}
-			}
-	}
-}
 if (arenaAlarm0 == 0 ){
 		if (normalAlarm0 == 0) {
 				if (canUseSpecial) {

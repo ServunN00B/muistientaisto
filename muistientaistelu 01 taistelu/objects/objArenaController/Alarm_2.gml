@@ -32,13 +32,8 @@ if (ChoosingPlayer = objPerSave.isAttacking) {
 	// Start pre turn timer
 	alarm_set(0,room_speed*preturnTimer); 
 	//Play background music
-	ds_list_add(objSound.allSounds,sound0);
-	ds_list_add(objMusic.allMusic ,sound0);
-	if (objSound.sound) {
-		if (objMusic.music) {
-			audio_play_sound(sound0,1,true);
-		}
-	}
+	audio_play_sound(sound0,1,true);
+	
 	// Suffling and dealing cards in grid
 	scrDealingCards();
 }

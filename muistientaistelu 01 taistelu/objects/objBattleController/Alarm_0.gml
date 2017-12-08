@@ -357,6 +357,7 @@ if(p1HP <= 0)
 	objPerSave.isAttacking = 0;
 	objPerSave.p1Health = objPerSave.basicStartHealth;
 	objPerSave.p2Health = objPerSave.basicStartHealth;
+	objPerSave.AI = false;
 	ds_list_clear(objPerSave.dsP1SpecialCards);
 	ds_list_clear(objPerSave.dsP2SpecialCards);
 	ds_list_clear(objPerSave.cardsInUse);
@@ -375,6 +376,7 @@ else if(p2HP <= 0)
 	objPerSave.isAttacking = 0;
 	objPerSave.p1Health = objPerSave.basicStartHealth;
 	objPerSave.p2Health = objPerSave.basicStartHealth;
+	objPerSave.AI = false;
 	ds_list_clear(objPerSave.dsP1SpecialCards);
 	ds_list_clear(objPerSave.dsP2SpecialCards);
 	ds_list_clear(objPerSave.cardsInUse);

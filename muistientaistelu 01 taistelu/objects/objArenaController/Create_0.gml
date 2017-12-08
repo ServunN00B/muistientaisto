@@ -87,6 +87,7 @@ if(objPerSave.firstTurn){
 	ChoosingPlayer = objPerSave.isAttacking;
 	//Deal Special cards for selection
 	scrSpeCardSelectDeal();
+	
 } else {
 	drawSelect = false;
 	alarm_set(0,room_speed*preturnTimer);

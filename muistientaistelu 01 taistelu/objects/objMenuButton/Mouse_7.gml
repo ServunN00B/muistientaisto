@@ -14,6 +14,7 @@ if (room != rooMain) {
 	ds_list_clear(objPerSave.dsP1SpecialCards);
 	ds_list_clear(objPerSave.dsP2SpecialCards);
 	ds_list_clear(objPerSave.cardsInUse);
+	objPerSave.AI = false;
 	room_goto(rooMain);
 } else {
 	instance_create_depth(room_width/2,60,depth - 5, objStatsScreen);

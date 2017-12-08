@@ -53,7 +53,7 @@ switch(attacker) {
 			
 			case 2:
 				myVcards = myCards;
-				if (ds_list_find_value(myVcards, ds_list_size(myVcards)) < 2) {
+				if (ds_list_find_value(myVcards, ds_list_size(myVcards) - 1) < 2) {
 					if (ds_list_find_value(myVcards, 0) < 2) {
 					varvo = floor(random_range(1,3));
 					ds_list_replace(myVcards, 0, varvo);
@@ -99,7 +99,7 @@ switch(attacker) {
 			
 			case 2:
 				myVcards = myCards;
-				if (ds_list_find_value(myVcards, ds_list_size(myVcards)) < 2) {
+				if (ds_list_find_value(myVcards, ds_list_size(myVcards) - 1) < 2) {
 					if (ds_list_find_value(myVcards, 0) < 2) {
 					varvo = floor(random_range(1,3));
 					ds_list_replace(myVcards, 0, varvo);

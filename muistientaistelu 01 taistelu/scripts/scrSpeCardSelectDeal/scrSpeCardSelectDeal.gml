@@ -74,4 +74,12 @@ with(instance_create_layer(Bx, By, layer_get_id("Instances"), objSpeCardDone)) {
 		image_xscale = 0.2;
 		image_yscale = 0.2;
 }
-	
+if (objPerSave.firstTurn){
+	if (objArenaController.ChoosingPlayer = 2){
+			if (objPerSave.AI) {
+				with(objSpeCardDone){
+					event_perform(ev_mouse,ev_left_release);
+				}
+			}
+	}
+}	
