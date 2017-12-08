@@ -2,6 +2,8 @@
 if (objPerSave.debugMod) {
 	instance_create_depth(1300,30,-10,restart);
 }
+view_x = camera_get_view_x(view_camera[0]);
+view_y = camera_get_view_y(view_camera[0]);
 // Save Health data
 
 pl1Hbar = objPL1Healthbar.image_xscale;
@@ -80,6 +82,7 @@ alarmi1 = 0;
 drawSelect = true;
 aikaJ = -1;
 firstDeal = true;
+shake = false;
 if(objPerSave.firstTurn){
 	//Starting count down on special card selection
 	alarm_set(2,room_speed*SCardSelectTimer); 

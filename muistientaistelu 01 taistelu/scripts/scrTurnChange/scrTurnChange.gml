@@ -77,9 +77,9 @@ var erikoisLista;
 var onPareja = false;
 if (objPerSave.isTurn = 1) {
 	vuorossa = objPerSave.p2Score;
+	vuorossaParit = objPL2CardHolder;
 	if (!ds_list_empty(vuorossa)) {
 		scoreNum = ds_list_size(vuorossa);
-		vuorossaParit = objPL2CardHolder;
 		onPareja = true;
 	}
 	erikoisKayt = objArenaController.p2SpeCardUsed;
@@ -89,9 +89,9 @@ if (objPerSave.isTurn = 1) {
 	}
 } else {
 	vuorossa = objPerSave.p1Score;
+	vuorossaParit = objPL1CardHolder;
 	if (!ds_list_empty(vuorossa)) {
 		scoreNum = ds_list_size(vuorossa);
-		vuorossaParit = objPL1CardHolder;
 		onPareja = true;
 	}
 	erikoisKayt = objArenaController.p1SpeCardUsed;

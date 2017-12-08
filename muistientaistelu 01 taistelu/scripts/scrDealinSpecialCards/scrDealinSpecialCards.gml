@@ -86,6 +86,15 @@ switch(argument0) {
 			//Check to see if there is a BOMB
 			if (sID < 0) {
 				vuorossaHP = vuorossaHP + sID;
+				with(objArenaController) {
+					shake = true;
+					alarm_set(3, 30);
+				}
+				
+				if (vuorossaHP < 1) {
+					show_message("Pakassasi oli POMMI! Pelaaja " + string(objPerSave.isTurn) + " kuoli!");
+					room_goto(battle);
+				}
 				show_message("Pakassasi oli POMMI! Menetit " + string(sID) + "hp:tä");
 				ds_list_delete(vuorossa, 3);
 				sID = ds_list_find_value(vuorossa,3);

@@ -53,6 +53,7 @@ if (canClick) {
 					with(spCardFront) {
 						event_user(0);
 					}
+					showDes = false;
 					canClick = false;
 					path2 = path_add();
 					path_add_point(path2, x, y, 100);

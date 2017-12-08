@@ -77,9 +77,7 @@ if (self.canClick) {
 								// When all the pairs are found, reset timer and deal new cards
 								if (objNormalCard.pairs > 5) {
 							
-									with(objArenaController) {
-										alarm_set(1,1);
-									}
+									objNormalCard.canClick = false;
 								}
 							// End finding pairs
 							} else {
