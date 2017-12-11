@@ -334,6 +334,7 @@ else if(player2Total == player1Total)
 	//This could be done with draw_text
 	show_message("It's a tie!");
 }
+damageDone = damageAmount;
 objPerSave.p1Health = p1HP - p2damage;
 objPerSave.p2Health = p2HP - p1damage;
 if (objPerSave.p1Health > objPerSave.basicStartHealth) {

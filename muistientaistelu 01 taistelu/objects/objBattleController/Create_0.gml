@@ -2,6 +2,12 @@ view_x = camera_get_view_x(view_camera[0]);
 view_y = camera_get_view_y(view_camera[0]);
 shake = false;
 
+showdmgtext = false;
+
+pl1Hbar = objPL1Healthbar.image_xscale;
+pl2Hbar = objPL2Healthbar.image_xscale;
+
+damageDone = 0;
 
 ds_list_delete(objSound.allSounds,sound0);
 ds_list_delete(objMusic.allMusic ,sound0);

@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "427c06d8-fc54-4204-9560-c85be41ab73e",
+            "Value": {
+                "id": "c987006d-3206-476f-b9ed-bb73d80566d1",
+                "resourcePath": "datafiles_yy\\specialcards.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "42b9d306-60be-4f8c-a5ec-040be5255fbb",
             "Value": {
                 "id": "ac51e0e5-2f2e-447f-bbaf-cce7a97ad514",
@@ -935,14 +943,6 @@
             }
         },
         {
-            "Key": "6e7af748-5d03-49b1-bacb-030f39f0ea86",
-            "Value": {
-                "id": "c96c62ad-f7bb-463a-a141-a9abf365abf0",
-                "resourcePath": "datafiles_yy\\specialcards.json.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "6ebc7647-d7f6-4aec-b448-360b7c3a5f48",
             "Value": {
                 "id": "45f8e196-860a-4304-b40f-cc44bb9d3b7f",
@@ -1299,6 +1299,14 @@
             "Value": {
                 "id": "c63e57da-b57c-4f98-9b61-5b04b430e250",
                 "resourcePath": "objects\\objBackground\\objBackground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "96fa1a3b-7399-4f5f-8f75-65588a95c325",
+            "Value": {
+                "id": "d6c59d06-af8d-44a9-a8c3-73fa444f0862",
+                "resourcePath": "objects\\objParticle\\objParticle.yy",
                 "resourceType": "GMObject"
             }
         },

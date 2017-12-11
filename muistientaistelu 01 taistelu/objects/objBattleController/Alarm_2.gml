@@ -5,7 +5,9 @@ var p1place = objP1Fight.x
 if (p1EndPlace==p1place)
 {
 	shake = true;
+	showdmgtext = true;
 	alarm_set(3,10);
+	alarm_set(4,20);
 }
 
 	if (p1place = p1EndPlace - spriteStep * 6) {

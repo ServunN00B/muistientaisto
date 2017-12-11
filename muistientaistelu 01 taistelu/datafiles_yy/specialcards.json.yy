@@ -1,5 +1,5 @@
 {
-    "id": "6e7af748-5d03-49b1-bacb-030f39f0ea86",
+    "id": "427c06d8-fc54-4204-9560-c85be41ab73e",
     "modelName": "GMIncludedFile",
     "mvc": "1.0",
     "name": "specialcards.json",

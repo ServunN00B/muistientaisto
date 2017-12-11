@@ -1,4 +1,12 @@
 /// @description Everything that happens to normal cards
+if (objPerSave.AI = true && objPerSave.isTurn == 2)
+{
+	effect_create_above(ef_ring,self.x,self.y,10,c_yellow);
+}
+else 
+{
+	effect_create_above(ef_ring,mouse_x,mouse_y,10,c_yellow);
+}
 if (self.canClick) {
 	if (!self.found) {
 		if (!self.turned) {
