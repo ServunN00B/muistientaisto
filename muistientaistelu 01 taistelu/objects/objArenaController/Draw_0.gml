@@ -16,19 +16,19 @@ if (floor(alarm_get(0)/room_speed)> -1) {
 	
 	}
 	
-	time = string("Turn starts in " + string(floor(alarm_get(0)/room_speed)));
+	time = string("Turn starts in " + string(floor(alarm_get(0)/room_speed + 1)));
 	//time.depth =-10;
 	draw_text_transformed((objTimeHolder.x-40)-string_width(time)/2, objTimeHolder.y -string_height(time)/2, time, 1.5, 1.5, 0);
 	//draw_text(objTimeHolder.x, objTimeHolder.y,"Vuoro alkaa " + string(floor(alarm_get(0)/room_speed)));
 } else {
 	if (alarm_get(2)< 0) {
-		time = string(floor(alarm_get(1)/room_speed));
+		time = string(floor(alarm_get(1)/room_speed) + 1);
 		if (alarm_get(1) != -1) {
 			draw_text_transformed(objTimeHolder.x-string_width(time)/2, objTimeHolder.y-string_height(time)/2, time, 1.5, 1.5, 0);
 		}
 	
 	} else {
-		time = string(floor(alarm_get(2)/room_speed));
+		time = string(floor(alarm_get(2)/room_speed + 1));
 		draw_text_transformed(objTimeHolder.x-string_width(time)/2, objTimeHolder.y-string_height(time)/2, time, 1.5, 1.5, 0);
 	}
 //draw_text(objTimeHolder.x, objTimeHolder.y, string(floor(alarmi1/room_speed)));

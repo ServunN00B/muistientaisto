@@ -20,6 +20,7 @@ switch(argument0) {
 		for (j=0; j <3; j+=1) {
 			var frontID = noone;
 			var coinID = noone;
+			var fvalue = noone;
 			// Creating card front
 			with(instance_create_depth(a+j*(c + f),b, -10, objSpecialCard)) {
 				sID = ds_list_find_value(vuorossa,objArenaController.j);
@@ -37,6 +38,7 @@ switch(argument0) {
 				image_yscale = 0.3;
 				OrigScale = 0.3;
 				frontID = self.id;
+				fvalue = sVALUE;
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
@@ -45,6 +47,7 @@ switch(argument0) {
 				image_yscale = 0.15;
 				self.x -= sprite_width;
 				coinID = self.id;
+				value = fvalue;
 				variable_instance_set(frontID,"myCoin",self.id);
 			}
 			//Creating cardback
@@ -113,12 +116,14 @@ switch(argument0) {
 			image_yscale = 0.3;
 			OrigScale = 0.3;
 			frontID = self.id;
+			fvalue = sVALUE;
 		}
 			with(instance_create_depth(a+e*(c + f)+ frontID.sprite_width,b, -12, objCoin)) {
 				image_xscale = 0.15;
 				image_yscale = 0.15;
 				self.x -= sprite_width;
 				coinID = self.id;
+				value = fvalue;
 				variable_instance_set(frontID,"myCoin",self.id);
 			}
 			

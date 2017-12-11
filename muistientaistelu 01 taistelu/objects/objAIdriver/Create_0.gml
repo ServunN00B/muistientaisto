@@ -12,9 +12,8 @@ canUseSpecial = false;
 arenaAlarm0 = 1;
 normalAlarm0 = 0;
 go = true;
-goTimer = objPerSave.aiDifficultyArray[objPerSave.aiDifficulty] / 2;
+goTimer = 0;
 
-/*
 switch(objPerSave.aiDifficulty) {
 	case 0:
 		goTimer = 40;
@@ -32,7 +31,6 @@ switch(objPerSave.aiDifficulty) {
 		goTimer = 35;
 	break;
 }
-*/
 	
 aiCardValue = 0;
 aiPair = undefined;

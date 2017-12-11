@@ -36,11 +36,11 @@ if (canClick) {
 		if (sTYPE != cardToNotUse) {
 			// Checks if the player has used a special card on this turn
 			if(!player) {
-		/*		var value = variable_instance_get(spCardFront, "sVALUE");
+				var value = variable_instance_get(spCardFront, "sVALUE");
 				// Check if player has enough coins for the card
 				if (playerCoin >= value) {
 					playerCoin = playerCoin - value;
-		*/			player = true;
+					player = true;
 					scrSpecialCards(sID);
 					if (objPerSave.debugMod) {
 						show_message("Tämän kortin sID on " + string(sID));
@@ -63,7 +63,7 @@ if (canClick) {
 					path_set_closed(path2, false);
 					path_start(path2, 100, path_action_stop, false);
 					
-		//		}
+				} //End of if player has coin
 			} //End of if !player
 		} //End of if not to use
 	
