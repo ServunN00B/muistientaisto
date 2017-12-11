@@ -1,4 +1,5 @@
 /// @description Everything that happens to normal cards
+var audio_is_played = false;
 
 if (self.canClick) {
 	if (!self.found) {
@@ -6,6 +7,9 @@ if (self.canClick) {
 			if (objArenaController.canTurn) {
 				self.turned = true;
 				if (objNormalCard.clicks = 0 && self.cardValue = "0") {
+					audio_play_sound(souCardClickFail, 1, false);
+					audio_sound_gain(souCardClickFail, 1, 0);
+					
 					sprite_index = sprTurnAnim;
 					alarm_set(1, 10);
 					scaling = true;
@@ -18,6 +22,10 @@ if (self.canClick) {
 					alarm_set(0,objArenaController.flipTimer * room_speed);
 				} else {
 					objNormalCard.clicks += 1;
+					if (self.cardValue = "0") {
+						audio_play_sound(souCardClickFail, 1, false);
+						audio_is_played = true;
+					}
 					if (clicks = 1) {
 						objArenaController.isPair = self.cardValue;
 						objArenaController.instID = id;
@@ -35,6 +43,10 @@ if (self.canClick) {
 				
 							// Incase of a pair, do not turn back
 							if(self.cardValue = objArenaController.isPair) {
+								if (!audio_is_played) {
+									audio_play_sound(souPair, 1, false);	
+								}
+								
 								if (objPerSave.AI = true && objPerSave.isTurn == 2)
 								{
 									effect_create_above(ef_ring,self.x,self.y,10,c_yellow);
@@ -90,6 +102,10 @@ if (self.canClick) {
 								}
 							// End finding pairs
 							} else {
+								if (!audio_is_played) {
+									audio_play_sound(souCardClick, 1, false);	
+								}
+
 								alarm_set(0, objArenaController.flipTimer * room_speed);
 								if (instance_exists(objAIdriver)) {objAIdriver.normalAlarm0 = 1;}
 								objArenaController.canTurn=false;

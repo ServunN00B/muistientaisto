@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+var audio_is_played = false;
+
 if (canClick) {
 	if (!select) {
 		var cardToNotUse;
@@ -40,6 +42,10 @@ if (canClick) {
 				// Check if player has enough coins for the card
 				if (playerCoin >= value) {
 					playerCoin = playerCoin - value;
+					audio_play_sound(souSpecialCard, 1, false);
+					audio_sound_gain(souSpecialCard, 1, 0);
+					audio_is_played = true;
+
 					player = true;
 					scrSpecialCards(sID);
 					if (objPerSave.debugMod) {
@@ -66,7 +72,12 @@ if (canClick) {
 				} //End of if player has coin
 			} //End of if !player
 		} //End of if not to use
-	
+		
+		if (!audio_is_played) {
+			audio_play_sound(souCardClickFail, 1, false);
+			audio_sound_gain(souCardClickFail, 1, 0);
+		}
+
 		if (objPerSave.isTurn = 1) {
 			objPerSave.dsP1SpecialCards = vuorossa;
 			objArenaController.p1SpeCardUsed = player;

@@ -20,6 +20,11 @@ p1OrigPlace = objP1Fight.x;
 p2OrigPlace = objP2Fight.x;
 spriteStep = 5;
 firstSprite = true;
+
+audio_play_sound(souBattle1, 1, true);
+audio_sound_gain(souBattle1, 0, 0);
+audio_sound_gain(souBattle1, 1, 1*1000);
+
 if (!objPerSave.vortex) {
 	alarm[0] = 1*room_speed;
 } else {

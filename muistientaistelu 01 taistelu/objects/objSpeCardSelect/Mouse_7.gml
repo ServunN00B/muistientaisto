@@ -1,4 +1,6 @@
 /// @description Selecting Card
+var audio_is_played = false;
+
 if (sCHOSEN = 1) {
 	var vuorossa;
 	if (objArenaController.ChoosingPlayer = 1) {
@@ -10,6 +12,10 @@ if (sCHOSEN = 1) {
 	if (!selected) {
 		//If there is less then 6 cards in deck
 		if (ds_list_size(vuorossa)<6) {
+			audio_play_sound(souCardClick, 1, false);
+			audio_sound_gain(souCardClick, 1, 0);
+			audio_is_played = true;
+			
 			objSpeCardSelect.thisID = self.id;
 			selected = true;
 			ds_list_add(vuorossa, sID);
@@ -23,7 +29,15 @@ if (sCHOSEN = 1) {
 			
 			} // With darken closed
 		} // How many cards in deck closed
+		
+		if (!audio_is_played) {
+			audio_play_sound(souCardClickFail, 1, false);
+			audio_sound_gain(souCardClickFail, 1, 0);
+		}
 	} else {
+		audio_play_sound(souButton, 1, false);
+		audio_sound_gain(souButton, 1, 0);
+		
 		selected = false;
 		var myDSindex = ds_list_find_index(vuorossa,sID);
 		ds_list_delete(vuorossa,myDSindex);
