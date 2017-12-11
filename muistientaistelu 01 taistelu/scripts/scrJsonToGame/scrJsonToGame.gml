@@ -25,10 +25,7 @@
 		global.specialCardData[# i, SpecialEnum.SPRITE] = theEntry[? "SPRITE"];
 		global.specialCardData[# i, SpecialEnum.CHOSEN] = theEntry[? "CHOSEN"];
 		global.specialCardData[# i, SpecialEnum.TEXT] = theEntry[? "TEXT"];
-<<<<<<< HEAD
-		
-=======
->>>>>>> 51c591df68105f999b5594cbceec33de895c2525
+
 	}
 	//Destroy unnecessary lists and maps
 	ds_list_destroy(list);
