@@ -1,12 +1,5 @@
 /// @description Everything that happens to normal cards
-if (objPerSave.AI = true && objPerSave.isTurn == 2)
-{
-	effect_create_above(ef_ring,self.x,self.y,10,c_yellow);
-}
-else 
-{
-	effect_create_above(ef_ring,mouse_x,mouse_y,10,c_yellow);
-}
+
 if (self.canClick) {
 	if (!self.found) {
 		if (!self.turned) {
@@ -42,6 +35,14 @@ if (self.canClick) {
 				
 							// Incase of a pair, do not turn back
 							if(self.cardValue = objArenaController.isPair) {
+								if (objPerSave.AI = true && objPerSave.isTurn == 2)
+								{
+									effect_create_above(ef_ring,self.x,self.y,10,c_yellow);
+								}
+								else 
+								{
+									effect_create_above(ef_ring,mouse_x,mouse_y,10,c_yellow);
+								}
 								objNormalCard.pairs +=1;
 								self.found = true;
 								objArenaController.canTurn = false;
