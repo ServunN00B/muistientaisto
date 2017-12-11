@@ -51,7 +51,7 @@ if (arenaAlarm0 == 0 ){
 								} 
 								file_text_writeln(AItxt);
 								go = false;
-								alarm_set(0,25);
+								alarm_set(0, goTimer);
 								aiPair = undefined;
 								if (objPerSave.debugMod) {
 									file_text_write_string(AItxt, "Vuoro " + string(turn) + " loppuu");
@@ -69,7 +69,7 @@ if (arenaAlarm0 == 0 ){
 							}
 							turn = 1;
 							go = false;
-							alarm_set(0,25);
+							alarm_set(0, goTimer);
 							}
 						} else {
 							if (ds_list_size(objAIdriver.cardsOnMemory) > 1) {
@@ -85,7 +85,7 @@ if (arenaAlarm0 == 0 ){
 							}
 							if(real(objAIdriver.aiCardValue) > 0) { turn = 2; } else { turn = 1; }
 							go = false;
-							alarm_set(0,25);
+							alarm_set(0, goTimer);
 						}
 			
 					}

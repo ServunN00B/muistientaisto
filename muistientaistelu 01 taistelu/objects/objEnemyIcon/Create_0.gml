@@ -3,3 +3,4 @@
 depth = -13;
 self.x = 1511;
 self.y = 728;
+alarm_set(0,1);

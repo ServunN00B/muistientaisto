@@ -1,8 +1,8 @@
 {
-    "id": "84d9d2d3-3a70-4534-954c-766cb2bdb440",
+    "id": "b0adf406-eec2-4487-bf68-930aff41f64b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrTurnChangePureAI",
+    "name": "scrDealCardsInBattle",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -20,8 +20,8 @@ if (objPerSave.isAttacking = 1){
 
 	if (objPerSave.isTurn = 1){
 		
-		objPL1Glow.visible = true;
-		objPL2Glow.visible = false;
+		objPL1Glow.visible = false;
+		objPL2Glow.visible = true;
 		if (!objPerSave.firstTurn) {
 			objPerSave.p1Coin +=1;
 			}
@@ -44,8 +44,8 @@ if (objPerSave.isAttacking = 1){
 
 	if (objPerSave.isTurn = 2){
 		
-		objPL1Glow.visible = false;
-		objPL2Glow.visible = true;
+		objPL1Glow.visible = true;
+		objPL2Glow.visible = false;
 		
 		if (!objPerSave.firstTurn) {
 			objPerSave.p2Coin +=1;
@@ -127,12 +127,12 @@ if (onPareja) {
 							break;
 						case 2:
 							// Sword
-							sprite_index = sprMace;
+							sprite_index = sprSword;
 							cardValue = "2";
 							break;
 						case 3:
 							// Mace
-							sprite_index = sprSword;
+							sprite_index = sprMace;
 							cardValue = "3";
 							break;
 					} // End of switch case

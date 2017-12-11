@@ -22,7 +22,8 @@
         "8a607b2c-41f3-4334-89d4-bcc5b6ed39a6",
         "4b21e363-6817-4b95-8639-758b97f08cdf",
         "d39318bf-4ce2-4700-b1a6-cc91dcf1dc68",
-        "9b3e0d1d-b668-4a61-a6ed-413334f6d2d4"
+        "9b3e0d1d-b668-4a61-a6ed-413334f6d2d4",
+        "b6414a26-f4cd-4ff7-a5a1-d13b8a354a21"
     ],
     "filterType": "GMSprite",
     "folderName": "groupUI",

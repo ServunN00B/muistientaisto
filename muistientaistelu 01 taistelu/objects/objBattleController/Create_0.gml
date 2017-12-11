@@ -2,6 +2,7 @@ view_x = camera_get_view_x(view_camera[0]);
 view_y = camera_get_view_y(view_camera[0]);
 shake = false;
 
+<<<<<<< HEAD
 showdmgtext = false;
 
 pl1Hbar = objPL1Healthbar.image_xscale;
@@ -16,6 +17,8 @@ if (objSound.sound) {
 		audio_stop_sound(sound0);
 	}
 }
+=======
+>>>>>>> 51c591df68105f999b5594cbceec33de895c2525
 alarmi = 2;
 damageMod = 0;
 p1addCon = false;
