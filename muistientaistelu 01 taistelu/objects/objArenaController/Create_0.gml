@@ -63,13 +63,6 @@ if (objPerSave.firstTurn) {
 			}
 		}
 } 
-if (objPerSave.isTurn = 1) {
-	objPL1Glow.visible = true;
-	objPL2Glow.visible = false;
-} else {
-	objPL1Glow.visible = false;
-	objPL2Glow.visible = true;
-}
 // for scoring
 //Player One var
 p1SpeCardUsed = false;
@@ -94,6 +87,14 @@ if(objPerSave.firstTurn){
 	alarm_set(2,room_speed*SCardSelectTimer); 
 	//SpeCard choosing variables
 	ChoosingPlayer = objPerSave.isAttacking;
+
+if (ChoosingPlayer = 1) {
+	objPL1Glow.visible = true;
+	objPL2Glow.visible = false;
+} else {
+	objPL1Glow.visible = false;
+	objPL2Glow.visible = true;
+}
 	//Deal Special cards for selection
 	scrSpeCardSelectDeal();
 	
@@ -103,6 +104,14 @@ if(objPerSave.firstTurn){
 		alarm_set(6,room_speed*2);
 	}
 	drawSelect = false;
+	
+if (objPerSave.isTurn = 1) {
+	objPL1Glow.visible = true;
+	objPL2Glow.visible = false;
+} else {
+	objPL1Glow.visible = false;
+	objPL2Glow.visible = true;
+}
 	alarm_set(0,room_speed*preturnTimer);
 	// Suffling and dealing cards in grid
 	scrDealingCards();

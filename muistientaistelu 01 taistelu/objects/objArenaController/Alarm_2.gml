@@ -1,6 +1,9 @@
 /// @description Specialcard choosing time
 objArenaController.countdown = 1;
 
+objPL2Glow.visible = false;
+objPL1Glow.visible = false;
+
 instance_destroy(objBlock);
 instance_destroy(objSpeCardSelect);
 instance_destroy(objSpecialCardBack);
@@ -31,6 +34,14 @@ if (ChoosingPlayer = objPerSave.isAttacking) {
 	
 	//Starting count down on special card selection for other player
 	alarm_set(2,room_speed*SCardSelectTimer);
+	
+if (ChoosingPlayer = 1) {
+	objPL1Glow.visible = true;
+	objPL2Glow.visible = false;
+} else {
+	objPL1Glow.visible = false;
+	objPL2Glow.visible = true;
+}
 	scrSpeCardSelectDeal();
 } else {
 	audio_sound_gain(objSoundController.sound_pretheme, 0, 1000*preturnTimer);
@@ -39,6 +50,13 @@ if (ChoosingPlayer = objPerSave.isAttacking) {
 	// Start pre turn timer
 	alarm_set(0,room_speed*preturnTimer); 
 	
+if (objPerSave.isTurn = 1) {
+	objPL1Glow.visible = true;
+	objPL2Glow.visible = false;
+} else {
+	objPL1Glow.visible = false;
+	objPL2Glow.visible = true;
+}
 	// Suffling and dealing cards in grid
 	scrDealingCards();
 }

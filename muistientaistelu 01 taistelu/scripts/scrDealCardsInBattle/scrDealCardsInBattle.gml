@@ -1,35 +1,37 @@
 //Deal back found pairs & used special card
+var vuorossa;
 var scoreNum;
 var vuorossaParit;
 var vuorossaErikois;
 var erikoisKayt;
 var erikoisLista;
 var onPareja = false;
-if (objPerSave.isTurn = 1) {
-	vuorossa = objPerSave.p2Score;
-	vuorossaParit = objPL2CardHolder;
-	if (!ds_list_empty(vuorossa)) {
-		scoreNum = ds_list_size(vuorossa);
-		onPareja = true;
+for (var k = 1; k < 3; k += 1) {
+	if (k>1) {
+		vuorossa = objPerSave.p1Score;
+		vuorossaParit = objPL2CardHolder;
+		if (!ds_list_empty(vuorossa)) {
+			scoreNum = ds_list_size(vuorossa);
+			onPareja = true;
+		}
+		erikoisKayt = objPerSave.p2LastingSpecialEffect;
+		if (erikoisKayt) {
+			erikoisLista = objPerSave.dsP2SpecialCards
+			vuorossaErikois = objPerSave.p2SpecialEffect;
+		}
+	} else {
+		vuorossa = objPerSave.p1Score;
+		vuorossaParit = objPL1CardHolder;
+		if (!ds_list_empty(vuorossa)) {
+			scoreNum = ds_list_size(vuorossa);
+			onPareja = true;
+		}
+		erikoisKayt = objPerSave.p1LastingSpecialEffect;
+		if (erikoisKayt) {
+			erikoisLista = objPerSave.dsP1SpecialCards
+			vuorossaErikois = objPerSave.p1SpecialEffect;
+		}
 	}
-	erikoisKayt = objArenaController.p2SpeCardUsed;
-	if (erikoisKayt) {
-		erikoisLista = objPerSave.dsP2SpecialCards
-		vuorossaErikois = objPerSave.p2SpecialEffect;
-	}
-} else {
-	vuorossa = objPerSave.p1Score;
-	vuorossaParit = objPL1CardHolder;
-	if (!ds_list_empty(vuorossa)) {
-		scoreNum = ds_list_size(vuorossa);
-		onPareja = true;
-	}
-	erikoisKayt = objArenaController.p1SpeCardUsed;
-	if (erikoisKayt) {
-		erikoisLista = objPerSave.dsP1SpecialCards
-		vuorossaErikois = objPerSave.p1SpecialEffect;
-	}
-}
 
 if (onPareja) {
 	//Going through pairs
@@ -40,8 +42,8 @@ if (onPareja) {
 		} else {
 			var fixi = i - 3;
 		}
-		with(instance_create_layer(vuorossaParit.x + fixi * 100, vuorossaParit.y+(150*pla), layer_get_id("Instances"), objNormalCard)) {
-				if (objPerSave.isAttacking != objPerSave.isTurn) {
+		with(instance_create_depth(vuorossaParit.x, vuorossaParit.y+(-75*i), 9 + (-1* i), objNormalCard)) {
+				if (objPerSave.isAttacking = k) {
 					//Attacking turn
 					switch(ds_list_find_value(vuorossa,i)){
 						case 0:
@@ -98,7 +100,7 @@ if (onPareja) {
 
 if (erikoisKayt) {
 	var frontID = noone;
-		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCard)) {
+		with(instance_create_depth(vuorossaParit.x + 250, vuorossaParit.y , 9 , objSpecialCard)) {
 			sID = vuorossaErikois;
 			if (objPerSave.debugMod) {
 				show_message(string(sID));
@@ -122,7 +124,7 @@ if (erikoisKayt) {
 		}
 			
 		//Creating cardback
-		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCardBack)){
+		with(instance_create_depth(vuorossaParit.x + 250, vuorossaParit.y , 8, objSpecialCardBack)){
 			switch(string(global.specialCardData[# vuorossaErikois, SpecialEnum.TYPE])) {
 				case "offensive":
 					sprite_index = sprOffensive;
@@ -144,4 +146,5 @@ if (erikoisKayt) {
 			variable_instance_set(frontID,"spCardBack",self.id);
 			canClick = false;
 		}	
+}
 }

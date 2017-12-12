@@ -141,9 +141,14 @@ p2sprite = noone;
 var p1spriteIdle = noone;
 var p2spriteIdle = noone;
 var spriteSize = 0.5;
+var p1depth;
+var p2depth;
 
+scrDealCardsInBattle();
 //Player Battle animations
 if (attackingPlayer = 1) {
+	p1depth = 0;
+	p2depth = 1;
 	// Player 1 Attacking animation
 		switch(p1Highest) {
 			case 0: 
@@ -191,6 +196,8 @@ if (attackingPlayer = 1) {
 		}
 		
 } else {
+		p1depth = 1;
+		p2depth = 0;
 		// Player 2 Attacking animation
 		switch(p2Highest) {
 			case 0: 
@@ -238,18 +245,19 @@ if (attackingPlayer = 1) {
 }
 
 with(objP1Fight) {
+	depth = p1depth;
 	sprite_index = p1spriteIdle;
 	image_xscale = spriteSize;
 	image_yscale = spriteSize;
 }
 with(objP2Fight) {
+	depth = p2depth;
 	sprite_index = p2spriteIdle;
 	image_xscale = spriteSize;
 	image_yscale = spriteSize;
 }
 
 alarm_set(2,28);
-
 //Compare total scores with each other and decide the winner and calculate damages 
 if(player1Total > player2Total)
 {
