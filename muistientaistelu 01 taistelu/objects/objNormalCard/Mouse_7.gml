@@ -23,7 +23,6 @@ if (onPoint) {
 						alarm_set(1, 10);
 						scaling = true;
 						alarm_set(4, 1);
-						//sprite_index = self.varSprite;
 			
 						objArenaController.instID = 0;
 						objArenaController.canTurn = false;
@@ -53,33 +52,7 @@ if (onPoint) {
 							alarm_set(1, 10);
 							scaling = true;
 							alarm_set(4, 1);
-							//sprite_index = self.varSprite;
-			
-							objArenaController.instID = 0;
-							objArenaController.canTurn = false;
-							self.turned = false;
-							alarm_set(0,objArenaController.flipTimer * room_speed);
-						} else {
-							objNormalCard.clicks += 1;
-							if (self.cardValue = "0") {
-								audio_play_sound(souCardClickFail, 1, false);
-								audio_is_played = true;
-							}
-							if (clicks = 1) {
-								if (!audio_is_played) {
-									audio_play_sound(souCardClick, 1, false);
-								}
-								objArenaController.isPair = self.cardValue;
-								objArenaController.instID = id;
-							}
-						// Changing sprite
-						if (self.varSprite) {
-							sprite_index = turnAnim;
-							alarm_set(1, 10);
-							scaling = true;
-							alarm_set(4, 1);
-							//sprite_index = self.varSprite;
-				
+							
 							// Turning cards back
 							if (objNormalCard.clicks > 1) {
 								// Incase of a pair, do not turn back
@@ -178,7 +151,7 @@ if (onPoint) {
 							}
 
 						}
-						}
+						
 					}
 				}
 			} //End of if !turned
