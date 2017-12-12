@@ -18,6 +18,7 @@ var p2damage = 0;
 var p1HP = objPerSave.p1Health;
 var p2HP = objPerSave.p2Health;
 
+scrDealCardsInBattle();
 //Checking if there is effects that effect the score calculation
 if (p1LastEffect){
 	switch (p1Specialcard) {
@@ -144,7 +145,6 @@ var spriteSize = 0.5;
 var p1depth;
 var p2depth;
 
-scrDealCardsInBattle();
 //Player Battle animations
 if (attackingPlayer = 1) {
 	p1depth = 0;

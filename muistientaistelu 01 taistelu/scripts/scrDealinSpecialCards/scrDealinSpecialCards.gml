@@ -6,12 +6,15 @@ var e = 0;
 if (argument0 > 0) { e = variable_instance_get(argument1, "spot")} //
 var vuorossa;
 var vuorossaHP;
+var vuorCoin;
 if (objPerSave.isTurn = 1) {
 	vuorossa = objPerSave.dsP1SpecialCards;
 	vuorossaHP = objPerSave.p1Health;
+	vuorCoin = objPerSave.p1Coin;
 } else {
 	vuorossa = objPerSave.dsP2SpecialCards;
 	vuorossaHP = objPerSave.p2Health;
+	vuorCoin = objPerSave.p2Coin;
 }
 
 switch(argument0) {
@@ -21,6 +24,7 @@ switch(argument0) {
 			var frontID = noone;
 			var coinID = noone;
 			var fvalue = noone;
+			var alpha = 1;
 			// Creating card front
 			with(instance_create_depth(a+j*(c + f),b, -10, objSpecialCard)) {
 				sID = ds_list_find_value(vuorossa,objArenaController.j);
@@ -39,6 +43,10 @@ switch(argument0) {
 				OrigScale = 0.3;
 				frontID = self.id;
 				fvalue = sVALUE;
+				if(fvalue > vuorCoin) {
+					alpha = 0.7;
+				}
+				image_alpha = alpha;
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speCardsOnTable,self.id); }
 				if (instance_exists(objAIdriver)) { ds_list_add(objAIdriver.speValueOnTable,sPRIORITY); }
 			}
@@ -48,6 +56,7 @@ switch(argument0) {
 				self.x -= sprite_width;
 				coinID = self.id;
 				value = fvalue;
+				image_alpha = alpha;
 				variable_instance_set(frontID,"myCoin",self.id);
 			}
 			//Creating cardback
@@ -71,6 +80,7 @@ switch(argument0) {
 				OrigScale = 0.3;
 				spCardFront = frontID;
 				myCoin = coinID;
+				image_alpha = alpha;
 				variable_instance_set(frontID,"spCardBack",self.id);
 			}
 			if (objPerSave.debugMod) {
@@ -117,6 +127,10 @@ switch(argument0) {
 			OrigScale = 0.3;
 			frontID = self.id;
 			fvalue = sVALUE;
+			if(fvalue > vuorCoin) {
+				alpha = 0.7;
+			}
+				image_alpha = alpha;
 		}
 			with(instance_create_depth(a+e*(c + f)+ frontID.sprite_width,b, -12, objCoin)) {
 				image_xscale = 0.15;
@@ -124,6 +138,7 @@ switch(argument0) {
 				self.x -= sprite_width;
 				coinID = self.id;
 				value = fvalue;
+				image_alpha = alpha;
 				variable_instance_set(frontID,"myCoin",self.id);
 			}
 			
@@ -148,6 +163,7 @@ switch(argument0) {
 			OrigScale = 0.3;
 			spCardFront = frontID;
 			myCoin = coinID;
+			image_alpha = alpha;
 			variable_instance_set(frontID,"spCardBack",self.id);
 		}
 	break;
