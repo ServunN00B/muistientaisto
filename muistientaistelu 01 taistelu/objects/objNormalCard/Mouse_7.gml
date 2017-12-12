@@ -20,6 +20,36 @@ if (onPoint) {
 					
 						sprite_index = turnAnim;
 						depth = depth -1;
+					alarm_set(1, 10);
+					scaling = true;
+					alarm_set(4, 1);
+					//sprite_index = self.varSprite;
+			
+					objArenaController.instID = 0;
+					objArenaController.canTurn = false;
+					self.turned = false;
+					alarm_set(0,objArenaController.flipTimer * room_speed);
+				} else {
+					objNormalCard.clicks += 1;
+					if (self.cardValue = "0") {
+						if objSound.sound {
+							audio_play_sound(souCardClickFail, 1, false);
+							audio_is_played = true;
+						}
+					}
+					if (clicks = 1) {
+						if (!audio_is_played) {
+							if objSound.sound {
+								audio_play_sound(souCardClick, 1, false);
+								audio_sound_gain(souCardClick, 1, 0);
+							}
+						}
+						objArenaController.isPair = self.cardValue;
+						objArenaController.instID = id;
+					}
+					// Changing sprite
+					if (self.varSprite) {
+						sprite_index = turnAnim;
 						alarm_set(1, 10);
 						scaling = true;
 						alarm_set(4, 1);
@@ -52,13 +82,16 @@ if (onPoint) {
 				
 							// Turning cards back
 							if (objNormalCard.clicks > 1) {
-				
 								// Incase of a pair, do not turn back
 								if(self.cardValue = objArenaController.isPair) {
 									if (!audio_is_played) {
 										audio_play_sound(souPair, 1, false);	
 									}
-								
+							// Incase of a pair, do not turn back
+							if(self.cardValue = objArenaController.isPair) {
+								if (!audio_is_played && objSound.sound) {
+									audio_play_sound(souPair, 1, false);	
+								}
 									if (objPerSave.AI = true && objPerSave.isTurn == 2)
 									{
 										effect_create_above(ef_ring,self.x,self.y,10,c_yellow);
@@ -109,7 +142,6 @@ if (onPoint) {
 
 									// When all the pairs are found, reset timer and deal new cards
 									if (objNormalCard.pairs > 5) {
-							
 										objNormalCard.canClick = false;
 									}
 								// End finding pairs
@@ -117,6 +149,13 @@ if (onPoint) {
 									if (!audio_is_played) {
 										audio_play_sound(souCardClick, 1, false);	
 									}
+									objNormalCard.canClick = false;
+								}
+							// End finding pairs
+							} else {
+								if (!audio_is_played && objSound.sound) {
+									audio_play_sound(souCardClick, 1, false);	
+								}
 
 									alarm_set(0, objArenaController.flipTimer * room_speed);
 									if (instance_exists(objAIdriver)) {objAIdriver.normalAlarm0 = 1;}
