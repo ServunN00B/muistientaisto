@@ -7,8 +7,10 @@ if (self.canClick) {
 			if (objArenaController.canTurn) {
 				self.turned = true;
 				if (objNormalCard.clicks = 0 && self.cardValue = "0") {
-					audio_play_sound(souCardClickFail, 1, false);
-					audio_sound_gain(souCardClickFail, 1, 0);
+					if objSound.sound {
+						audio_play_sound(souCardClickFail, 1, false);
+						audio_sound_gain(souCardClickFail, 1, 0);
+					}
 					
 					sprite_index = sprTurnAnim;
 					alarm_set(1, 10);
@@ -23,12 +25,17 @@ if (self.canClick) {
 				} else {
 					objNormalCard.clicks += 1;
 					if (self.cardValue = "0") {
-						audio_play_sound(souCardClickFail, 1, false);
-						audio_is_played = true;
+						if objSound.sound {
+							audio_play_sound(souCardClickFail, 1, false);
+							audio_is_played = true;
+						}
 					}
 					if (clicks = 1) {
 						if (!audio_is_played) {
-							audio_play_sound(souCardClick, 1, false);
+							if objSound.sound {
+								audio_play_sound(souCardClick, 1, false);
+								audio_sound_gain(souCardClick, 1, 0);
+							}
 						}
 						objArenaController.isPair = self.cardValue;
 						objArenaController.instID = id;
@@ -46,7 +53,7 @@ if (self.canClick) {
 				
 							// Incase of a pair, do not turn back
 							if(self.cardValue = objArenaController.isPair) {
-								if (!audio_is_played) {
+								if (!audio_is_played && objSound.sound) {
 									audio_play_sound(souPair, 1, false);	
 								}
 								
@@ -105,7 +112,7 @@ if (self.canClick) {
 								}
 							// End finding pairs
 							} else {
-								if (!audio_is_played) {
+								if (!audio_is_played && objSound.sound) {
 									audio_play_sound(souCardClick, 1, false);	
 								}
 

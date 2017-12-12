@@ -3,7 +3,11 @@
 if (objSound.sound) {
 	objSound.sound = false;
 	sprite_index = sprVolumeOff;
+	
+	audio_play_sound(souButton, 1, false);
 } else {
 	objSound.sound = true;
 	sprite_index = sprVolumeOn;
+	
+	audio_play_sound(souButton, 1, false);
 }

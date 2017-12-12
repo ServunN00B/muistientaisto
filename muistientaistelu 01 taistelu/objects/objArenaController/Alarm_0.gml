@@ -30,7 +30,12 @@ if (objPerSave.debugMod) {
 		var random_sound_theme = irandom(array_length_1d(objSoundController.sound_theme_array)-1);
 		objSoundController.sound_theme = objSoundController.sound_theme_array[random_sound_theme];
 		audio_play_sound(objSoundController.sound_theme, 1, true);
-		audio_sound_gain(objSoundController.sound_theme, 0.3, 0);
+		if objMusic.music {
+			audio_sound_gain(objSoundController.sound_theme, 0.3, 0);
+		}
+		else {
+			audio_sound_gain(objSoundController.sound_theme, 0, 0);
+		}
 	}
 	
 	alarm_set(4,room_speed*turnTimer-3*room_speed);

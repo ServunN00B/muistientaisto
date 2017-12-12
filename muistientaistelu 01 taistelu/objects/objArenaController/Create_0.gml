@@ -100,7 +100,12 @@ if (ChoosingPlayer = 1) {
 	
 } else {
 	if audio_is_playing(souBattle1) {
-		audio_sound_gain(souBattle1, 0, 2*1000);
+		if objMusic.music {
+			audio_sound_gain(souBattle1, 0, 2*1000);
+		}
+		else {
+			audio_sound_gain(souBattle1, 0, 0);
+		}
 		alarm_set(6,room_speed*2);
 	}
 	drawSelect = false;

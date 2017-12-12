@@ -44,7 +44,12 @@ if (ChoosingPlayer = 1) {
 }
 	scrSpeCardSelectDeal();
 } else {
-	audio_sound_gain(objSoundController.sound_pretheme, 0, 1000*preturnTimer);
+	if objMusic.music {
+		audio_sound_gain(objSoundController.sound_pretheme, 0, 1000*preturnTimer);
+	}
+	else {
+		audio_sound_gain(objSoundController.sound_pretheme, 0, 0);
+	}
 	
 	drawSelect = false;
 	// Start pre turn timer
