@@ -1,12 +1,15 @@
 /// @description Normalcard variables
+turnAnim = noone;
+turnAnimRe = noone;
 canClick = true;
 clicks = 0;
 found = false;
 pairs = 0;
 turned = false;
-self.image_xscale = image_xscale / 5.8;
-self.image_yscale = image_yscale / 5.8;
+self.image_xscale = image_xscale / 7;
+self.image_yscale = image_yscale / 7;
 OrigScale = self.image_xscale;
+origDepth = depth;
 OrigX = self.x;
 OrigY = self.y;
 scaleChange = 1.1; //Scale multiplier, 1 normal, < 1 is smaller, >1 is larger

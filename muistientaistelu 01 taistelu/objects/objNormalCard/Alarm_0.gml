@@ -1,7 +1,7 @@
 /// @description Cooldown between turning cards
 
 if (found = false) {
-	self.sprite_index = sprTurnAnimReverse;
+	self.sprite_index = turnAnimRe;
 	alarm_set(3, 10);
 				scaling = true;
 				alarm_set(4, 1);

@@ -255,11 +255,35 @@
             }
         },
         {
+            "Key": "18797da2-8b15-415a-8f3e-4a02da7d93f9",
+            "Value": {
+                "id": "9061e659-1008-405e-9529-f148b2eb86a9",
+                "resourcePath": "sprites\\sprAnimStoneTurn\\sprAnimStoneTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18e3e4ce-f5be-4d1a-9694-e12c45ba2daa",
             "Value": {
                 "id": "29096b72-3ce9-4731-b1e4-8533883b58cc",
                 "resourcePath": "objects\\objTitle\\objTitle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "19444008-d2e0-4c2d-b137-0db785488032",
+            "Value": {
+                "id": "eb8ead67-8294-4a06-b0bd-c2b60bb71ed6",
+                "resourcePath": "sprites\\sprAnimBananaTurnRe\\sprAnimBananaTurnRe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1979c309-77dd-4fef-bd97-07f2ff4becbb",
+            "Value": {
+                "id": "bb982347-a393-43aa-9e7e-4f185890d0c4",
+                "resourcePath": "sprites\\sprAnimSwordTurn\\sprAnimSwordTurn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -495,6 +519,14 @@
             }
         },
         {
+            "Key": "35142047-3dd4-4542-a26d-cd0b36db54dc",
+            "Value": {
+                "id": "56c2fa61-a7c3-4f7a-845a-aebe9c110db9",
+                "resourcePath": "sprites\\sprAnimMaceTurn\\sprAnimMaceTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "355bbd81-a0a7-4724-87e4-0c96b2a6c7c2",
             "Value": {
                 "id": "c777807b-b40c-43f7-ac6b-54c924b59c7f",
@@ -532,6 +564,14 @@
                 "id": "9e1954b5-4097-4385-97df-7c1036c3f46e",
                 "resourcePath": "sprites\\sprDefence\\sprDefence.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "38d69d1c-50c0-4027-8ec0-7a8d69be387a",
+            "Value": {
+                "id": "e999fc6a-7b74-4908-8cb1-f71688c1d4b2",
+                "resourcePath": "views\\38d69d1c-50c0-4027-8ec0-7a8d69be387a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -588,6 +628,22 @@
                 "id": "d074fabd-b18a-470e-ad3c-46c6279b0f96",
                 "resourcePath": "sprites\\sprAttackCards\\sprAttackCards.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "41043849-1e74-4b86-80d4-ab385438f7e8",
+            "Value": {
+                "id": "e6412db1-eed8-4e06-9a2d-489448961aa5",
+                "resourcePath": "sprites\\sprAnimBarkTurnRe\\sprAnimBarkTurnRe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "422ef6d5-b2e8-4161-900c-9d0d19b00c3f",
+            "Value": {
+                "id": "d818d64d-a3cf-4a11-b70a-111278458256",
+                "resourcePath": "views\\422ef6d5-b2e8-4161-900c-9d0d19b00c3f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -847,10 +903,26 @@
             }
         },
         {
+            "Key": "56a71709-6cb8-4ba0-8604-da0bee67b4ee",
+            "Value": {
+                "id": "73a9dec0-2854-495d-8e7c-431cdd6b3212",
+                "resourcePath": "views\\56a71709-6cb8-4ba0-8604-da0bee67b4ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "57630c4e-23c3-48c4-a372-0ce423382cb5",
             "Value": {
                 "id": "63a6dee6-7f1c-4f8d-b554-ce60d15e9837",
                 "resourcePath": "views\\57630c4e-23c3-48c4-a372-0ce423382cb5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "58bd7670-6312-445d-b514-ee486a83e078",
+            "Value": {
+                "id": "bb7d5e5a-0c21-46d0-83e8-7dec469c9311",
+                "resourcePath": "views\\58bd7670-6312-445d-b514-ee486a83e078.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -860,6 +932,14 @@
                 "id": "527b6d65-0dcb-4b76-9474-568270e08259",
                 "resourcePath": "sounds\\souGruntAttack6\\souGruntAttack6.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5b12a537-cb5e-4990-a6bc-4d0d189aa478",
+            "Value": {
+                "id": "9ba70a79-1883-4020-9a85-701c35e0c1ac",
+                "resourcePath": "views\\5b12a537-cb5e-4990-a6bc-4d0d189aa478.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -963,6 +1043,14 @@
             "Value": {
                 "id": "2bd1b944-4d5e-43eb-a228-6a5581d5649c",
                 "resourcePath": "sprites\\sprAnimPlayerAttackMace\\sprAnimPlayerAttackMace.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "64e96f86-54de-4d57-a663-bd8ae556eef2",
+            "Value": {
+                "id": "7a5dc427-f20b-4112-8368-cbe7f1da8aa3",
+                "resourcePath": "sprites\\sprAnimSwordTurnRe\\sprAnimSwordTurnRe.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1087,6 +1175,14 @@
             }
         },
         {
+            "Key": "72564cff-c823-4e34-8e89-80048b715f0a",
+            "Value": {
+                "id": "cfaa6feb-87a1-428c-bf9a-3f3b4c81c963",
+                "resourcePath": "views\\72564cff-c823-4e34-8e89-80048b715f0a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "72c1f355-c90b-4935-963f-60cfed1d002d",
             "Value": {
                 "id": "85516ae1-099e-49a9-a2be-67bcb9a38fe0",
@@ -1135,6 +1231,14 @@
             }
         },
         {
+            "Key": "77814355-3730-40d9-9af6-5fa4b706c5d9",
+            "Value": {
+                "id": "0fd46458-0412-438f-9e85-87d21520deb9",
+                "resourcePath": "sprites\\sprAnimShieldTurn\\sprAnimShieldTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "77ae2ad2-aa17-45b8-9832-d567e1041145",
             "Value": {
                 "id": "8f74fbe9-9192-49d6-acfd-de6ccea9721d",
@@ -1148,6 +1252,14 @@
                 "id": "d64d76b3-cd67-4fea-9725-2eea2a9dec3a",
                 "resourcePath": "objects\\objPL1HP\\objPL1HP.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "787e1935-37bc-4eea-9a49-309ad84b8858",
+            "Value": {
+                "id": "a132e1a3-414f-47b3-82e3-810d9b003bfa",
+                "resourcePath": "sprites\\sprScreenBlack\\sprScreenBlack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1311,6 +1423,14 @@
             }
         },
         {
+            "Key": "87eb5f10-7883-4e7f-9ee9-5c9a537efda3",
+            "Value": {
+                "id": "21c9e6d5-14c5-48fa-a886-62afa8eca70f",
+                "resourcePath": "sprites\\sprAnimKnifeTurn\\sprAnimKnifeTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "886eef84-e57e-4368-94bf-817001cd8c5b",
             "Value": {
                 "id": "2e000b19-bb74-4e79-95af-2b3ca6502a1b",
@@ -1364,6 +1484,14 @@
                 "id": "b8cb4c13-0ff0-4c16-b656-c43310c226c9",
                 "resourcePath": "objects\\objSpeCardDone\\objSpeCardDone.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c847803-9a07-4247-b040-beb8b8d6f590",
+            "Value": {
+                "id": "07276523-f18f-4017-8d20-ecaad2252d97",
+                "resourcePath": "sprites\\sprAnimStoolTurnRe\\sprAnimStoolTurnRe.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1487,6 +1615,14 @@
             }
         },
         {
+            "Key": "9ceca1ce-e74f-4b78-97db-cbcec02e9ec4",
+            "Value": {
+                "id": "aca83448-f514-4a0d-8701-bb6747c08722",
+                "resourcePath": "sprites\\sprAnimStoolTurn\\sprAnimStoolTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d24fa96-8634-49fa-995c-9c138088c7fb",
             "Value": {
                 "id": "aea3fa2a-6a09-4830-a3e7-0f9de7dba545",
@@ -1500,6 +1636,14 @@
                 "id": "f51fd1a4-9dbb-4741-8f1c-da2e23c2f148",
                 "resourcePath": "scripts\\scrAiCheckMemory\\scrAiCheckMemory.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9de40490-7dd2-4beb-8e70-5155c143061f",
+            "Value": {
+                "id": "6830adec-3a39-451e-84e4-f59fe4367781",
+                "resourcePath": "sprites\\sprAnimBananaTurn\\sprAnimBananaTurn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1655,6 +1799,14 @@
             }
         },
         {
+            "Key": "af6bba1f-3d6e-4378-a714-c90f18831ef5",
+            "Value": {
+                "id": "8635a821-4f2e-4f75-8800-f171879ef808",
+                "resourcePath": "views\\af6bba1f-3d6e-4378-a714-c90f18831ef5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b02c9748-3c83-44f6-9c1d-633583313362",
             "Value": {
                 "id": "d05f46ef-0dd9-40b7-a4cb-eeb870655cad",
@@ -1735,6 +1887,14 @@
             }
         },
         {
+            "Key": "bae38c9e-bf41-4fe8-99c9-64f3841af16c",
+            "Value": {
+                "id": "67509b4d-418b-46dc-8b0d-51a65e9c3b8a",
+                "resourcePath": "sprites\\sprAnimBarkTurn\\sprAnimBarkTurn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "baf8e72c-304d-4066-b022-fb7076d4774b",
             "Value": {
                 "id": "90c48ef2-736a-458a-b1aa-633e0f207559",
@@ -1791,11 +1951,27 @@
             }
         },
         {
+            "Key": "c396d83e-f631-4f88-b0d3-65ad8eb7c95b",
+            "Value": {
+                "id": "5af0796e-fd0e-43f1-938f-59093968d99b",
+                "resourcePath": "sprites\\sprAnimShieldTurnRe\\sprAnimShieldTurnRe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6208dba-ee4e-45e7-bc1d-81ad9d629f09",
             "Value": {
                 "id": "1a445c4b-9f89-4e2b-acc5-e00ee33ed834",
                 "resourcePath": "scripts\\scrAiSpecialCards\\scrAiSpecialCards.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c6c21732-2e8d-4e3e-a985-4c29ce2f5494",
+            "Value": {
+                "id": "b2ac10d1-d325-4e0f-93d5-cc0fad638b38",
+                "resourcePath": "sprites\\sprAnimKnifeTurnRe\\sprAnimKnifeTurnRe.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1983,6 +2159,14 @@
             }
         },
         {
+            "Key": "df76f9b4-352f-43bd-8427-61c62c084af9",
+            "Value": {
+                "id": "399d41cc-b9e7-4286-a871-bd2e6abd32bc",
+                "resourcePath": "sprites\\sprAnimStoneTurnRe\\sprAnimStoneTurnRe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e31c908b-340e-4ae6-b463-7bd36d357a97",
             "Value": {
                 "id": "809809c6-3a17-4312-adcc-65bc8fc421ad",
@@ -2004,6 +2188,14 @@
                 "id": "99159fcf-f7c9-49f3-b494-15e350eb3866",
                 "resourcePath": "sprites\\sprDouble\\sprDouble.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e37ad459-0164-4845-8dc1-65727551831c",
+            "Value": {
+                "id": "c57792b3-4113-42d7-b86e-fc24dc201cab",
+                "resourcePath": "views\\e37ad459-0164-4845-8dc1-65727551831c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2243,6 +2435,14 @@
             "Value": {
                 "id": "bdea9b7a-b814-458f-b7dd-7d93e5d8094e",
                 "resourcePath": "sprites\\sprShip\\sprShip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc0e5615-af1f-4b9a-8548-0b4efdf0975e",
+            "Value": {
+                "id": "4fadc39b-7428-41b1-91e3-5efbbc46dbbd",
+                "resourcePath": "sprites\\sprAnimMaceTurnRe\\sprAnimMaceTurnRe.yy",
                 "resourceType": "GMSprite"
             }
         },

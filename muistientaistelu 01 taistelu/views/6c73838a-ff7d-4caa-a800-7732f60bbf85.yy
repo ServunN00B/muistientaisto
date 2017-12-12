@@ -4,9 +4,9 @@
     "mvc": "1.1",
     "name": "6c73838a-ff7d-4caa-a800-7732f60bbf85",
     "children": [
-        "9a8310ab-ad29-4aa7-9091-d17b8a1b89e8",
-        "77ae2ad2-aa17-45b8-9832-d567e1041145",
-        "d9e08677-a8ab-41d0-b38d-2a0342a4b257"
+        "56a71709-6cb8-4ba0-8604-da0bee67b4ee",
+        "e37ad459-0164-4845-8dc1-65727551831c",
+        "38d69d1c-50c0-4027-8ec0-7a8d69be387a"
     ],
     "filterType": "GMSprite",
     "folderName": "groupDefend",

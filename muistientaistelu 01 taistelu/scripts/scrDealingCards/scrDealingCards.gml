@@ -22,22 +22,38 @@
 						case 0:
 							// Miss, "rock", "banana", "beer"
 							var rand = floor(random_range(1,3));
-							if (rand = 1) {	varSprite = spriteStone; } else { varSprite = sprBanana;}
+							if (rand = 1) {	
+								varSprite = spriteStone; 
+								turnAnim = sprAnimStoneTurn;
+								turnAnimRe = sprAnimStoneTurnRe;
+								
+							} else { 
+								varSprite = sprBanana;
+								turnAnim = sprAnimBananaTurn;
+								turnAnimRe = sprAnimBananaTurnRe;
+								
+							}
 							cardValue = "0";
 							break;
 						case 1:
 							// Knife
 							varSprite = sprKnife;
+							turnAnim = sprAnimKnifeTurn;
+							turnAnimRe = sprAnimKnifeTurnRe;
 							cardValue = "1";
 							break;
 						case 2:
 							// Sword
 							varSprite = sprSword;
+							turnAnim = sprAnimSwordTurn;
+							turnAnimRe = sprAnimSwordTurnRe;
 							cardValue = "2";
 							break;
 						case 3:
 							// Mace
 							varSprite = sprMace;
+							turnAnim = sprAnimMaceTurn;
+							turnAnimRe = sprAnimMaceTurnRe;
 							cardValue = "3";
 							break;
 					} // End of switch case
@@ -47,22 +63,36 @@
 						case 0:
 							// Miss, "rock", "banana", "beer"
 							var rand = floor(random_range(1,3));
-							if (rand = 1) {	varSprite = spriteStone; } else { varSprite = sprBanana;}
+							if (rand = 1) {	
+								varSprite = spriteStone; 
+								turnAnim = sprAnimStoneTurn;
+								turnAnimRe = sprAnimStoneTurnRe;
+							} else { 
+								varSprite = sprBanana;
+								turnAnim = sprAnimBananaTurn;
+								turnAnimRe = sprAnimBananaTurnRe;
+							}
 							cardValue = "0";
 							break;
 						case 1:
 							// Bark
 							varSprite = sprBark;
+							turnAnim = sprAnimBarkTurn;
+							turnAnimRe = sprAnimBarkTurnRe;
 							cardValue = "1";
 							break;
 						case 2:
 							// Stool
 							varSprite = sprStool;
+							turnAnim = sprAnimStoolTurn;
+							turnAnimRe = sprAnimStoolTurnRe;
 							cardValue = "2";
 							break;
 						case 3:
 							// Shield
 							varSprite = sprShield;
+							turnAnim = sprAnimShieldTurn;
+							turnAnimRe = sprAnimShieldTurnRe;
 							cardValue = "3";
 							break;
 					}

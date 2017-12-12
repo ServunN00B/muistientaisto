@@ -7,6 +7,7 @@ if (argument0 > 0) { e = variable_instance_get(argument1, "spot")} //
 var vuorossa;
 var vuorossaHP;
 var vuorCoin;
+var alpha = 1;
 if (objPerSave.isTurn = 1) {
 	vuorossa = objPerSave.dsP1SpecialCards;
 	vuorossaHP = objPerSave.p1Health;
@@ -24,7 +25,6 @@ switch(argument0) {
 			var frontID = noone;
 			var coinID = noone;
 			var fvalue = noone;
-			var alpha = 1;
 			// Creating card front
 			with(instance_create_depth(a+j*(c + f),b, -10, objSpecialCard)) {
 				sID = ds_list_find_value(vuorossa,objArenaController.j);
