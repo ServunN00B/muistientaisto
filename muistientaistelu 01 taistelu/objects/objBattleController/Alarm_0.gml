@@ -347,6 +347,7 @@ if (objPerSave.p2Health > objPerSave.basicStartHealth) {
 //Gameover screen?
 if(p1HP <= 0)
 {
+	audio_stop_all();
 	show_message("Player 1 is dead! Game Over!");
 	objPerSave.firstTurn = true;
 	ds_list_clear(objPerSave.p1Score);
@@ -366,6 +367,7 @@ if(p1HP <= 0)
 }
 else if(p2HP <= 0)
 {
+	audio_stop_all();
 	show_message("Player 2 is dead! Game Over!");
 	objPerSave.firstTurn = true;
 	ds_list_clear(objPerSave.p1Score);

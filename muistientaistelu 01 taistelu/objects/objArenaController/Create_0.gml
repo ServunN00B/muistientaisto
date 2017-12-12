@@ -1,4 +1,6 @@
 /// @description In the begining of a battle
+countdown = 1;
+
 if (objPerSave.debugMod) {
 	instance_create_depth(1300,30,-10,restart);
 }
@@ -87,6 +89,7 @@ aikaJ = -1;
 firstDeal = true;
 shake = false;
 if(objPerSave.firstTurn){
+	alarm_set(4,room_speed*SCardSelectTimer);
 	//Starting count down on special card selection
 	alarm_set(2,room_speed*SCardSelectTimer); 
 	//SpeCard choosing variables
@@ -95,9 +98,12 @@ if(objPerSave.firstTurn){
 	scrSpeCardSelectDeal();
 	
 } else {
+	if audio_is_playing(souBattle1) {
+		audio_sound_gain(souBattle1, 0, 2*1000);
+		alarm_set(6,room_speed*2);
+	}
 	drawSelect = false;
 	alarm_set(0,room_speed*preturnTimer);
-	audio_play_sound(sound0,1,true);
 	// Suffling and dealing cards in grid
 	scrDealingCards();
 }

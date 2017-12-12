@@ -18,6 +18,7 @@ if (p1EndPlace==p1place)
 			sprite_index = objBattleController.p2sprite;
 		}
 	
+		alarm_set(4,6);
 	}
 
 

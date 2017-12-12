@@ -27,6 +27,9 @@ if (self.canClick) {
 						audio_is_played = true;
 					}
 					if (clicks = 1) {
+						if (!audio_is_played) {
+							audio_play_sound(souCardClick, 1, false);
+						}
 						objArenaController.isPair = self.cardValue;
 						objArenaController.instID = id;
 					}

@@ -21,6 +21,7 @@ p2OrigPlace = objP2Fight.x;
 spriteStep = 5;
 firstSprite = true;
 
+audio_stop_sound(objSoundController.sound_theme);
 audio_play_sound(souBattle1, 1, true);
 audio_sound_gain(souBattle1, 0, 0);
 audio_sound_gain(souBattle1, 1, 1*1000);

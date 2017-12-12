@@ -1,5 +1,7 @@
 /// @description Start of turn alarm
 
+objArenaController.countdown = 1;
+
 instance_destroy(objBackFlash);
 canTurn = true;
 if (instance_exists(objAIdriver)) {objAIdriver.arenaAlarm0 = 0;}
@@ -16,7 +18,7 @@ if (objPerSave.debugMod) {
 } else {
 	
 	if (objPerSave.isAttacking != objPerSave.isTurn) {
-		alarm_set(3,room_speed*turnTimer-2*room_speed);
+		alarm_set(5,room_speed*turnTimer-2*room_speed);
 	}
 	else {
 		if audio_is_playing(objSoundController.sound_pretheme) {

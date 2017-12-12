@@ -1,4 +1,6 @@
 /// @description Specialcard choosing time
+objArenaController.countdown = 1;
+
 instance_destroy(objBlock);
 instance_destroy(objSpeCardSelect);
 instance_destroy(objSpecialCardBack);
@@ -24,15 +26,18 @@ while(ds_list_size(vuorossaK) < 6) {
 //Which Player is Choosing
 if (ChoosingPlayer = objPerSave.isAttacking) {
 	if (ChoosingPlayer = 1) { ChoosingPlayer = 2; } else { ChoosingPlayer = 1; }
+	
+	alarm_set(4,room_speed*SCardSelectTimer-3*room_speed);
+	
 	//Starting count down on special card selection for other player
 	alarm_set(2,room_speed*SCardSelectTimer);
 	scrSpeCardSelectDeal();
 } else {
+	audio_sound_gain(objSoundController.sound_pretheme, 0, 1000*preturnTimer);
+	
 	drawSelect = false;
 	// Start pre turn timer
 	alarm_set(0,room_speed*preturnTimer); 
-	//Play background music
-	audio_play_sound(sound0,1,true);
 	
 	// Suffling and dealing cards in grid
 	scrDealingCards();
