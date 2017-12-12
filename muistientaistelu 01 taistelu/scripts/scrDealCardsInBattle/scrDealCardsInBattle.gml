@@ -8,7 +8,7 @@ var erikoisLista;
 var onPareja = false;
 for (var k = 1; k < 3; k += 1) {
 	if (k>1) {
-		vuorossa = objPerSave.p1Score;
+		vuorossa = objPerSave.p2Score;
 		vuorossaParit = objPL2CardHolder;
 		if (!ds_list_empty(vuorossa)) {
 			scoreNum = ds_list_size(vuorossa);
