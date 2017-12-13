@@ -1,13 +1,11 @@
-Title, Acoustic chicken logo, Team members, voice actors, special thanks to, Pelifarmi logo.
 
-Team members currently are shown two at the time, starting from Heikki and Matti, then (GATE 1->) Susanna and Jarmo, (GATE2->) Simo and Kristian. Please announce your role in team.
 
 -- TEAM MEMBERS --
 
 Heikki Kullas
 Game design & Sounds
 
-Matti H‰kkinen
+Matti H√§kkinen
 Programming
 
 Jarmo Kurra
@@ -25,20 +23,20 @@ Programming
 
 -- VOICE ACTORS --
 Eleonoora Kalliokoski
-Jari R‰s‰nen
+Jari R√§s√§nen
 Ilpo Alatalo
 Marko Rantanen
 Robin Blikst
-Tuulia V‰h‰sarja
+Tuulia V√§h√§sarja
 
 -- SPECIAL THANKS TO --
 
 Mikko Ruotsalainen
-Tapio Ter‰v‰
-Tatu Meril‰inen
+Tapio Ter√§v√§
+Tatu Meril√§inen
 Ville Helttunen
 Kosti Pasanen
-Santeri Sirviˆ
+Santeri Sirvi√∂
 Samuli Karjalainen
 
 -- FONTS USED --

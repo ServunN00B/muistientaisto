@@ -303,14 +303,6 @@
             }
         },
         {
-            "Key": "1a1667dc-bc70-4c94-b6de-c80cee4175f4",
-            "Value": {
-                "id": "fd6782e2-13c9-430c-881e-06537866053c",
-                "resourcePath": "datafiles_yy\\credits.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "1a59df38-c763-4dfe-8801-3a0d0a565a85",
             "Value": {
                 "id": "b0e24445-48d7-4f6b-88c3-5c67d3830f43",
@@ -380,6 +372,14 @@
                 "id": "5f26f89e-4ffe-437f-807b-3d1661291688",
                 "resourcePath": "objects\\objP2Fight\\objP2Fight.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2171c5cb-15ad-4731-940d-26e0be60ae66",
+            "Value": {
+                "id": "3c06bb83-03fd-4ec2-b4e6-c8debc964ddc",
+                "resourcePath": "datafiles_yy\\credits.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2139,6 +2139,14 @@
             "Value": {
                 "id": "9223f55b-03c8-45e4-b570-fbf4c68e6ffe",
                 "resourcePath": "sprites\\sprAnimPlayerDefendShield\\sprAnimPlayerDefendShield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cef607ac-c031-47cd-ae54-465d62a19acd",
+            "Value": {
+                "id": "a83bd794-b184-448a-ac94-a68bd8dc00e5",
+                "resourcePath": "sprites\\sprChickenLogo\\sprChickenLogo.yy",
                 "resourceType": "GMSprite"
             }
         },

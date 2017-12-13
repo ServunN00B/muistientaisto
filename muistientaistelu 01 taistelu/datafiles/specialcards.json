@@ -1,8 +1,8 @@
-﻿[
+[
  {
    "ID": 0,
    "NAME": "Chicken shield",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "defensive",
    "PRIORITY": 1,
    "SPRITE": "sprChicken",
@@ -12,7 +12,7 @@
  {
    "ID": 1,
    "NAME": "Double whammy",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "offensive",
    "PRIORITY": 1,
    "SPRITE": "sprDouble",
@@ -22,7 +22,7 @@
  {
    "ID": 2,
    "NAME": "The squire",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "offensive",
    "PRIORITY": 1,
    "SPRITE": "sprSquire",
@@ -32,7 +32,7 @@
  {
    "ID": 3,
    "NAME": "Lady Ingrid",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "defensive",
    "PRIORITY": 1,
    "SPRITE": "sprLady",
@@ -42,7 +42,7 @@
  {
    "ID": 4,
    "NAME": "Weak spot",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "offensive",
    "PRIORITY": 0,
    "SPRITE": "sprWeakspot",
@@ -52,7 +52,7 @@
  {
    "ID": 5,
    "NAME": "Gruel",
-   "VALUE": 2,
+   "VALUE": 1,
    "TYPE": "offensive",
    "PRIORITY": -1,
    "SPRITE": "sprGruel",
@@ -62,7 +62,7 @@
  {
    "ID": 6,
    "NAME": "Payback",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "defensive",
    "PRIORITY": 0,
    "SPRITE": "sprPayback",
@@ -72,7 +72,7 @@
  {
    "ID": 7,
    "NAME": "Tribute",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "defensive",
    "PRIORITY": 1,
    "SPRITE": "sprTribute",
@@ -82,7 +82,7 @@
  {
    "ID": 8,
    "NAME": "Scout",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "neutral",
    "PRIORITY": 0,
    "SPRITE": "sprScout",
@@ -92,7 +92,7 @@
  {
    "ID": 9,
    "NAME": "Bomb",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "neutral",
    "PRIORITY": -1,
    "SPRITE": "sprBomb",
@@ -102,7 +102,7 @@
  {
    "ID": 10,
    "NAME": "Poison",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "offensive",
    "PRIORITY": 0,
    "SPRITE": "sprPoison",
@@ -112,7 +112,7 @@
  {
    "ID": 11,
    "NAME": "Chain",
-   "VALUE": 3,
+   "VALUE": 2,
    "TYPE": "offensive",
    "PRIORITY": 0,
    "SPRITE": "sprChain",
@@ -122,7 +122,7 @@
  {
    "ID": 12,
    "NAME": "Time elixir",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "neutral",
    "PRIORITY": 0,
    "SPRITE": "sprTime",
@@ -132,7 +132,7 @@
  {
    "ID": 13,
    "NAME": "Mist",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "offensive",
    "PRIORITY": 0,
    "SPRITE": "sprMist",
@@ -142,7 +142,7 @@
  {
    "ID": 14,
    "NAME": "Thief",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "defensive",
    "PRIORITY": -1,
    "SPRITE": "sprThief",
@@ -152,7 +152,7 @@
  {
    "ID": 15,
    "NAME": "Curse",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "offensive",
    "PRIORITY": 0,
    "SPRITE": "sprCurse",
@@ -162,7 +162,7 @@
  {
    "ID": 16,
    "NAME": "Vortex",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "offensive",
    "PRIORITY": 2,
    "SPRITE": "sprVortex",
@@ -172,7 +172,7 @@
  {
    "ID": 17,
    "NAME": "Catapult",
-   "VALUE": 5,
+   "VALUE": 3,
    "TYPE": "offensive",
    "PRIORITY": 2,
    "SPRITE": "sprCatapult",
