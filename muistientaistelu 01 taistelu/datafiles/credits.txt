@@ -5,10 +5,11 @@
 Heikki Kullas
 Game design & Sounds
 
-Matti Häkkinen
+Matti Haekkinen
 Programming
 
 Jarmo Kurra
+UI, Art & Animation
 
 Susanna Impola
 Art & Animation
@@ -23,17 +24,17 @@ Programming
 
 -- VOICE ACTORS --
 Eleonoora Kalliokoski
-Jari Räsänen
+Jari Raesaenen
 Ilpo Alatalo
 Marko Rantanen
 Robin Blikst
-Tuulia Vähäsarja
+Tuulia Vaehaesarja
 
 -- SPECIAL THANKS TO --
 
 Mikko Ruotsalainen
-Tapio Terävä
-Tatu Meriläinen
+Tapio Teraevae
+Tatu Merilaeinen
 Ville Helttunen
 Kosti Pasanen
 Santeri Sirviö
