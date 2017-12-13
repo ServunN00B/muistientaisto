@@ -166,7 +166,11 @@ if (onPareja) {
 
 if (erikoisKayt) {
 	var frontID = noone;
-		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCard)) {
+	var kk = 150;
+	if (objPerSave.isTurn = 1) {
+		kk = -55;
+	}
+		with(instance_create_layer( vuorossaParit.x+kk, vuorossaParit.y + 250, "Instances", objSpecialCard)) {
 			sID = vuorossaErikois;
 			if (objPerSave.debugMod) {
 				show_message(string(sID));
@@ -190,7 +194,7 @@ if (erikoisKayt) {
 		}
 			
 		//Creating cardback
-		with(instance_create_layer( vuorossaParit.x, vuorossaParit.y + 300, "Instances", objSpecialCardBack)){
+		with(instance_create_layer( vuorossaParit.x+kk, vuorossaParit.y + 250, "Instances", objSpecialCardBack)){
 			switch(string(global.specialCardData[# vuorossaErikois, SpecialEnum.TYPE])) {
 				case "offensive":
 					sprite_index = sprOffensive;

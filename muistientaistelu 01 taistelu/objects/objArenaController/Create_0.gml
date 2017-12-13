@@ -1,4 +1,5 @@
 /// @description In the begining of a battle
+depth = -1;
 countdown = 1;
 
 if (objPerSave.debugMod) {
