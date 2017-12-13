@@ -11,7 +11,7 @@ while (!file_text_eof(teksti)){
 
 file_text_close(teksti);
 textRows = ds_list_size(creds);
-totalTime = objMenuBackground.onePicTime * 2;
+totalTime = objMenuBackground.onePicTime * 2 - 120;
 logo = true;
 image_alpha = 1;
 alarm_set(0,60);
