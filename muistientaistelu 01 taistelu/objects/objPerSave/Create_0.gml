@@ -41,7 +41,7 @@ debugMod = false;
 	
 	
 //Checking for Options ini for modified options
-//scrOptionsini();
+scrOptionsini();
 p1StartHealth = basicStartHealth;
 p2StartHealth = basicStartHealth;
 p1Health = basicStartHealth;

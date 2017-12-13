@@ -15,10 +15,10 @@ if (file_exists(working_directory+"\options.ini")) {
 			objPerSave.basicStartHealth = ini_read_real("basic","hp", 20);
 		
 		//Turn modifiers
-			objPerSave.SCardSelectTimer = ini_read_real("turn","SpecialSelectTime", 15);
+			objPerSave.SCardSelectTimer = ini_read_real("turn","SpecialSelectTime", 60);
 			objPerSave.preturnTimer = ini_read_real("turn","PreTurnTime", 3);
 			objPerSave.turnTimer = ini_read_real("turn","TurnTime", 20);
-			objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
+			objPerSave.flipTimer = ini_read_real("turn","FlipTime", 0.5);
 			
 		//Reading string to array
 			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 50, 100, 0");
@@ -75,13 +75,13 @@ if (file_exists(working_directory+"\options.ini")) {
 		ini_open("options.ini");
 	//Writing options
 		//Basic
-		ini_write_real("basic","hp", 40);
+		ini_write_real("basic","hp", 20);
 		
 		//Turn modifiers
-		ini_write_real("turn","SpecialSelectTime", 15);
+		ini_write_real("turn","SpecialSelectTime", 60);
 		ini_write_real("turn","PreTurnTime", 3);
 		ini_write_real("turn","TurnTime", 20);
-		ini_write_real("turn","FlipTime", 1);	
+		ini_write_real("turn","FlipTime", 0.5);	
 		
 		//AI modifiers
 		ini_write_real("AI","aiDifficultyArray", "20, 50, 100, 0");
@@ -97,10 +97,10 @@ if (file_exists(working_directory+"\options.ini")) {
 		objPerSave.basicStartHealth = ini_read_real("basic","hp", 20);
 		
 		//Turn modifiers
-		objPerSave.SCardSelectTimer = ini_read_real("turn","SpecialSelectTime", 15);
+		objPerSave.SCardSelectTimer = ini_read_real("turn","SpecialSelectTime", 60);
 		objPerSave.preturnTimer = ini_read_real("turn","PreTurnTime", 3);
 		objPerSave.turnTimer = ini_read_real("turn","TurnTime", 20);
-		objPerSave.flipTimer = ini_read_real("turn","FlipTime", 1);
+		objPerSave.flipTimer = ini_read_real("turn","FlipTime", 0.5);
 			
 		//Reading string to array
 			aiDifficultyString =  ini_read_string("AI","aiDifficultyArray", "20, 50, 100, 0");
