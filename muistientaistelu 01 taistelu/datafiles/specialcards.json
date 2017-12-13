@@ -167,7 +167,7 @@
    "PRIORITY": 2,
    "SPRITE": "sprVortex",
    "TEXT": "Both heroes take 5 damage - ends both turns immediately without turn phase (all found pairs are discarded)",
-   "CHOSEN": 1
+   "CHOSEN": 0
  },
  {
    "ID": 17,

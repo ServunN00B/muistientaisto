@@ -20,6 +20,7 @@ p1OrigPlace = objP1Fight.x;
 p2OrigPlace = objP2Fight.x;
 spriteStep = 5;
 firstSprite = true;
+battleEnd = false;
 
 audio_stop_sound(objSoundController.sound_theme);
 audio_play_sound(souBattle1, 1, true);
@@ -59,13 +60,26 @@ if (!objPerSave.vortex) {
 		image_yscale = spriteSize;
 	}
 
-	alarm_set(2,28);
-
 	var mssg = "Joku käytti vortexin! \n molemmat saavat 5 damagea";
 	show_message(mssg);
 	objPerSave.vortex = false;
 	objPerSave.p1Health -= 5;
 	objPerSave.p2Health -= 5;
+	if(objPerSave.p1Health <= 0)
+	{
+		objBattleEnd.sprite_index = sprDefeat;
+		objBattleEnd.visible = true;
+		objContinue.visible = true;
+		battleEnd = true;
+	}
+	
+	if(objPerSave.p2Health <= 0)
+	{
+		objBattleEnd.visible = true;
+		objContinue.visible = true;
+		battleEnd = true;
+	}
+
 	
 	ds_list_clear(objPerSave.p1Score);
 	ds_list_clear(objPerSave.p2Score);

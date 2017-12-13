@@ -17,7 +17,9 @@ if (p1place > p1EndPlace) //(p1EndPlace==p1place)
 		with(objP2Fight) {
 			sprite_index = objBattleController.p2sprite;
 		}
-	
+		if (!battleEnd) {
+			alarm_set(7, 3 * room_speed);
+		}
 		if objSound.sound {
 			alarm_set(4,6);
 		}

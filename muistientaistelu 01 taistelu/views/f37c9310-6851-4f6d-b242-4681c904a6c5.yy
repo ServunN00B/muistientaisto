@@ -13,7 +13,8 @@
         "5ffe4036-cfcb-49cc-9fc9-e1271b6bb46e",
         "fecd41ad-e3c1-4fd7-b85c-0351cf83f02a",
         "1d1052b5-5077-4d9c-9e10-1bf9bee6d20f",
-        "9c088ae3-2860-472c-b0b0-5455c5bb94ac"
+        "9c088ae3-2860-472c-b0b0-5455c5bb94ac",
+        "a9e4363c-c561-4300-a5cd-0fd85c6c8864"
     ],
     "filterType": "GMSprite",
     "folderName": "groupButtons",

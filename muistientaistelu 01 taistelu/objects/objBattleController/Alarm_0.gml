@@ -355,43 +355,21 @@ if (objPerSave.p2Health > objPerSave.basicStartHealth) {
 //Gameover screen?
 if(p1HP <= 0)
 {
-	audio_stop_all();
-	show_message("Player 1 is dead! Game Over!");
-	objPerSave.firstTurn = true;
-	ds_list_clear(objPerSave.p1Score);
-	ds_list_clear(objPerSave.p2Score);
-	objPerSave.p1LastingSpecialEffect = false;
-	objPerSave.p2LastingSpecialEffect = false;
-	objPerSave.p1SpecialEffect = -1;
-	objPerSave.p2SpecialEffect = -1;
-	objPerSave.isAttacking = 0;
-	objPerSave.p1Health = objPerSave.basicStartHealth;
-	objPerSave.p2Health = objPerSave.basicStartHealth;
-	objPerSave.AI = false;
-	ds_list_clear(objPerSave.dsP1SpecialCards);
-	ds_list_clear(objPerSave.dsP2SpecialCards);
-	ds_list_clear(objPerSave.cardsInUse);
-	room_goto(rooMain);
+	objBattleEnd.sprite_index = sprDefeat;
+	objBattleEnd.visible = true;
+	objContinue.visible = true;
+	audio_play_sound(souVictory,1,true);
+	audio_sound_gain(souVictory,1,0);
+	battleEnd = true;
+	
 }
 else if(p2HP <= 0)
 {
-	audio_stop_all();
-	show_message("Player 2 is dead! Game Over!");
-	objPerSave.firstTurn = true;
-	ds_list_clear(objPerSave.p1Score);
-	ds_list_clear(objPerSave.p2Score);
-	objPerSave.p1LastingSpecialEffect = false;
-	objPerSave.p2LastingSpecialEffect = false;
-	objPerSave.p1SpecialEffect = -1;
-	objPerSave.p2SpecialEffect = -1;
-	objPerSave.isAttacking = 0;
-	objPerSave.p1Health = objPerSave.basicStartHealth;
-	objPerSave.p2Health = objPerSave.basicStartHealth;
-	objPerSave.AI = false;
-	ds_list_clear(objPerSave.dsP1SpecialCards);
-	ds_list_clear(objPerSave.dsP2SpecialCards);
-	ds_list_clear(objPerSave.cardsInUse);
-	room_goto(rooMain);
+	objBattleEnd.visible = true;
+	objContinue.visible = true;
+	audio_play_sound(souDefeat,1,true);
+	audio_sound_gain(souDefeat,1,0);
+	battleEnd = true;
 }
 
 ds_list_clear(objPerSave.p1Score);
