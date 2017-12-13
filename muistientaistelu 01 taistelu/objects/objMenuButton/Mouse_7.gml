@@ -13,7 +13,7 @@ if (room != rooMain) {
 	objSoundController.sound_pretheme = objSoundController.sound_pretheme_array[random_sound_pretheme];
 	audio_play_sound(objSoundController.sound_pretheme, 1, true);
 	if objMusic.music {
-		audio_sound_gain(objSoundController.sound_pretheme, 0.4, 0);
+		audio_sound_gain(objSoundController.sound_pretheme, 0.5, 0);
 	}
 	else {
 		audio_sound_gain(objSoundController.sound_pretheme, 0, 0);

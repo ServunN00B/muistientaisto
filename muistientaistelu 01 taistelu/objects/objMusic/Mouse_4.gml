@@ -15,7 +15,7 @@ if (music) {
 	
 	audio_play_sound(souButton, 1, false);
 	
-	audio_sound_gain(objSoundController.sound_theme, 0.3, 1*1000);
-	audio_sound_gain(objSoundController.sound_pretheme, 0.4, 1*1000);
+	audio_sound_gain(objSoundController.sound_theme, 0.5, 1*1000);
+	audio_sound_gain(objSoundController.sound_pretheme, 0.5, 1*1000);
 	audio_sound_gain(souBattle1, 1, 1*1000);
 }

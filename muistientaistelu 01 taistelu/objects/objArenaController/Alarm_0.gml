@@ -31,7 +31,7 @@ if (objPerSave.debugMod) {
 		objSoundController.sound_theme = objSoundController.sound_theme_array[random_sound_theme];
 		audio_play_sound(objSoundController.sound_theme, 1, true);
 		if objMusic.music {
-			audio_sound_gain(objSoundController.sound_theme, 0.3, 0);
+			audio_sound_gain(objSoundController.sound_theme, 0.5, 0);
 		}
 		else {
 			audio_sound_gain(objSoundController.sound_theme, 0, 0);

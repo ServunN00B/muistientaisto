@@ -42,7 +42,9 @@ if (onPareja) {
 		} else {
 			var fixi = i - 3;
 		}
-		with(instance_create_depth(vuorossaParit.x, vuorossaParit.y+(-75*i), 9 + (-1* i), objNormalCard)) {
+		with(instance_create_depth(vuorossaParit.x, vuorossaParit.y+i*75, -666+i*1, objNormalCard)) {
+			image_xscale = image_xscale*0.8;
+		//with(instance_create_depth(vuorossaParit.x, vuorossaParit.y+(-75*i), 9 + (-1* i), objNormalCard)) {
 				if (objPerSave.isAttacking = k) {
 					//Attacking turn
 					switch(ds_list_find_value(vuorossa,i)){
@@ -98,9 +100,42 @@ if (onPareja) {
 	}
 }
 
+var kk = 1;
+
 if (erikoisKayt) {
 	var frontID = noone;
-		with(instance_create_depth(vuorossaParit.x + 250, vuorossaParit.y , 9 , objSpecialCard)) {
+	
+		if (k > 1) {
+			kk = -2.3;
+		}
+			
+		//Creating cardback
+		with(instance_create_depth(vuorossaParit.x+kk*75, vuorossaParit.y-68, -10, objSpecialCardBack)){
+			switch(string(global.specialCardData[# vuorossaErikois, SpecialEnum.TYPE])) {
+				case "offensive":
+					sprite_index = sprOffensive;
+					break;
+		
+				case "defensive":
+					sprite_index = sprDefence;
+					break;
+
+				case "neutral":
+					sprite_index = sprNeutral;
+					break;
+			}
+			select = false;
+			image_xscale = 0.2;
+			image_yscale = 0.2;
+			image_xscale = image_xscale*0.9;
+			image_yscale = image_yscale*1.15;
+			OrigScale = 0.2;
+			spCardFront = frontID;
+			variable_instance_set(frontID,"spCardBack",self.id);
+			canClick = false;
+		}	
+		
+		with(instance_create_depth(vuorossaParit.x+kk*75, vuorossaParit.y-68, -11 , objSpecialCard)) {
 			sID = vuorossaErikois;
 			if (objPerSave.debugMod) {
 				show_message(string(sID));
@@ -119,32 +154,10 @@ if (erikoisKayt) {
 			sprite_index = asset_get_index(sSPRITE);
 			image_xscale = 0.2;
 			image_yscale = 0.2;
+			image_xscale = image_xscale*0.9;
+			image_yscale = image_yscale*1.15;
 			OrigScale = 0.2;
 			frontID = self.id;
 		}
-			
-		//Creating cardback
-		with(instance_create_depth(vuorossaParit.x + 250, vuorossaParit.y , 8, objSpecialCardBack)){
-			switch(string(global.specialCardData[# vuorossaErikois, SpecialEnum.TYPE])) {
-				case "offensive":
-					sprite_index = sprOffensive;
-					break;
-		
-				case "defensive":
-					sprite_index = sprDefence;
-					break;
-
-				case "neutral":
-					sprite_index = sprNeutral;
-					break;
-			}
-			select = false;
-			image_xscale = 0.2;
-			image_yscale = 0.2;
-			OrigScale = 0.2;
-			spCardFront = frontID;
-			variable_instance_set(frontID,"spCardBack",self.id);
-			canClick = false;
-		}	
 }
 }

@@ -61,7 +61,11 @@ if (canClick) {
 				
 					with(spCardFront) {
 						event_user(0);
+						image_xscale = 0.2;
+						image_yscale = 0.2;
 					}
+					image_xscale = 0.2;
+					image_yscale = 0.2;
 					showDes = false;
 					canClick = false;
 					path2 = path_add();
