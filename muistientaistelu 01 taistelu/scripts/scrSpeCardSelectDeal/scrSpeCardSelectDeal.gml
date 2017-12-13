@@ -66,13 +66,24 @@ for (j=0; j <ds_list_size(vuorossa); j+=1) {
 	}
 	
 }
+
+/*
+var a = objSpeCardSelectionHolder.x;
+var b = objSpeCardSelectionHolder.y;
+var c = 6; //Cards on a row
+var f = 20; //padding
+var g = 101; //Sprite width
+var h = 147; //Sprite height
+*/
+
 var Be = floor(ds_list_size(vuorossa)/c)%c;
-var Bx = (a+c*(g + f))/2;
+var Bx = a+(c*g+(c-1)*f)/2; //(a+c*(g + f))/2;
 var By = (b+Be*(h+f))+10;
 
 with(instance_create_layer(Bx, By, layer_get_id("Instances"), objSpeCardDone)) {
 		image_xscale = 0.2;
 		image_yscale = 0.2;
+		x = x-(objSpeCardDone.sprite_width)/2;
 }
 if (objPerSave.firstTurn){
 	if (objArenaController.ChoosingPlayer = 2){
