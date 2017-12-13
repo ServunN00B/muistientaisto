@@ -3,6 +3,7 @@
 xmoved = x;
 xorig = x;
 yorig = y;
+depth = -666;
 var scaleButtons = 0.5;
 menuButtonId = noone;
 with(instance_create_depth(self.x + 40, self.y + 30, depth - 1, objMenuButton)) {
