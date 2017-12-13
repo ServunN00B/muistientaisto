@@ -6,7 +6,8 @@
     "children": [
         "886eef84-e57e-4368-94bf-817001cd8c5b",
         "ce8c9ffa-cf1d-4313-a402-6b8bb20defc3",
-        "fb67b702-7ab0-456f-9434-78545605adf7"
+        "fb67b702-7ab0-456f-9434-78545605adf7",
+        "a82988d9-540f-4277-bccc-3fb4f258afba"
     ],
     "filterType": "GMSprite",
     "folderName": "groupBackground",
