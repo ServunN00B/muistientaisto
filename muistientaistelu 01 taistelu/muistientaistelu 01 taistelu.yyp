@@ -2351,6 +2351,14 @@
             }
         },
         {
+            "Key": "e68456a1-e9c3-4ab2-9c64-23f8be8f0787",
+            "Value": {
+                "id": "ba05e0ae-6726-4667-8cb9-d19b9d769cc2",
+                "resourcePath": "objects\\objHPback1\\objHPback1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e84c2903-7ad1-4cdd-900e-6b21e4627b0b",
             "Value": {
                 "id": "266f69e2-6132-4a6d-a5cd-0726ba8fff98",
