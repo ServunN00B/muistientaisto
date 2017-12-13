@@ -22,9 +22,8 @@ if (objPerSave.isAttacking = 1){
 		
 		objPL1Glow.visible = false;
 		objPL2Glow.visible = true;
-		if (!objPerSave.firstTurn) {
-			objPerSave.p1Coin +=1;
-			}
+		objPerSave.p1Coin +=1;
+		
 		
 		objPerSave.isTurn = 2;
 		
@@ -47,9 +46,8 @@ if (objPerSave.isAttacking = 1){
 		objPL1Glow.visible = true;
 		objPL2Glow.visible = false;
 		
-		if (!objPerSave.firstTurn) {
-			objPerSave.p2Coin +=1;
-			}
+		objPerSave.p2Coin +=1;
+		
 		objPerSave.isTurn = 1;
 		
 		if (instance_exists(objAIdriver)){instance_destroy(objAIdriver);}
