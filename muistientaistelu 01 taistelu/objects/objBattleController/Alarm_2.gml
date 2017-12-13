@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var p1place = objP1Fight.x
 
-if (p1EndPlace==p1place)
+if (p1place > p1EndPlace) //(p1EndPlace==p1place)
 {
 	shake = true;
 	showdmgtext = true;
@@ -10,7 +10,7 @@ if (p1EndPlace==p1place)
 	alarm_set(6,20);
 }
 
-	if (p1place = p1EndPlace - spriteStep * 6) {
+	if (p1place > p1EndPlace - spriteStep * 6) {
 		with(objP1Fight) {
 			sprite_index = objBattleController.p1sprite;
 		}
