@@ -15,7 +15,7 @@ with(instance_create_depth(self.x + sprite_width / 2 - 50, self.y + 140, depth -
 	targetObj = "objPerSave";
 	targetVar = "aiDifficulty";
 	sprite_index = sprArrowButton;
-	image_xscale = -1;
+	image_xscale = image_xscale * -1;
 	arrowL = self.id;
 }
 
