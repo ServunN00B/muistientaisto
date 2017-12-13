@@ -2127,6 +2127,14 @@
             }
         },
         {
+            "Key": "cef607ac-c031-47cd-ae54-465d62a19acd",
+            "Value": {
+                "id": "a83bd794-b184-448a-ac94-a68bd8dc00e5",
+                "resourcePath": "sprites\\sprChickenLogo\\sprChickenLogo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d250165e-57c9-46fb-a2e4-9e133d7b9ca9",
             "Value": {
                 "id": "5c49d752-bc5e-4991-a10a-9bf24a072d44",
