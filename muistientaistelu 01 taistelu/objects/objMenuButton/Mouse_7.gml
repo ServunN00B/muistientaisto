@@ -6,6 +6,7 @@ if objSound.sound {
 }
 
 if (room != rooMain) {
+	/*
 	audio_stop_all();
 	
 	var random_sound_pretheme = irandom(array_length_1d(objSoundController.sound_pretheme_array)-1);
@@ -34,6 +35,8 @@ if (room != rooMain) {
 	ds_list_clear(objPerSave.cardsInUse);
 	objPerSave.AI = false;
 	room_goto(rooMain);
+	*/
+	game_restart();
 } else {
 	instance_create_depth(room_width/2,60,depth - 5, objStatsScreen);
 }
