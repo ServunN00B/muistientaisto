@@ -1,0 +1,26 @@
+/// @description Normalcard variables
+turnAnim = noone;
+turnAnimRe = noone;
+canClick = true;
+clicks = 0;
+found = false;
+pairs = 0;
+turned = false;
+self.image_xscale = image_xscale / 7;
+self.image_yscale = image_yscale / 7;
+OrigScale = self.image_xscale;
+origDepth = depth;
+OrigX = self.x;
+OrigY = self.y;
+scaleChange = 1.1; //Scale multiplier, 1 normal, < 1 is smaller, >1 is larger
+scaleTime = 10;
+scaling = false;
+manySteps = 0;
+origWidth = self.sprite_width;
+origHeight = self.sprite_height;
+BigScale = OrigScale * scaleChange;
+scaleStep = ((BigScale - OrigScale) / scaleTime) * 2;
+cordXChange = (origWidth * scaleChange - origWidth) / 2; // Divider can be changed
+cordYChange = (origHeight * scaleChange - origHeight) / 2;
+cordXStep = cordXChange / scaleTime;
+cordYStep = cordYChange / scaleTime;
